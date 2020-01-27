@@ -1,0 +1,61 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Site Title -->
+  <title> {{ page.title }} </title>
+
+  <!-- Inline CSS -->
+  <!-- Source: http://garthdb.com/writings/i-am-a-jekyll-god/ -->
+  <style type="text/css">
+    {
+      % include styles.css %
+    }
+  </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Alice|Lato:400,400i,700,900" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
+
+
+  <!-- 404 -->
+  <!-- Source: http://yizeng.me/2013/05/26/create-a-custom-jekyll-404-page/ -->
+  {% if page.url == "/404.html" %}
+  <meta http-equiv="refresh" content="5; url=/">
+  {% endif %}
+
+
+</head>
+
+<body>
+
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-91048600-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+  <!-- Jekyll -->
+  {{ content }}
+
+
+</body>
+
+</html>

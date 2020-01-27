@@ -1,0 +1,14 @@
+# Jekyll config file
+name: Jot Dhaliwal
+markdown: kramdown
+
+# Base hostname & protocol for your site
+url: https://jotd.me
+enforce_ssl: jotd.me
+
+# Configure Sass to output compressed css
+# Source: http://garthdb.com/writings/i-am-a-jekyll-god/
+sass:
+  sass_dir: _includes
+  style: compressed
+
