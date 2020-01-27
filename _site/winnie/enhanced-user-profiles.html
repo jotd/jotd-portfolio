@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Winnie Profiles </title>
+
+  <!-- This stuff sets up the page to be mobile friendly -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Let search engines read your content only in https site -->
+  <link rel="canonical" href="https://jotd.me" />
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+    crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+ 
+
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+
+<body>
+
+  <!-- Bootstrap Nav -->
+  <nav  class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span id="black-toggle" class="icon-bar"></span>
+          <span id="black-toggle" class="icon-bar"></span>
+          <span id="black-toggle" class="icon-bar"></span>
+        </button>
+        <a  class="navbar-brand" href="/">Jot Dhaliwal</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a  class="" href="/work">Work</a></li>
+          <li><a  class="" href="/about">About</a></li>
+          <li><a  class="" href="https://www.linkedin.com/in/jotdhaliwal/" target="_blank">LinkedIn</a></li>
+          <!-- <li> <a href="https://s3-us-west-1.amazonaws.com/jotd.me/jot_dhaliwal_resume3.pdf" target="_blank">Resume</a></li> -->
+        </ul>
+      </div><!-- /.navbar-collapse -->
+  </nav>
+
+
+  <div class="content-medium">
+    <img id="margin-hero-img" src="https://jotsd.s3.amazonaws.com/winnie/profiles/cover.png">
+  </div>
+  
+
+  <div class="content-narrow">
+    <h5 class="text-case-study-h1"> Enhanced User Profiles </h5>
+    <h6 class="text-case-study-subheader"> ⛵ <span class="highlight"> Winnie / September 2018 </span>  </h6>
+  </div>
+
+
+  <div class="content-narrow">
+    <p id="margin-below-sentence" class="text-body">
+        Winnie is the social app that gives parents superpowers! 
+        Parents can ask questions, give advice and discover family-friendly businesses. 
+    </p>
+    <p id="margin-below-sentence" class="text-body">
+        I noticed when users browsed each other’s profiles, they could see posts but replies were excluded. 
+        This caused a negative experience because expected behavior is to see all content that another user has created.  
+        Turns out the company had punted on designing replies as standalone objects. 
+        As a result of this product debt, replies were excluded from profiles and also search results.
+    </p>
+    <p id="margin-below-sentence" class="text-body">
+        Analytics showed me that users create five times as many replies as posts. 
+        Over half of the replies are created by users that don’t post at all. 
+        This meant that a majority of profiles appeared empty. 
+    </p>
+    <p id="margin-below-section" class="text-body">
+        My hypothesis was that if users see replies on each other’s profiles and in search results, it would increase the number of page views and time spent in app.
+        <b>By designing a solution to this problem, I could positively impact the company's objective of 
+        creating a large daily active audience.</b>
+    </p>
+  </div>
+
+  <div class="content-narrow">
+    <h3 class="text-subheader-3"> Approach </h3>
+    <h2 class="text-subheader-2"> defining scope </h2>
+    <p id="margin-below-sentence" class="text-body">
+        Replies would be surfaced on user profiles (mobile, web) and in search results (mobile only).
+        Search results on web would not include replies because it's not universal across both posts and places. 
+    </p>
+    <p id="margin-below-sentence" class="text-body">
+        Platforms included iOS, Android and web. 
+    </p>
+    <h2 class="text-subheader-2"> parent content </h2>
+    <p id="margin-below-sentence" class="text-body">
+        The first challenge was to figure out what content to include from the parent post. 
+        Replies to a discussion include the title whereas replies to a review include a place card 
+        as well as the rating and description.
+    </p>
+    <h2 class="text-subheader-2"> reply content </h2>
+    <p id="margin-below-sentence" class="text-body">
+      An arrrow icon is included in the user’s reply to offset the content.  
+      This visual treatment gives users feedback while scrolling profiles without
+      distracting from the actual content.
+    </p>
+    <p id="margin-below-section" class="text-body">
+      In terms of media attachments, multiple photos appear in a grid. 
+      If a reply contains at least one photo and a URL, the link card is hidden. 
+    </p>
+  </div>
+
+  <div class="content-wide">
+    <!-- <h2 class="text-case-study-h2"> Replies on Profile </h2> -->
+    <img src="https://jotsd.s3.amazonaws.com/winnie/profiles/replies-media-attachments.png">
+    <p id="margin-below-section" class="text-img-desc">
+        Preview of how replies with media attachments appears on user profiles.
+    </p>
+  </div>
+
+  <div class="content-narrow">  
+      <h2 class="text-subheader-2"> metadata </h2>
+      <p id="margin-below-sentence" class="text-body">
+          I reused the existing metadata patterns from posts on profiles and posts in search results. 
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        
+        
+      </p>
+      <h2 class="text-subheader-2"> overflow menu </h2>
+      <p id="margin-below-sentence" class="text-body">
+          The overflow menu options were simplified. The affordance to share a reply outside of the app was removed but a reply could still be reported.
+      </p>
+      <h2 class="text-subheader-2"> engagement actions </h2>
+      <p id="margin-below-section" class="text-body">
+          Users could like a reply but not reply or bookmark.
+          Nested conversations were not supported and the parent post could already be bookmarked.
+      </p>
+  </div>
+
+
+    <div class="content-medium">
+        <img src="https://jotsd.s3.amazonaws.com/winnie/profiles/public-filled.png">
+        <p id="margin-below-section" class="text-img-desc">
+            Users can filter by post type to make it easier to scroll profiles
+        </p>
+    </div> 
+
+    <div class="content-narrow">
+        <h2 class="text-subheader-2"> profiles </h2>
+        <p id="margin-below-section" class="text-body">
+            By default all activity is shown on user profiles, including posts and replies.
+            Only the most recent reply is shown if a user creates multiple replies to the same post.
+        </p>
+    </div>
+
+    <div class="content-medium">
+        <img src="https://jotsd.s3.amazonaws.com/winnie/profiles/own-empty.png">
+        <p id="margin-below-section" class="text-img-desc">
+            Empty states for a user's own profile
+        </p>
+    </div>
+
+    <div class="content-narrow">
+        <p id="margin-below-sentence" class="text-body">
+            These empty states contain CTA's prompting users's to post a review, ask a question or answer a question.
+            The CTA to leave a review or ask a question deep links to the composer. 
+        </p>
+        <p id="margin-below-sentence" class="text-body">
+            By default, the user is prompted to review a place because local data is more valuable for monetization than topical data.
+            A very specific, easily answerable question that feels subjective is less taxing on the user than asking them to 
+            think of their own question. 
+        </p>
+        <p id="margin-below-section" class="text-body">
+            This is because there’s no wrong answer to the question, it’s not intimidating, and the user doesn't have to think of something to say.
+        </p>
+    </div>
+
+
+    <div class="content-medium">
+        <img src="https://jotsd.s3.amazonaws.com/winnie/profiles/public-empty.png">
+        <p id="margin-below-section" class="text-img-desc">
+            Empty states for another user's profile 
+        </p>
+    </div>
+
+
+   
+    
+    
+    <div class="content-narrow">
+        <h3 class="text-subheader-3"> Results </h3>
+        <p id="margin-below-sentence" class="text-body">
+          I successfully shipped this feature across iOS, Android and the web by working side by side with three engineers. 
+        </p>
+        <div id="" class="text-body">
+            Overall, I learned that empty states can be used to prompt users for reviews and new places.   
+            Local data can be monetized in a variety of ways in comparison to prompting users to ask questions.
+        </div>
+      </div>
+    
+
+
+  <!-- Footer-->
+  <!-- <div class="content-narrow lead-footer">
+    <div>
+      <h4 class="text-footer"> © Jot Dhaliwal | All Rights Reserved 🙏 </h4>
+    </div>
+  </div> -->
+
+
+  <!-- Bootstrap  -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

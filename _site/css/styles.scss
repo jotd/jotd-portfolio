@@ -1,0 +1,418 @@
+
+// ----------------------------------------------------------------------------------------
+// Headers
+$COLOR1: #2a2c2e;
+// Body Background
+$COLOR2: #f9f9f9;
+// Gray Text
+$COLOR3: #74797e;
+// Project Thumbnails 
+$COLOR4: #F1F1F1;
+// Winnie Blue
+$accent: #5dcfff;
+// Shadows
+$shadow: #C5CDD5;
+$typeface: "Lato", sans-serif;
+$typeface2: "Playfair Display", serif;
+$lead: 32px;
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+body {
+  background-color: $COLOR2 !important;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.shadow {
+  box-shadow: 0 4px 16px $shadow;
+}
+// Remove all text deocration from links
+a:hover, a:visited, a:focus, a:active {
+  text-decoration: none !important;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// H1 Extend
+%base-1 {
+  font-family: $typeface2;
+  font-weight: 900;
+  color: $COLOR1;
+}
+// Body Text Extend
+%base-3 {
+  font-family: $typeface;
+  font-weight: 400;
+  color: $COLOR1;
+}
+// Nav Link Extend
+%base-4 {
+  font-family: $typeface;
+  font-weight: 900;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+#margin-below-header {
+  margin-bottom: 48px;
+}
+#margin-below-sentence {
+  margin-bottom: 40px;
+}
+#margin-below-section {
+  margin-bottom: 80px;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Containers for content
+.content-thumbnail {
+  max-height: 400px;
+  max-width: 550px;
+  margin: 0 auto; 
+  margin-bottom: 24px;
+  border-radius: 24px;
+  animation: popIn ease 1.2s;
+  background: $COLOR4;
+}
+.content-thumbnail:hover {
+  box-shadow: 0 12px 80px $COLOR4;
+  transition: 0.2s ease-in-out;
+}
+.offset-thumbnail-1{
+  animation: popIn ease 1.2s .1s;
+}
+.offset-thumbnail-2{
+  animation: popIn ease 1.2s .2s;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+.content-body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.content-about {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.content-headshot {
+  max-width: 350px;
+  margin: 0 auto;
+  background: $COLOR4;
+  border-radius: 24px;
+  margin-bottom: 64px;
+}
+.content-image {
+  max-width: 950px;
+  margin: 0 auto;
+  background: $COLOR4;
+  border-radius: 24px;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Header on home page
+.header-home {
+  @extend %base-1;
+  color: $COLOR1;
+  font-size: 52px;
+  line-height: 72px;
+  margin-top: 96px;
+  margin-bottom: -600px;
+  text-align: center;
+}
+// Blue text for header on home page
+.blue-text {
+  color: $accent;
+}
+// Center H1
+.center-header-home {
+  max-width: 550px;
+  margin: 0 auto;
+  position: relative;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+#app-icon {
+  height: 56px;
+  width: 56px;
+  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  border-radius: 8px;
+}
+#app-icon-lockup {
+  position: relative;
+  margin-left: 96px;
+  margin-top: -96px;
+  margin-right: 32px;
+  padding-bottom: 32px;
+}
+.project-header {
+  @extend %base-1;
+  font-size: 20px;
+}
+.project-description {
+  @extend %base-3;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: $COLOR3;
+}
+.tag-text {
+  @extend %base-3;
+  font-size: 14px;
+  line-height: $lead;
+  color: white;
+}
+// Skill tags for projects
+.tag {
+  padding: .1px 16px .1px 16px;
+  background: $COLOR1;
+  border-radius: 8px;
+  letter-spacing: 0.05rem;
+  display: inline-block;
+  margin-top: 12px;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Case Study Header 
+.text-case-study-h1 {
+  @extend %base-1;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.text-subheader-3 {
+  @extend %base-1;
+  font-size: 24px;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  color: $COLOR1;
+}
+// Smallcaps
+.text-subheader-1 {
+  @extend %base-4;
+  color: $COLOR1;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  margin-bottom: 12px;
+  margin-left: 16px;
+  font-variant: small-caps;
+}
+// Body Text
+.text-body {
+  @extend %base-3;
+  font-size: 18px;
+  line-height: $lead;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+// Survey Questions
+.text-body-secondary-1 {
+  @extend %base-3;
+  color: $COLOR1;
+  font-size: 18px;
+  line-height: $lead;
+  text-align: left;
+  margin-left: 16px;
+}
+// Survey Answer Choices
+.text-body-secondary-2 {
+  @extend %base-3;
+  color: $COLOR3;
+  font-size: 16px;
+  line-height: $lead;
+  text-align: left;
+  margin-left: 16px;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Social Icons
+.social-icons {
+  margin-top: 11px;
+  margin-right: 13px;
+}
+// Social Icons
+.fa-linkedin-in,
+.fa-twitter,
+.fa-medium-m,
+.fa-pinterest {
+  color: $COLOR1;
+}
+.fa-linkedin-in:hover,
+.fa-twitter:hover,
+.fa-medium-m:hover,
+.fa-pinterest:hover {
+  color: $accent;
+}
+.highlight {
+  background-image: linear-gradient(120deg, $accent, $accent);
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 90%;
+  transition: background-size 0.2s ease-in-out;
+  color: inherit;
+  text-decoration: none;
+}
+// Text highlight color
+::selection {
+  background: $COLOR1;
+  color: #fff;
+}
+::-moz-selection {
+  background: $COLOR1;
+  color: #fff;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Pushing down the whole nav
+.navbar {
+  padding-top: 16px;
+  margin-bottom: 80px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+// Links
+.navbar-default .navbar-nav > li > a {
+  @extend %base-3;
+  color: #333333 !important;
+  font-size: 18px;
+  text-align: right;
+}
+// Toggle Default
+.navbar-default .navbar-toggle {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+// Toggle on Hover
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+// 3 Bars in Toggle
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $COLOR1 !important;
+  // Animate hamburger menu
+  transition: all 0.15s;
+}
+// Animate hamburger menu
+.navbar-toggle span:nth-child(2) {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle span:nth-child(3) {
+  opacity: 0;
+}
+.navbar-toggle span:nth-child(4) {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed span:nth-child(2),
+.navbar-toggle.collapsed span:nth-child(4) {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed span:nth-child(3) {
+  opacity: 1;
+}
+// Name top left corner
+.navbar-default .navbar-brand {
+  @extend %base-1;
+  color: $COLOR1 !important;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+// Hide divider below toggle
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent !important;
+}
+// Mobile nav offset
+@media only screen and (max-width: 500px) {
+  .offset-nav-1 {
+    animation: slideRight ease .2s;
+  }
+  
+  .offset-nav-2 {
+    animation: slideRight ease .2s .1s;
+  }
+  
+  .offset-nav-3 {
+    animation: slideRight ease .2s .15s;
+  }
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+// Footer Styles
+.content-footer {
+  padding-top: 1rem;
+  padding-bottom: .3rem;
+  background-color: $COLOR4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+#text-footer-1 {
+  @extend %base-3;
+  font-size: 18px;
+  margin-top: 5px;
+  text-align: left;
+}
+#text-footer-2 {
+  text-align: right;
+}
+.social-icons-footer {
+  margin-right: 12px;
+  margin-top: 10px;
+}
+#margin-about-footer {
+  margin-bottom: 120px;
+}
+// ----------------------------------------------------------------------------------------
+
+
+// ----------------------------------------------------------------------------------------
+@keyframes popIn {
+  0%{
+    transform: scale(.8) translateY(100px);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.05) translateY(-10px);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(3100px);
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+// ----------------------------------------------------------------------------------------
