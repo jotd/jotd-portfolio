@@ -1,4 +1,3 @@
-
 // ----------------------------------------------------------------------------------------
 // Headers
 $COLOR1: #2a2c2e;
@@ -6,17 +5,16 @@ $COLOR1: #2a2c2e;
 $COLOR2: #f9f9f9;
 // Gray Text
 $COLOR3: #74797e;
-// Project Thumbnails 
-$COLOR4: #F1F1F1;
+// Project Thumbnails
+$COLOR4: #f0f0f0;
 // Winnie Blue
 $accent: #5dcfff;
 // Shadows
-$shadow: #C5CDD5;
+$shadow: #f1f1f1;
 $typeface: "Lato", sans-serif;
 $typeface2: "Playfair Display", serif;
 $lead: 32px;
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 body {
@@ -30,11 +28,13 @@ img {
   box-shadow: 0 4px 16px $shadow;
 }
 // Remove all text deocration from links
-a:hover, a:visited, a:focus, a:active {
+a:hover,
+a:visited,
+a:focus,
+a:active {
   text-decoration: none !important;
 }
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 // H1 Extend
@@ -56,7 +56,6 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
 #margin-below-header {
   margin-bottom: 48px;
@@ -69,30 +68,28 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
 // Containers for content
 .content-thumbnail {
   max-height: 400px;
   max-width: 550px;
-  margin: 0 auto; 
-  margin-bottom: 24px;
+  margin: 0 auto;
+  margin-bottom: 40px;
   border-radius: 24px;
   animation: popIn ease 1.2s;
   background: $COLOR4;
 }
 .content-thumbnail:hover {
-  box-shadow: 0 12px 80px $COLOR4;
+  box-shadow: 0 16px 80px $shadow;
   transition: 0.2s ease-in-out;
 }
-.offset-thumbnail-1{
-  animation: popIn ease 1.2s .1s;
+.offset-thumbnail-1 {
+  animation: popIn ease 1.2s 0.1s;
 }
-.offset-thumbnail-2{
-  animation: popIn ease 1.2s .2s;
+.offset-thumbnail-2 {
+  animation: popIn ease 1.2s 0.2s;
 }
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 .content-body {
@@ -118,7 +115,6 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
 // Header on home page
 .header-home {
@@ -141,7 +137,6 @@ a:hover, a:visited, a:focus, a:active {
   position: relative;
 }
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 #app-icon {
@@ -177,7 +172,7 @@ a:hover, a:visited, a:focus, a:active {
 }
 // Skill tags for projects
 .tag {
-  padding: .1px 16px .1px 16px;
+  padding: 0.1px 16px 0.1px 16px;
   background: $COLOR1;
   border-radius: 8px;
   letter-spacing: 0.05rem;
@@ -186,9 +181,8 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
-// Case Study Header 
+// Case Study Header
 .text-case-study-h1 {
   @extend %base-1;
   font-size: 40px;
@@ -241,7 +235,6 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
 // Social Icons
 .social-icons {
@@ -280,7 +273,6 @@ a:hover, a:visited, a:focus, a:active {
   color: #fff;
 }
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 // Pushing down the whole nav
@@ -347,25 +339,24 @@ a:hover, a:visited, a:focus, a:active {
 // Mobile nav offset
 @media only screen and (max-width: 500px) {
   .offset-nav-1 {
-    animation: slideRight ease .2s;
+    animation: slideRight ease 0.2s;
   }
-  
+
   .offset-nav-2 {
-    animation: slideRight ease .2s .1s;
+    animation: slideRight ease 0.2s 0.1s;
   }
-  
+
   .offset-nav-3 {
-    animation: slideRight ease .2s .15s;
+    animation: slideRight ease 0.2s 0.15s;
   }
 }
 // ----------------------------------------------------------------------------------------
-
 
 // ----------------------------------------------------------------------------------------
 // Footer Styles
 .content-footer {
   padding-top: 1rem;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   background-color: $COLOR4;
   position: fixed;
   bottom: 0;
@@ -389,28 +380,27 @@ a:hover, a:visited, a:focus, a:active {
 }
 // ----------------------------------------------------------------------------------------
 
-
 // ----------------------------------------------------------------------------------------
 @keyframes popIn {
-  0%{
-    transform: scale(.8) translateY(100px);
+  0% {
+    transform: scale(0.8) translateY(100px);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: scale(1.05) translateY(-10px);
     opacity: 1;
   }
-  100%{
+  100% {
     transform: scale(1) translateY(0px);
     opacity: 1;
   }
 }
 
 @keyframes slideRight {
-  0%{
+  0% {
     transform: translateX(3100px);
   }
-  100%{
+  100% {
     transform: translateX(0px);
     opacity: 1;
   }
