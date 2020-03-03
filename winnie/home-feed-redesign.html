@@ -79,43 +79,42 @@
     </p>
     <div class="text-subheader-1">project</div>
     <p id="margin-below-sentence" class="text-body">
-      In the summer of 2018, I was tasked with redesigning Winnie's <span class="highlight">home feed on iOS</span>.
-     At this point, the home feed consisted of UGC around parenting discussions which confused users based on App Store reviews.
-     Users expected to see local data right away but the home feed was entirely  <span class="highlight">focused around content creation and engagement.</span>
+     Winnie's <span class="highlight"> home feed needed a redesign </span> to surface local data. 
+     Based on support tickets and App Store Reviews, it was clear users were confused by seeeing a feed consisting entirely of parenting discussions.
+     Users expected to find local child care and kids activities immediately after opening the app but the feed was <span class="highlight"> originally designed for content contribution and engagement.</span>
     </p>
     <p id="margin-below-sentence" class="text-body">
-      Although Winnie had made a <span class="highlight">big investment to collect local data</span> across different markets, <span class="highlight"> it was not being surfaced</span> in the home feed. 
-      Monetization was also an important consideration because Winnie's revenue came from sponsored search results. This meant that sponsored businesses could also be showcased in the home feed.
+      Although Winnie was making a <span class="highlight">big investment to collect local data</span> across different markets, <span class="highlight"> it was not being surfaced</span> in the home feed. 
+      This created a negative experience for new users who were presented with a feed of discussions instead of affordances for local search and discovery. 
+      Monetization was also a consideration because child care providers paid to be promoted in search results. So additional advertising inventory could be created in the home feed. 
     </p>
     <p id="margin-below-sentence" class="text-body">
-      <span class="highlight">My hypothesis</span> was that If I added affordances for place search and discovery to the home feed, Winnie could increase the number of place searches as well as place detail views.
+      <span class="highlight">My hypothesis</span> was that If I added affordances for local search and discovery to the home feed then I could increase the number of place searches as well as place detail views.
+      As a result, the home feed experience would match user expectations and paying partners could reach more potential customers. 
     </p>
     <div class="text-subheader-1">results</div>
     <p id="margin-below-sentence" class="text-body">
       <span class="highlight"> 72% vs. 42% </span> of new users <span class="highlight">completed a local search</span> in their first app session. 
      This +30% lift reflected that new users could search and discover local places faster, right from the home feed. 
-     Previously a user would have to go to the search tab for such actions.
     </p>
     <p id="margin-below-section" class="text-body">
       The number of place detail views did not meaningfully increase because the CTR from search results to place detail stayed flat. 
-      On iOS, search fitlers are hidden behind a button so even though users were creating more searches, they were not seeing
-      results that matched their intent. 
+      So even though users were creating more searches, they were not seeing results that matched their intent. 
     </p>
   </div> 
 
 
 
 <div id="margin-below-section" class="content-body"> 
-    <h3 class="text-subheader-3"> Data </h3>
+    <h3 class="text-subheader-3"> Survey Data </h3>
 
     <p id="margin-below-sentence" class="text-body">
       To inform my design decisions, I surveyed a random sample of 1K parents who had used the iOS app in the past three months.
     </p>
-    <p id="margin-below-sentence" class="text-body">
+    <!-- <p id="margin-below-sentence" class="text-body">
       After closing the survey, I exported the email addresses of respondents and matched them with internal user data. 
       This allowed me to segment responses by location.
-    </p>
-
+    </p> -->
     <div  class="text-subheader-1"> key insights </div>
     <p id="margin-below-sentence" class="text-body">
       A majority of users said their goal in using Winnie was to find local child care (8%) and activities (52%) 
@@ -132,7 +131,7 @@
     </p>
   
 
-    <!-- Survey Questions -->
+    <!-- Survey -->
     <div class="text-subheader-1">survey questions</div>
       <p class="text-body-secondary-1"> 
         Q: What was your goal in using Winnie?
@@ -182,13 +181,34 @@
         <li id="margin-below-section" class="text-body-secondary-2">I would not spend money</li>
       </ul>           
 </div>
-    
+
+<div class="content-body"> 
+  <h3 class="text-subheader-3"> Approach </h3>
+    <p id="margin-below-sentence" class="text-body">
+      My strategy for creating a new home feed architecture revolved around intent, browse and nurture. 
+    </p>
+    <p id="margin-below-sentence" class="text-body">
+      At the top of feed, a user would be able to quickly create a search based on intent.
+      Below search affordances, a user could browse local providers for child care and kids activities. 
+      The rest of feed would show parenting discussions and static resources. 
+    </p>
+</div>
+
+<!-- Wireframe -->
+<div id="margin-below-section" class="content-wireframe"> 
+  <img class="slightly-rounded-corners" src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/wireframe.png">
+</div>
+
 
 <div class="content-body"> 
   <h3 class="text-subheader-3"> First Iteration </h3>
   <p id="margin-below-sentence" class="text-body">
-    I started off by exploring different ways to display a variety of search shortcuts which served two purposes. 
+    I started off by exploring different ways to display search shortcut buttons which served two purposes. 
     Not only could users see search results faster but they would also understand the variety of local data that was available for search.
+  </p>
+  <p id="margin-below-sentence" class="text-body">
+    Displaying "filtered" search buttons such as Montessori didn't make sense because we don't have strong data collection in every major market.
+    As a result, lots of users would end up in an undesirable low data or empty state.
   </p>
 </div>
 
@@ -204,6 +224,15 @@
     Then I delved into different ways to help users discover local places and also manage places that they had previously viewed and saved. 
     However due to backend engineering constraints, it was out of scope to show viewed places. 
   </p>
+  <p id="margin-below-sentence" class="text-body">
+    To increase CTR from feed to place detail, I proposed personalizing the places shown in the segmented control based on their search intent. 
+    During onboarding, users are shown a simple form where they can use checkboxes to state whether they are looking for daycares, preschools, kids activitie or drop-in care.  
+    The responses to this question were then used to populate the segmented control. 
+    The default state would show a mix of child care and kids activities. 
+  </p>
+  <p id="margin-below-sentence" class="text-body">
+    
+  </p>
 </div>
 
 <!-- Mockup -->
@@ -214,21 +243,37 @@
 <div class="content-body"> 
   <h3 class="text-subheader-3"> Shipped Design </h3>
   <p id="margin-below-sentence" class="text-body">
-    In the final design I only used one row of search shortcuts so the feed content wouldn't be pushed too far down.
+    The Nearby button launches a full screen map view with a carousel of places. 
+    As a user scrolls through the carousel, the associated map pin scales up to provide feedback. 
+    In terms of visual treatment, the active map pin would have a white icon against a colored background for contrast against inactive map pins. 
+    The point of each map pin would denote the latitutde and longitude.
   </p>
-    <p id="margin-below-sentence" class="text-body">
-    Below the search shortcuts, I placed a segmented control allowing the user 
-    to toggle between featured and viewed places. 
+  <p id="margin-below-sentence" class="text-body">
+    The other search buttons would trigger a search with results based on the category such as Daycares, Preschools, Activities etc.   
+    Below the search shortcuts, I placed a segmented control allowing the user to toggle between featured and viewed places. 
+    The default state for the featured places section would be local child care and kids activities based on the user's device location.
+    Some randomness and a quality filter (description, reviews) was added so this section felt curated to users.
+    If the device location can't be detected then the user's home location captured in onboarding would be used. 
+    If no places are found, the radius would be expanded until the max limit is reached. 
+    If no places are found after reaching the max radius, then the segmented control would be hidden altogether.
+  </p>
+  <p id="margin-below-sentence" class="text-body">
+    Furthermore, the places that populate the carousel would be personalized based on onboarding. 
+    If a user has no saved places, there would be a prompt urging the user to create a search to discover local places. 
+    Tapping on the prompt would take the user to the search tab. 
   </p>
 </div>
 
 <!-- Mockup -->
 <div id="margin-below-section" class="content-image"> 
-  <img src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/final-iteration.png">
+  <img src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/third-iteration.png">
 </div>
 
-
-
+<!-- <div id="margin-above-footer" class="content-body"> 
+  <h3 class="text-subheader-3"> Reflection </h3>
+    <p id="margin-below-sentence" class="text-body">
+  </p>
+</div> -->
 
 <!-- Footer -->
   <div class="container-fluid">

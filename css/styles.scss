@@ -27,6 +27,9 @@ img {
 .shadow {
   box-shadow: 0 4px 16px $shadow;
 }
+.slightly-rounded-corners {
+  border-radius: 16px;
+}
 // Remove all text deocration from links
 a:hover,
 a:visited,
@@ -100,6 +103,10 @@ a:active {
   max-width: 600px;
   margin: 0 auto;
 }
+.content-wireframe {
+  max-width: 350px;
+  margin: 0 auto;
+}
 .content-headshot {
   max-width: 350px;
   margin: 0 auto;
@@ -110,6 +117,12 @@ a:active {
 .content-image {
   max-width: 950px;
   margin: 0 auto;
+  background: $COLOR4;
+  border-radius: 24px;
+}
+.content-gif {
+  width: 80%;
+  margin-left: 10%;
   background: $COLOR4;
   border-radius: 24px;
 }
@@ -188,6 +201,7 @@ a:active {
   font-size: 40px;
   text-align: center;
   margin-bottom: 32px;
+  line-height: 52px;
 }
 .text-subheader-3 {
   @extend %base-1;
@@ -375,9 +389,10 @@ a:active {
   margin-right: 12px;
   margin-top: 10px;
 }
-#margin-about-footer {
-  margin-bottom: 120px;
+#margin-above-footer {
+  margin-bottom: 140px;
 }
+
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
