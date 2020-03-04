@@ -103,7 +103,10 @@ a:active {
   line-height: 72px;
   margin-top: 96px;
   margin-bottom: -600px;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 1px;
+  -webkit-animation: fadeIn 700ms ease-in-out 0.25s both;
+          animation: fadeIn 700ms ease-in-out 0.25s both; }
 
 .blue-text {
   color: #5dcfff; }
@@ -129,7 +132,8 @@ a:active {
   padding-bottom: 32px; }
 
 .project-header {
-  font-size: 20px; }
+  font-size: 20px;
+  letter-spacing: 1px; }
 
 .project-description {
   font-size: 18px;
@@ -145,7 +149,6 @@ a:active {
   padding: 0.1px 16px 0.1px 16px;
   background: #2a2c2e;
   border-radius: 8px;
-  letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 12px; }
 
@@ -153,13 +156,15 @@ a:active {
   font-size: 40px;
   text-align: center;
   margin-bottom: 32px;
-  line-height: 52px; }
+  line-height: 52px;
+  letter-spacing: 1px; }
 
 .text-subheader-3 {
   font-size: 24px;
   margin-bottom: 32px;
   margin-left: 16px;
-  color: #2a2c2e; }
+  color: #2a2c2e;
+  letter-spacing: 1px; }
 
 .text-subheader-1 {
   color: #2a2c2e;
@@ -370,4 +375,20 @@ a:active {
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
     opacity: 1; } }

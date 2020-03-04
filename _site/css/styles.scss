@@ -14,6 +14,7 @@ $shadow: #f1f1f1;
 $typeface: "Lato", sans-serif;
 $typeface2: "Playfair Display", serif;
 $lead: 32px;
+$letter: 1px;
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
@@ -138,6 +139,7 @@ a:active {
   margin-top: 96px;
   margin-bottom: -600px;
   text-align: center;
+  letter-spacing: $letter;
 }
 // Blue text for header on home page
 .blue-text {
@@ -170,6 +172,7 @@ a:active {
 .project-header {
   @extend %base-1;
   font-size: 20px;
+  letter-spacing: $letter;
 }
 .project-description {
   @extend %base-3;
@@ -188,7 +191,7 @@ a:active {
   padding: 0.1px 16px 0.1px 16px;
   background: $COLOR1;
   border-radius: 8px;
-  letter-spacing: 0.05rem;
+  // letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 12px;
 }
@@ -202,6 +205,7 @@ a:active {
   text-align: center;
   margin-bottom: 32px;
   line-height: 52px;
+  letter-spacing: $letter;
 }
 .text-subheader-3 {
   @extend %base-1;
@@ -209,13 +213,14 @@ a:active {
   margin-bottom: 32px;
   margin-left: 16px;
   color: $COLOR1;
+  letter-spacing: $letter;
 }
 // Smallcaps
 .text-subheader-1 {
   @extend %base-4;
   color: $COLOR1;
   font-size: 24px;
-  letter-spacing: 1px;
+  letter-spacing: $letter;
   margin-top: 16px;
   margin-bottom: 12px;
   margin-left: 16px;
@@ -343,7 +348,7 @@ a:active {
   @extend %base-1;
   color: $COLOR1 !important;
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: $letter;
 }
 // Hide divider below toggle
 .navbar-default .navbar-collapse,
