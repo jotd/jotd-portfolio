@@ -141,7 +141,7 @@ a:active {
   text-align: center;
   letter-spacing: $letter;
   animation: fadeIn 750ms ease-in-out 0.3s both;
-  animation-delay: 0.75s;
+  animation-delay: 0.85s;
 }
 // Blue text for header on home page
 .blue-text {
@@ -149,7 +149,7 @@ a:active {
 }
 // Center H1
 .center-header-home {
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
 }
@@ -305,6 +305,7 @@ a:active {
   animation: fadeIn 750ms ease-in-out 0.3s both;
   animation-delay: 0.5s;
 }
+
 // Links
 .navbar-default .navbar-nav > li > a {
   @extend %base-3;
