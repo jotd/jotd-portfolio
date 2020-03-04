@@ -99,20 +99,22 @@ a:active {
 
 .header-home {
   color: #2a2c2e;
-  font-size: 52px;
+  font-size: 48px;
   line-height: 72px;
   margin-top: 96px;
-  margin-bottom: -600px;
+  margin-bottom: -550px;
   text-align: center;
   letter-spacing: 1px;
-  -webkit-animation: fadeIn 700ms ease-in-out 0.25s both;
-          animation: fadeIn 700ms ease-in-out 0.25s both; }
+  -webkit-animation: fadeIn 750ms ease-in-out 0.3s both;
+          animation: fadeIn 750ms ease-in-out 0.3s both;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s; }
 
 .blue-text {
   color: #5dcfff; }
 
 .center-header-home {
-  max-width: 550px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative; }
 
@@ -239,7 +241,11 @@ a:active {
   padding-top: 16px;
   margin-bottom: 80px !important;
   background-color: transparent !important;
-  border-color: transparent !important; }
+  border-color: transparent !important;
+  -webkit-animation: fadeIn 750ms ease-in-out 0.3s both;
+          animation: fadeIn 750ms ease-in-out 0.3s both;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s; }
 
 .navbar-default .navbar-nav > li > a {
   color: #333333 !important;
