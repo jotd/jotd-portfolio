@@ -107,8 +107,8 @@ a:active {
   letter-spacing: 1px;
   -webkit-animation: fadeIn 750ms ease-in-out 0.3s both;
           animation: fadeIn 750ms ease-in-out 0.3s both;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s; }
+  -webkit-animation-delay: 0.85s;
+          animation-delay: 0.85s; }
 
 .blue-text {
   color: #5dcfff; }
