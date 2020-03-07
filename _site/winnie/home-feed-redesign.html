@@ -1,286 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8">
+    <title>Home Feed Redesign</title>
 
-  <title> Home Feed Redesign </title>
+    <!-- This stuff sets up the page to be mobile friendly -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
-  <!-- This stuff sets up the page to be mobile friendly -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Let search engines read your content only in https site -->
+    <link rel="canonical" href="https://jotd.me" />
 
-  <!-- Let search engines read your content only in https site -->
-  <link rel="canonical" href="https://jotd.me" />
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
-  <!-- Link to External Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- Bootstrap -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    /> -->
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+      integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+      crossorigin="anonymous"
+    />
 
-  <!-- Font Awesome  -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-    crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:900&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png">
-</head>
-
-
-<body>
-
-
-  <!-- Bootstrap Nav -->
-  <nav  class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-          aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span id="black-toggle" class="icon-bar"></span>
-          <span id="black-toggle" class="icon-bar"></span>
-          <span id="black-toggle" class="icon-bar"></span>
-        </button>
-        <a  class="navbar-brand" href="/">Jot Dhaliwal</a>
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <a href="/" class="face w-inline-block w--current"></a>
+        <a href="#" class="btn contact w-button"> Contact</a>
+        <div class="menu">
+          <a href="/work" class="menu-link w--current">Work</a>
+          <a href="/about" class="menu-link">About</a>
+        </div>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="offset-nav-1">  <a id="text-white" class="" href="/work">Work</a> </li> 
-                    <li class="offset-nav-2">  <a id="text-white" class="" href="/about">About</a></li>
-                    <li class="offset-nav-3">  <a id="text-white" class="" href="https://www.linkedin.com/in/jotdhaliwal/"
-                            target="_blank">LinkedIn</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-  </nav>
+    </div>
 
+    <div id="margin-below-header" class="content-body">
+      <h5 class="text-case-study-h1">Home Feed Redesign</h5>
+    </div>
 
-  
-  <div id="margin-below-header" class="content-body">
-    <h5 class="text-case-study-h1"> Home Feed Redesign </h5>
-  </div>
-  
+    <div id="margin-below-section" class="content-body">
+      <img
+        class="content-image"
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/cover.png"
+      />
+    </div>
 
-  <div id="margin-below-section" class="content-body">
-      <img class="content-image" src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/cover.png">
-  </div>
+    <div class="content-body">
+      <h3 class="text-subheader-3">Overview</h3>
+      <p id="margin-below-sentence" class="text-body">
+        Winnie is a marketplace for child care, kids activities and backed by a
+        trusted community of parents and providers.
+      </p>
+      <div class="text-subheader-1">project</div>
+      <p id="margin-below-sentence" class="text-body">
+        Winnie's <span class="highlight"> home feed needed a redesign </span> to
+        surface local data. Based on support tickets and App Store Reviews, it
+        was clear users were confused by seeeing a feed consisting entirely of
+        parenting discussions. Users expected to find local child care and kids
+        activities immediately after opening the app but the feed was
+        <span class="highlight">
+          originally designed for content contribution and engagement.</span
+        >
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Although Winnie was making a
+        <span class="highlight">big investment to collect local data</span>
+        across different markets,
+        <span class="highlight"> it was not being surfaced</span> in the home
+        feed. This created a negative experience for new users who were
+        presented with a feed of discussions instead of affordances for local
+        search and discovery. Monetization was also a consideration because
+        child care providers paid to be promoted in search results. So
+        additional advertising inventory could be created in the home feed.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        <span class="highlight">My hypothesis</span> was that If I added
+        affordances for local search and discovery to the home feed then I could
+        increase the number of place searches as well as place detail views. As
+        a result, the home feed experience would match user expectations and
+        paying partners could reach more potential customers.
+      </p>
+      <div class="text-subheader-1">results</div>
+      <p id="margin-below-sentence" class="text-body">
+        <span class="highlight"> 72% vs. 42% </span> of new users
+        <span class="highlight">completed a local search</span> in their first
+        app session. This +30% lift reflected that new users could search and
+        discover local places faster, right from the home feed.
+      </p>
+      <p id="margin-below-section" class="text-body">
+        The number of place detail views did not meaningfully increase because
+        the CTR from search results to place detail stayed flat. So even though
+        users were creating more searches, they were not seeing results that
+        matched their intent.
+      </p>
+    </div>
 
+    <div id="margin-below-section" class="content-body">
+      <h3 class="text-subheader-3">Survey Data</h3>
 
-  <div class="content-body">
-    <h3 class="text-subheader-3"> Overview </h3>
-    <p id="margin-below-sentence" class="text-body">
-      Winnie is a marketplace for child care, kids activities and backed by a trusted community of parents and providers.
-    </p>
-    <div class="text-subheader-1">project</div>
-    <p id="margin-below-sentence" class="text-body">
-     Winnie's <span class="highlight"> home feed needed a redesign </span> to surface local data. 
-     Based on support tickets and App Store Reviews, it was clear users were confused by seeeing a feed consisting entirely of parenting discussions.
-     Users expected to find local child care and kids activities immediately after opening the app but the feed was <span class="highlight"> originally designed for content contribution and engagement.</span>
-    </p>
-    <p id="margin-below-sentence" class="text-body">
-      Although Winnie was making a <span class="highlight">big investment to collect local data</span> across different markets, <span class="highlight"> it was not being surfaced</span> in the home feed. 
-      This created a negative experience for new users who were presented with a feed of discussions instead of affordances for local search and discovery. 
-      Monetization was also a consideration because child care providers paid to be promoted in search results. So additional advertising inventory could be created in the home feed. 
-    </p>
-    <p id="margin-below-sentence" class="text-body">
-      <span class="highlight">My hypothesis</span> was that If I added affordances for local search and discovery to the home feed then I could increase the number of place searches as well as place detail views.
-      As a result, the home feed experience would match user expectations and paying partners could reach more potential customers. 
-    </p>
-    <div class="text-subheader-1">results</div>
-    <p id="margin-below-sentence" class="text-body">
-      <span class="highlight"> 72% vs. 42% </span> of new users <span class="highlight">completed a local search</span> in their first app session. 
-     This +30% lift reflected that new users could search and discover local places faster, right from the home feed. 
-    </p>
-    <p id="margin-below-section" class="text-body">
-      The number of place detail views did not meaningfully increase because the CTR from search results to place detail stayed flat. 
-      So even though users were creating more searches, they were not seeing results that matched their intent. 
-    </p>
-  </div> 
-
-
-
-<div id="margin-below-section" class="content-body"> 
-    <h3 class="text-subheader-3"> Survey Data </h3>
-
-    <p id="margin-below-sentence" class="text-body">
-      To inform my design decisions, I surveyed a random sample of 1K parents who had used the iOS app in the past three months.
-    </p>
-    <!-- <p id="margin-below-sentence" class="text-body">
+      <p id="margin-below-sentence" class="text-body">
+        To inform my design decisions, I surveyed a random sample of 1K parents
+        who had used the iOS app in the past three months.
+      </p>
+      <!-- <p id="margin-below-sentence" class="text-body">
       After closing the survey, I exported the email addresses of respondents and matched them with internal user data. 
       This allowed me to segment responses by location.
     </p> -->
-    <div  class="text-subheader-1"> key insights </div>
-    <p id="margin-below-sentence" class="text-body">
-      A majority of users said their goal in using Winnie was to find local child care (8%) and activities (52%) 
-      which made sense since Winnie's maine value prop is local data. 
-    </p>
-    <p id="margin-below-sentence" class="text-body">
-      Only 18% of users said they wanted advice or support from other parents. 
-      This made me realize that I could push down UGC in the home feed since most users didn't find value in it.
-    </p>
-    <p id="margin-below-sentence" class="text-body">
-      In terms of how users wanted to acommplish this goal, a majority said they wanted to use 
-      search queries (14%) and explore a map (26%) to see a ranked list of results. 
-      This meant that shortcuts to create search queries and explore a map could be added above the home feed.
-    </p>
-  
+      <div class="text-subheader-1">key insights</div>
+      <p id="margin-below-sentence" class="text-body">
+        A majority of users said their goal in using Winnie was to find local
+        child care (8%) and activities (52%) which made sense since Winnie's
+        maine value prop is local data.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Only 18% of users said they wanted advice or support from other parents.
+        This made me realize that I could push down UGC in the home feed since
+        most users didn't find value in it.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        In terms of how users wanted to acommplish this goal, a majority said
+        they wanted to use search queries (14%) and explore a map (26%) to see a
+        ranked list of results. This meant that shortcuts to create search
+        queries and explore a map could be added above the home feed.
+      </p>
 
-    <!-- Survey -->
-    <div class="text-subheader-1">survey questions</div>
-      <p class="text-body-secondary-1"> 
+      <!-- Survey -->
+      <div class="text-subheader-1">survey questions</div>
+      <p class="text-body-secondary-1">
         Q: What was your goal in using Winnie?
-      </p>  
-      <ul>
-        <li  class="text-body-secondary-2">Stay informed about events in my area </li>
-        <li class="text-body-secondary-2">Explore child care options – camps, daycares, preschools</li>
-        <li class="text-body-secondary-2">Find a babysitter, nanny, tutor or other service provider</li>
-        <li class="text-body-secondary-2">Find places to go with my kids</li>
-        <li class="text-body-secondary-2">Get advice and support from parents</li>
-        <li id="margin-below-sentence" class="text-body-secondary-2">Research products for my children</li>
-      </ul> 
-      
-    <p class="text-body-secondary-1"> 
-      Q: What would be your ideal way to accomplish this goal?
       </p>
       <ul>
-        <li class="text-body-secondary-2">Plan ahead and view dates on a calendar</li>
-        <li class="text-body-secondary-2">Browse interesting photos and videos</li>
-        <li class="text-body-secondary-2">Receive a personalized email newsletter</li>
-        <li class="text-body-secondary-2">Read expert articles and recommendations</li>
-        <li  class="text-body-secondary-2">Using a search box, like Google</li>
+        <li class="text-body-secondary-2">
+          Stay informed about events in my area
+        </li>
+        <li class="text-body-secondary-2">
+          Explore child care options – camps, daycares, preschools
+        </li>
+        <li class="text-body-secondary-2">
+          Find a babysitter, nanny, tutor or other service provider
+        </li>
+        <li class="text-body-secondary-2">Find places to go with my kids</li>
+        <li class="text-body-secondary-2">
+          Get advice and support from parents
+        </li>
+        <li id="margin-below-sentence" class="text-body-secondary-2">
+          Research products for my children
+        </li>
+      </ul>
+
+      <p class="text-body-secondary-1">
+        Q: What would be your ideal way to accomplish this goal?
+      </p>
+      <ul>
+        <li class="text-body-secondary-2">
+          Plan ahead and view dates on a calendar
+        </li>
+        <li class="text-body-secondary-2">
+          Browse interesting photos and videos
+        </li>
+        <li class="text-body-secondary-2">
+          Receive a personalized email newsletter
+        </li>
+        <li class="text-body-secondary-2">
+          Read expert articles and recommendations
+        </li>
+        <li class="text-body-secondary-2">Using a search box, like Google</li>
         <li class="text-body-secondary-2">Exploring a map, like Yelp</li>
-        <li class="text-body-secondary-2">Ask a group publicly on a message board</li>
-        <li id="margin-below-sentence" class="text-body-secondary-2">Ask someone privately via chat</li>
-      </ul> 
-  
-      <p class="text-body-secondary-1"> 
+        <li class="text-body-secondary-2">
+          Ask a group publicly on a message board
+        </li>
+        <li id="margin-below-sentence" class="text-body-secondary-2">
+          Ask someone privately via chat
+        </li>
+      </ul>
+
+      <p class="text-body-secondary-1">
         Q: What result would best satisfy your needs?
       </p>
       <ul>
-        <li  class="text-body-secondary-2">Many answers from a group of people</li>
-        <li class="text-body-secondary-2">A ranked list of results to choose from</li>
-        <li id="margin-below-sentence" class="text-body-secondary-2">One answer from a trusted source</li>
-      </ul> 
-    
-      <p class="text-body-secondary-1"> 
+        <li class="text-body-secondary-2">
+          Many answers from a group of people
+        </li>
+        <li class="text-body-secondary-2">
+          A ranked list of results to choose from
+        </li>
+        <li id="margin-below-sentence" class="text-body-secondary-2">
+          One answer from a trusted source
+        </li>
+      </ul>
+
+      <p class="text-body-secondary-1">
         Q: Would you intend to purchase any of the following?
       </p>
       <ul>
-        <li  class="text-body-secondary-2">Tickets for an event or experience</li>
+        <li class="text-body-secondary-2">
+          Tickets for an event or experience
+        </li>
         <li class="text-body-secondary-2">Membership at a gym or play space</li>
-        <li class="text-body-secondary-2">Individual activities, classes or camps</li>
-        <li class="text-body-secondary-2">Enrollment in a daycare or preschool</li>
-        <li class="text-body-secondary-2">Booking service providers, such as a babysitter or tutor</li>
-        <li class="text-body-secondary-2">Products & gear for kids, such as toys, books and clothes</li>
-        <li id="margin-below-section" class="text-body-secondary-2">I would not spend money</li>
-      </ul>           
-</div>
+        <li class="text-body-secondary-2">
+          Individual activities, classes or camps
+        </li>
+        <li class="text-body-secondary-2">
+          Enrollment in a daycare or preschool
+        </li>
+        <li class="text-body-secondary-2">
+          Booking service providers, such as a babysitter or tutor
+        </li>
+        <li class="text-body-secondary-2">
+          Products & gear for kids, such as toys, books and clothes
+        </li>
+        <li id="margin-below-section" class="text-body-secondary-2">
+          I would not spend money
+        </li>
+      </ul>
+    </div>
 
-<div class="content-body"> 
-  <h3 class="text-subheader-3"> Approach </h3>
-    <p id="margin-below-sentence" class="text-body">
-      My strategy for creating a new home feed architecture revolved around intent, browse and nurture. 
-    </p>
-    <p id="margin-below-sentence" class="text-body">
-      At the top of feed, a user would be able to quickly create a search based on intent.
-      Below search affordances, a user could browse local providers for child care and kids activities. 
-      The rest of feed would show parenting discussions and static resources. 
-    </p>
-</div>
+    <div class="content-body">
+      <h3 class="text-subheader-3">Approach</h3>
+      <p id="margin-below-sentence" class="text-body">
+        My strategy for creating a new home feed architecture revolved around
+        intent, browse and nurture.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        At the top of feed, a user would be able to quickly create a search
+        based on intent. Below search affordances, a user could browse local
+        providers for child care and kids activities. The rest of feed would
+        show parenting discussions and static resources.
+      </p>
+    </div>
 
-<!-- Wireframe -->
-<div id="margin-below-section" class="content-wireframe"> 
-  <img class="slightly-rounded-corners" src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/wireframe.png">
-</div>
+    <!-- Wireframe -->
+    <div id="margin-below-section" class="content-wireframe">
+      <img
+        class="slightly-rounded-corners"
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/wireframe.png"
+      />
+    </div>
 
+    <div class="content-body">
+      <h3 class="text-subheader-3">First Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        I started off by exploring different ways to display search shortcut
+        buttons which served two purposes. Not only could users see search
+        results faster but they would also understand the variety of local data
+        that was available for search.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Displaying "filtered" search buttons such as Montessori didn't make
+        sense because we don't have strong data collection in every major
+        market. As a result, lots of users would end up in an undesirable low
+        data or empty state.
+      </p>
+    </div>
 
-<div class="content-body"> 
-  <h3 class="text-subheader-3"> First Iteration </h3>
-  <p id="margin-below-sentence" class="text-body">
-    I started off by exploring different ways to display search shortcut buttons which served two purposes. 
-    Not only could users see search results faster but they would also understand the variety of local data that was available for search.
-  </p>
-  <p id="margin-below-sentence" class="text-body">
-    Displaying "filtered" search buttons such as Montessori didn't make sense because we don't have strong data collection in every major market.
-    As a result, lots of users would end up in an undesirable low data or empty state.
-  </p>
-</div>
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/first-iteration.png"
+      />
+    </div>
 
-<!-- Mockup -->
-<div id="margin-below-section" class="content-image"> 
-  <img src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/first-iteration.png">
-</div>
+    <div class="content-body">
+      <h3 class="text-subheader-3">Second Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        Then I delved into different ways to help users discover local places
+        and also manage places that they had previously viewed and saved.
+        However due to backend engineering constraints, it was out of scope to
+        show viewed places.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        To increase CTR from feed to place detail, I proposed personalizing the
+        places shown in the segmented control based on their search intent.
+        During onboarding, users are shown a simple form where they can use
+        checkboxes to state whether they are looking for daycares, preschools,
+        kids activitie or drop-in care. The responses to this question were then
+        used to populate the segmented control. The default state would show a
+        mix of child care and kids activities.
+      </p>
+      <p id="margin-below-sentence" class="text-body"></p>
+    </div>
 
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/second-iteration.png"
+      />
+    </div>
 
-<div class="content-body"> 
-  <h3 class="text-subheader-3"> Second Iteration </h3>
-  <p id="margin-below-sentence" class="text-body">
-    Then I delved into different ways to help users discover local places and also manage places that they had previously viewed and saved. 
-    However due to backend engineering constraints, it was out of scope to show viewed places. 
-  </p>
-  <p id="margin-below-sentence" class="text-body">
-    To increase CTR from feed to place detail, I proposed personalizing the places shown in the segmented control based on their search intent. 
-    During onboarding, users are shown a simple form where they can use checkboxes to state whether they are looking for daycares, preschools, kids activitie or drop-in care.  
-    The responses to this question were then used to populate the segmented control. 
-    The default state would show a mix of child care and kids activities. 
-  </p>
-  <p id="margin-below-sentence" class="text-body">
-    
-  </p>
-</div>
+    <div class="content-body">
+      <h3 class="text-subheader-3">Shipped Design</h3>
+      <p id="margin-below-sentence" class="text-body">
+        The Nearby button launches a full screen map view with a carousel of
+        places. As a user scrolls through the carousel, the associated map pin
+        scales up to provide feedback. In terms of visual treatment, the active
+        map pin would have a white icon against a colored background for
+        contrast against inactive map pins. The point of each map pin would
+        denote the latitutde and longitude.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        The other search buttons would trigger a search with results based on
+        the category such as Daycares, Preschools, Activities etc. Below the
+        search shortcuts, I placed a segmented control allowing the user to
+        toggle between featured and viewed places. The default state for the
+        featured places section would be local child care and kids activities
+        based on the user's device location. Some randomness and a quality
+        filter (description, reviews) was added so this section felt curated to
+        users. If the device location can't be detected then the user's home
+        location captured in onboarding would be used. If no places are found,
+        the radius would be expanded until the max limit is reached. If no
+        places are found after reaching the max radius, then the segmented
+        control would be hidden altogether.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Furthermore, the places that populate the carousel would be personalized
+        based on onboarding. If a user has no saved places, there would be a
+        prompt urging the user to create a search to discover local places.
+        Tapping on the prompt would take the user to the search tab.
+      </p>
+    </div>
 
-<!-- Mockup -->
-<div id="margin-below-section" class="content-image"> 
-  <img src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/second-iteration.png">
-</div>
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/third-iteration.png"
+      />
+    </div>
 
-<div class="content-body"> 
-  <h3 class="text-subheader-3"> Shipped Design </h3>
-  <p id="margin-below-sentence" class="text-body">
-    The Nearby button launches a full screen map view with a carousel of places. 
-    As a user scrolls through the carousel, the associated map pin scales up to provide feedback. 
-    In terms of visual treatment, the active map pin would have a white icon against a colored background for contrast against inactive map pins. 
-    The point of each map pin would denote the latitutde and longitude.
-  </p>
-  <p id="margin-below-sentence" class="text-body">
-    The other search buttons would trigger a search with results based on the category such as Daycares, Preschools, Activities etc.   
-    Below the search shortcuts, I placed a segmented control allowing the user to toggle between featured and viewed places. 
-    The default state for the featured places section would be local child care and kids activities based on the user's device location.
-    Some randomness and a quality filter (description, reviews) was added so this section felt curated to users.
-    If the device location can't be detected then the user's home location captured in onboarding would be used. 
-    If no places are found, the radius would be expanded until the max limit is reached. 
-    If no places are found after reaching the max radius, then the segmented control would be hidden altogether.
-  </p>
-  <p id="margin-below-sentence" class="text-body">
-    Furthermore, the places that populate the carousel would be personalized based on onboarding. 
-    If a user has no saved places, there would be a prompt urging the user to create a search to discover local places. 
-    Tapping on the prompt would take the user to the search tab. 
-  </p>
-</div>
-
-<!-- Mockup -->
-<div id="margin-below-section" class="content-image"> 
-  <img src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/third-iteration.png">
-</div>
-
-<!-- <div id="margin-above-footer" class="content-body"> 
+    <!-- <div id="margin-above-footer" class="content-body"> 
   <h3 class="text-subheader-3"> Reflection </h3>
     <p id="margin-below-sentence" class="text-body">
   </p>
 </div> -->
 
-<!-- Footer -->
-  <div class="container-fluid">
+    <!-- Footer -->
+    <!-- <div class="container-fluid">
       <div class="row">
       <div class="content-footer">
           <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <p id="text-footer-1"> ©2020 Jot Dhaliwal</p>
+              <p id="text-footer-1"> © Great designers steal</p>
           </div>
           <div id="text-footer-2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
               <span> <a href=https://www.linkedin.com/in/jotdhaliwal target="_blank"> <i class="fab fa-linkedin-in fa-lg social-icons-footer hvr-shrink"></i></a> </span>
@@ -290,18 +368,23 @@
           </div>
       </div>
       </div>
-  </div>
+  </div> -->
 
-
-
-  <!-- Bootstrap  -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-    
+    <!-- Bootstrap  -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script> -->
   </body>
 </html>

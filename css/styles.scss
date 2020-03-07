@@ -14,9 +14,14 @@ $shadow: #f1f1f1;
 $typeface: "Lato", sans-serif;
 $typeface2: "Playfair Display", serif;
 $lead: 32px;
-$letter: 1px;
+$letter: 0.5px;
 // ----------------------------------------------------------------------------------------
 
+@font-face {
+  font-family: "blender_pro_bold-webfont";
+  src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff");
+  // src: url("/css/fonts/blender_pro_bold-webfont.woff2") format("woff2");
+}
 // ----------------------------------------------------------------------------------------
 body {
   background-color: $COLOR2 !important;
@@ -32,19 +37,24 @@ img {
   border-radius: 16px;
 }
 // Remove all text deocration from links
+a,
 a:hover,
 a:visited,
 a:focus,
 a:active {
   text-decoration: none !important;
 }
+
+.hide-scroll {
+  overflow: hidden; /* Hide scrollbars */
+}
+
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
 // H1 Extend
 %base-1 {
-  font-family: $typeface2;
-  font-weight: 900;
+  font-family: "blender_pro_bold-webfont";
   color: $COLOR1;
 }
 // Body Text Extend
@@ -70,11 +80,16 @@ a:active {
 #margin-below-section {
   margin-bottom: 80px;
 }
+#project-card-margin {
+  margin-top: 160px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
 // Containers for content
-.content-thumbnail {
+.project-card {
   max-height: 400px;
   max-width: 550px;
   margin: 0 auto;
@@ -87,10 +102,11 @@ a:active {
   box-shadow: 0 16px 80px $shadow;
   transition: 0.2s ease-in-out;
 }
-.offset-thumbnail-1 {
+.offset-card-1 {
   animation: popIn ease 1.2s 0.1s;
+  margin-bottom: 160px;
 }
-.offset-thumbnail-2 {
+.offset-card-2 {
   animation: popIn ease 1.2s 0.2s;
 }
 // ----------------------------------------------------------------------------------------
@@ -114,6 +130,7 @@ a:active {
   background: $COLOR4;
   border-radius: 24px;
   margin-bottom: 64px;
+  margin-top: 160px;
 }
 .content-image {
   max-width: 950px;
@@ -130,19 +147,35 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
+
 // Header on home page
 .header-home {
   @extend %base-1;
   color: $COLOR1;
-  font-size: 48px;
-  line-height: 72px;
-  margin-top: 96px;
-  margin-bottom: -550px;
-  text-align: center;
+  font-size: 104px;
+  line-height: 94px;
+  margin-top: 144px;
+  text-align: left;
   letter-spacing: $letter;
-  animation: fadeIn 750ms ease-in-out 0.3s both;
-  animation-delay: 0.85s;
+  position: relative;
+  // animation: fadeIn 750ms ease-in-out 0.3s both;
+  // animation-delay: 0.5s;
 }
+
+.tagline-home {
+  @extend %base-1;
+  color: $COLOR1;
+  font-size: 48px;
+  line-height: 62px;
+  margin-top: 16px;
+  margin-bottom: -500px;
+  text-align: left;
+  letter-spacing: $letter;
+  position: relative;
+  // animation: fadeIn 750ms ease-in-out 0.3s both;
+  // animation-delay: 0.5s;
+}
+
 // Blue text for header on home page
 .blue-text {
   color: $accent;
@@ -151,7 +184,7 @@ a:active {
 .center-header-home {
   max-width: 650px;
   margin: 0 auto;
-  position: relative;
+  // position: relative;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -165,22 +198,23 @@ a:active {
   border-radius: 8px;
 }
 #app-icon-lockup {
-  position: relative;
   margin-left: 96px;
-  margin-top: -96px;
+  margin-top: -119px;
   margin-right: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 .project-header {
   @extend %base-1;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: $letter;
+  margin-bottom: -8px;
 }
 .project-description {
   @extend %base-3;
   font-size: 18px;
   margin-bottom: 8px;
   color: $COLOR3;
+  line-height: 24px;
 }
 .tag-text {
   @extend %base-3;
@@ -192,10 +226,14 @@ a:active {
 .tag {
   padding: 0.1px 16px 0.1px 16px;
   background: $COLOR1;
-  border-radius: 8px;
+  border-radius: 10px;
   // letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 12px;
+}
+
+.tag:hover {
+  opacity: 0.8;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -203,11 +241,12 @@ a:active {
 // Case Study Header
 .text-case-study-h1 {
   @extend %base-1;
-  font-size: 40px;
+  font-size: 64px;
   text-align: center;
   margin-bottom: 32px;
   line-height: 52px;
   letter-spacing: $letter;
+  margin-top: 160px;
 }
 .text-subheader-3 {
   @extend %base-1;
@@ -297,83 +336,83 @@ a:active {
 
 // ----------------------------------------------------------------------------------------
 // Pushing down the whole nav
-.navbar {
-  padding-top: 16px;
-  margin-bottom: 80px !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
-  animation: fadeIn 750ms ease-in-out 0.3s both;
-  animation-delay: 0.5s;
-}
+// .navbar {
+//   padding-top: 16px;
+//   margin-bottom: 80px !important;
+//   background-color: transparent !important;
+//   border-color: transparent !important;
+//   animation: fadeIn 750ms ease-in-out 0.3s both;
+//   animation-delay: 0.5s;
+// }
 
-// Links
-.navbar-default .navbar-nav > li > a {
-  @extend %base-3;
-  color: #333333 !important;
-  font-size: 18px;
-  text-align: right;
-}
-// Toggle Default
-.navbar-default .navbar-toggle {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-// Toggle on Hover
-.navbar-default .navbar-toggle:hover {
-  background-color: transparent !important;
-  border-color: transparent !important;
-}
-// 3 Bars in Toggle
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: $COLOR1 !important;
-  // Animate hamburger menu
-  transition: all 0.15s;
-}
-// Animate hamburger menu
-.navbar-toggle span:nth-child(2) {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle span:nth-child(3) {
-  opacity: 0;
-}
-.navbar-toggle span:nth-child(4) {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed span:nth-child(2),
-.navbar-toggle.collapsed span:nth-child(4) {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed span:nth-child(3) {
-  opacity: 1;
-}
-// Name top left corner
-.navbar-default .navbar-brand {
-  @extend %base-1;
-  color: $COLOR1 !important;
-  font-size: 18px;
-  letter-spacing: $letter;
-}
-// Hide divider below toggle
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: transparent !important;
-}
-// Mobile nav offset
-@media only screen and (max-width: 500px) {
-  .offset-nav-1 {
-    animation: slideRight ease 0.2s;
-  }
+// // Links
+// .navbar-default .navbar-nav > li > a {
+//   @extend %base-3;
+//   color: #333333 !important;
+//   font-size: 18px;
+//   text-align: right;
+// }
+// // Toggle Default
+// .navbar-default .navbar-toggle {
+//   background-color: transparent !important;
+//   border-color: transparent !important;
+// }
+// // Toggle on Hover
+// .navbar-default .navbar-toggle:hover {
+//   background-color: transparent !important;
+//   border-color: transparent !important;
+// }
+// // 3 Bars in Toggle
+// .navbar-default .navbar-toggle .icon-bar {
+//   background-color: $COLOR1 !important;
+//   // Animate hamburger menu
+//   transition: all 0.15s;
+// }
+// // Animate hamburger menu
+// .navbar-toggle span:nth-child(2) {
+//   transform: rotate(45deg);
+//   transform-origin: 10% 10%;
+// }
+// .navbar-toggle span:nth-child(3) {
+//   opacity: 0;
+// }
+// .navbar-toggle span:nth-child(4) {
+//   transform: rotate(-45deg);
+//   transform-origin: 10% 90%;
+// }
+// .navbar-toggle.collapsed span:nth-child(2),
+// .navbar-toggle.collapsed span:nth-child(4) {
+//   transform: rotate(0);
+// }
+// .navbar-toggle.collapsed span:nth-child(3) {
+//   opacity: 1;
+// }
+// // Name top left corner
+// .navbar-default .navbar-brand {
+//   @extend %base-1;
+//   color: $COLOR1 !important;
+//   font-size: 18px;
+//   letter-spacing: $letter;
+// }
+// // Hide divider below toggle
+// .navbar-default .navbar-collapse,
+// .navbar-default .navbar-form {
+//   border-color: transparent !important;
+// }
+// // Mobile nav offset
+// @media only screen and (max-width: 500px) {
+//   .offset-nav-1 {
+//     animation: slideRight ease 0.2s;
+//   }
 
-  .offset-nav-2 {
-    animation: slideRight ease 0.2s 0.1s;
-  }
+//   .offset-nav-2 {
+//     animation: slideRight ease 0.2s 0.1s;
+//   }
 
-  .offset-nav-3 {
-    animation: slideRight ease 0.2s 0.15s;
-  }
-}
+//   .offset-nav-3 {
+//     animation: slideRight ease 0.2s 0.15s;
+//   }
+// }
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
@@ -443,3 +482,119 @@ a:active {
   }
 }
 // ----------------------------------------------------------------------------------------
+
+.header {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 9;
+}
+
+.header-container {
+  position: fixed;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: auto;
+  z-index: 10;
+  display: flex;
+  margin: auto;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.face {
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
+  background-size: cover;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.face.w--current {
+  width: 72px;
+  height: 72px;
+}
+
+.btn {
+  // height: 40px;
+  margin-top: 12px;
+  margin-right: 12px;
+  padding-top: 10px;
+  border-radius: 8px;
+  background-color: #4eeba9;
+  font-family: $typeface;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn.contact {
+  display: none;
+  height: auto;
+  margin-top: 0px;
+  margin-right: 0px;
+  padding: 8px 12px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  // background-color: #3898ec;
+  color: white;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.menu-link.w--current {
+  border-radius: 8px;
+  background-color: #fff;
+  opacity: 1;
+  font-family: $typeface;
+  color: $COLOR1;
+  text-decoration: none;
+}
+
+.menu-link {
+  display: flex;
+  height: 36px;
+  margin-right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  align-items: center;
+  border-bottom-style: none;
+  border-radius: 20px;
+  font-family: $typeface;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu {
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.menu {
+  display: flex;
+  height: 24px;
+  padding: 8px 2px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: $COLOR1;
+}
+
+a.menu-link {
+  color: white;
+}

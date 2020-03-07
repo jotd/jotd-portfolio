@@ -1,246 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Do not copy this head section to other pages -->
-<head>
-    <meta charset="utf-8">
+  <!-- Do not copy this head section to other pages -->
+  <head>
+    <meta charset="utf-8" />
 
     <title>Works of Jot</title>
 
     <!-- This stuff sets up the page to be mobile friendly -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
     <!-- Let search engines read your content only in https site -->
     <link rel="canonical" href="https://jotd.me" />
 
     <!-- Link to External Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:900&display=swap" rel="stylesheet">
-   
-      <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Playfair+Display:900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- JQuery -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-</head>
+  </head>
 
-
-
-<body>
-
-
-
-    <!-- Bootstrap Nav -->
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span id="black-toggle" class="icon-bar"></span>
-                    <span id="black-toggle" class="icon-bar"></span>
-                    <span id="black-toggle" class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">Jot Dhaliwal</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="offset-nav-1">  <a id="text-white" class="" href="/work">Work</a> </li> 
-                    <li class="offset-nav-2">  <a id="text-white" class="" href="/about">About</a></li>
-                    <li class="offset-nav-3">  <a id="text-white" class="" href="https://www.linkedin.com/in/jotdhaliwal/"
-                            target="_blank">LinkedIn</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-    </nav>
-    
-
-
+  <body class="hide-scroll">
+    <div class="header">
+      <div class="header-container">
+        <a href="/" class="face w-inline-block w--current"></a>
+        <a href="#" class="btn contact w-button"> Contact</a>
+        <div class="menu">
+          <a href="/work" class="menu-link">Work</a>
+          <a href="/about" class="menu-link">About</a>
+        </div>
+      </div>
+    </div>
 
     <div class="center-header-home">
-        <h1 class="header-home">
-            <span class="blue-text">Jot Dhaliwal</span> is a Product Designer in SF, working across mobile <span class="blue-text"> & </span> web.
-        </h1>
+      <h1 class="header-home">Jot Dhaliwal</h1>
+      <p class="tagline-home">
+        SF based Product Designer <br />
+        & Instructor
+      </p>
     </div>
 
+    <!-- Footer -->
+    <!-- © Great designers steal -->
 
-
-  <!-- Footer -->
-    <div class="container-fluid">
-        <div class="row">
-        <div class="content-footer">
-            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <p id="text-footer-1"> ©2020 Jot Dhaliwal</p>
-            </div>
-            <div id="text-footer-2" class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                <span> <a href=https://www.linkedin.com/in/jotdhaliwal target="_blank"> <i class="fab fa-linkedin-in fa-lg social-icons-footer hvr-shrink"></i></a> </span>
-                <span> <a href=https://twitter.com/jotd target="_blank"> <i class="fab fa-twitter fa-lg social-icons-footer hvr-shrink"></i></a> </span>
-                <span> <a href=https://medium.com/@jotd target="_blank"> <i class="fab fa-medium-m fa-lg social-icons-footer hvr-shrink"></i></a> </span>
-                <span> <a href=https://www.pinterest.com/jotdhaliwal/ target="_blank"> <i class="fab fa-pinterest fa-lg social-icons-footer hvr-shrink"></i></a> </span> 
-            </div>
-        </div>
-        </div>
-    </div>
-
-   
-
-   
     <script src="js/three.js"></script>
     <script src="js/Projector.js"></script>
     <script src="js/CanvasRenderer.js"></script>
     <script src="js/stats.min.js"></script>
     <script src="js/wavy.js"></script>
 
-
-    
     <!-- https://threejs.org/examples/ -->
     <script>
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
-            {
-            // Do nothing if mobile device
-        }
-        else if (screen.width < 500) {
-            // Do nothing if mobile device
-        }
-        else {
-            var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        // Do nothing if mobile device
+      } else if (screen.width < 500) {
+        // Do nothing if mobile device
+      } else {
+        setTimeout(
+          function() {
+            var SEPARATION = 100,
+              AMOUNTX = 50,
+              AMOUNTY = 50;
             var container, stats;
             var camera, scene, renderer;
-            var particles, particle, count = 0;
-            var mouseX = 0, mouseY = 0;
+            var particles,
+              particle,
+              count = 0;
+            var mouseX = 0,
+              mouseY = 0;
             var windowHalfX = window.innerWidth / 2;
             var windowHalfY = window.innerHeight / 2;
             init();
             animate();
             function init() {
-                container = document.createElement('div');
-                document.body.appendChild(container);
-                camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
-                camera.position.z = 1000;
-                scene = new THREE.Scene();
+              container = document.createElement("div");
+              document.body.appendChild(container);
+              camera = new THREE.PerspectiveCamera(
+                75,
+                window.innerWidth / window.innerHeight,
+                1,
+                10000
+              );
+              camera.position.z = 1000;
+              scene = new THREE.Scene();
 
-                // change default bg color of canvas
-                // source: https://stackoverflow.com/questions/16177056/changing-three-js-background-to-transparent-or-other-color
-                scene.background = new THREE.Color( 0xf9f9f9 );
+              // change default bg color of canvas
+              // source: https://stackoverflow.com/questions/16177056/changing-three-js-background-to-transparent-or-other-color
+              scene.background = new THREE.Color(0xf9f9f9);
 
-
-                particles = new Array();
-                var PI2 = Math.PI * 2;
-                var material = new THREE.SpriteCanvasMaterial({
-                    // change color of floating dots 
-                    color: 0x5dcfff,
-                    // color: 0xABE4FC,
-                    program: function (context) {
-                        context.beginPath();
-                        context.arc(0, 0, 0.5, 0, PI2, true);
-                        context.fill();
-                    }
-                });
-                var i = 0;
-                for (var ix = 0; ix < AMOUNTX; ix++) {
-                    for (var iy = 0; iy < AMOUNTY; iy++) {
-                        particle = particles[i++] = new THREE.Sprite(material);
-                        particle.position.x = ix * SEPARATION - ((AMOUNTX * SEPARATION) / 2);
-                        particle.position.z = iy * SEPARATION - ((AMOUNTY * SEPARATION) / 2);
-                        scene.add(particle);
-                    }
+              particles = new Array();
+              var PI2 = Math.PI * 2;
+              var material = new THREE.SpriteCanvasMaterial({
+                // change color of floating dots
+                color: 0x5dcfff,
+                program: function(context) {
+                  context.beginPath();
+                  context.arc(0, 0, 0.5, 0, PI2, true);
+                  context.fill();
                 }
-                renderer = new THREE.CanvasRenderer();
-                renderer.setPixelRatio(window.devicePixelRatio);
-                renderer.setSize(window.innerWidth, window.innerHeight);
-                container.appendChild(renderer.domElement);
-                stats = new Stats();
+              });
+              var i = 0;
+              for (var ix = 0; ix < AMOUNTX; ix++) {
+                for (var iy = 0; iy < AMOUNTY; iy++) {
+                  particle = particles[i++] = new THREE.Sprite(material);
+                  particle.position.x =
+                    ix * SEPARATION - (AMOUNTX * SEPARATION) / 2;
+                  particle.position.z =
+                    iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
+                  scene.add(particle);
+                }
+              }
+              renderer = new THREE.CanvasRenderer();
+              renderer.setPixelRatio(window.devicePixelRatio);
+              renderer.setSize(window.innerWidth, window.innerHeight);
+              container.appendChild(renderer.domElement);
+              stats = new Stats();
 
-                // Hide stats widget container
-                // container.appendChild(stats.dom); 
+              // Hide stats widget container
+              // container.appendChild(stats.dom);
 
-
-                document.addEventListener('mousemove', onDocumentMouseMove, false);
-                document.addEventListener('touchstart', onDocumentTouchStart, false);
-                document.addEventListener('touchmove', onDocumentTouchMove, false);
-                //
-                window.addEventListener('resize', onWindowResize, false);
+              document.addEventListener(
+                "mousemove",
+                onDocumentMouseMove,
+                false
+              );
+              document.addEventListener(
+                "touchstart",
+                onDocumentTouchStart,
+                false
+              );
+              document.addEventListener(
+                "touchmove",
+                onDocumentTouchMove,
+                false
+              );
+              //
+              window.addEventListener("resize", onWindowResize, false);
             }
             function onWindowResize() {
-                windowHalfX = window.innerWidth / 2;
-                windowHalfY = window.innerHeight / 2;
-                camera.aspect = window.innerWidth / window.innerHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(window.innerWidth, window.innerHeight);
+              windowHalfX = window.innerWidth / 2;
+              windowHalfY = window.innerHeight / 2;
+              camera.aspect = window.innerWidth / window.innerHeight;
+              camera.updateProjectionMatrix();
+              renderer.setSize(window.innerWidth, window.innerHeight);
             }
             //
             function onDocumentMouseMove(event) {
-                mouseX = event.clientX - windowHalfX;
-                mouseY = event.clientY - windowHalfY;
+              mouseX = event.clientX - windowHalfX;
+              mouseY = event.clientY - windowHalfY;
             }
             function onDocumentTouchStart(event) {
-                if (event.touches.length === 1) {
-                    event.preventDefault();
-                    mouseX = event.touches[0].pageX - windowHalfX;
-                    mouseY = event.touches[0].pageY - windowHalfY;
-                }
+              if (event.touches.length === 1) {
+                event.preventDefault();
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+              }
             }
             function onDocumentTouchMove(event) {
-                if (event.touches.length === 1) {
-                    event.preventDefault();
-                    mouseX = event.touches[0].pageX - windowHalfX;
-                    mouseY = event.touches[0].pageY - windowHalfY;
-                }
+              if (event.touches.length === 1) {
+                event.preventDefault();
+                mouseX = event.touches[0].pageX - windowHalfX;
+                mouseY = event.touches[0].pageY - windowHalfY;
+              }
             }
             //
             function animate() {
-                requestAnimationFrame(animate);
-                render();
+              requestAnimationFrame(animate);
+              render();
 
-                // Hide the stats widget lines
-                // stats.update();
-
+              // Hide the stats widget lines
+              // stats.update();
             }
             function render() {
-                camera.position.x += (mouseX - camera.position.x) * .05;
-                camera.position.y += (- mouseY - camera.position.y) * .05;
-                camera.lookAt(scene.position);
-                var i = 0;
-                for (var ix = 0; ix < AMOUNTX; ix++) {
-                    for (var iy = 0; iy < AMOUNTY; iy++) {
-                        particle = particles[i++];
-                        particle.position.y = (Math.sin((ix + count) * 0.3) * 50) +
-                            (Math.sin((iy + count) * 0.5) * 50);
-                        particle.scale.x = particle.scale.y = (Math.sin((ix + count) * 0.3) + 1) * 4 +
-                            (Math.sin((iy + count) * 0.5) + 1) * 4;
-                    }
+              camera.position.x += (mouseX - camera.position.x) * 0.05;
+              camera.position.y += (-mouseY - camera.position.y) * 0.05;
+              camera.lookAt(scene.position);
+              var i = 0;
+              for (var ix = 0; ix < AMOUNTX; ix++) {
+                for (var iy = 0; iy < AMOUNTY; iy++) {
+                  particle = particles[i++];
+                  particle.position.y =
+                    Math.sin((ix + count) * 0.3) * 50 +
+                    Math.sin((iy + count) * 0.5) * 50;
+                  particle.scale.x = particle.scale.y =
+                    (Math.sin((ix + count) * 0.3) + 1) * 4 +
+                    (Math.sin((iy + count) * 0.5) + 1) * 4;
                 }
-                renderer.render(scene, camera);
-                count += 0.1;
+              }
+              renderer.render(scene, camera);
+              count += 0.1;
             }
-            
-            
-        }
+          },
+
+          0000
+        );
+      }
     </script>
-
-    <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-
-   
-</body>
-
-
+  </body>
 </html>
