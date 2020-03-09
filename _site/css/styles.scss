@@ -14,7 +14,7 @@ $shadow: #f1f1f1;
 $typeface: "Lato", sans-serif;
 $typeface2: "Playfair Display", serif;
 $lead: 32px;
-$letter: 1px;
+$letter: 0.1px;
 // ----------------------------------------------------------------------------------------
 
 @font-face {
@@ -45,8 +45,9 @@ a:active {
   text-decoration: none !important;
 }
 
+// Hide scrollbars on home page
 .hide-scroll {
-  overflow: hidden; /* Hide scrollbars */
+  overflow: hidden;
 }
 
 // ----------------------------------------------------------------------------------------
@@ -61,7 +62,6 @@ a:active {
 %base-3 {
   font-family: $typeface;
   font-weight: 400;
-  color: $COLOR1;
 }
 // Nav Link Extend
 %base-4 {
@@ -72,7 +72,7 @@ a:active {
 
 // ----------------------------------------------------------------------------------------
 #margin-below-header {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 #margin-below-sentence {
   margin-bottom: 40px;
@@ -98,6 +98,19 @@ a:active {
   animation: popIn ease 1.2s;
   background: $COLOR4;
 }
+.header-work {
+  @extend %base-1;
+  max-height: 400px;
+  max-width: 550px;
+  margin: 0 auto;
+  font-size: 56px;
+  margin-top: 120px;
+  margin-bottom: 32px;
+  line-height: 83px;
+  letter-spacing: $letter;
+  position: relative;
+}
+
 .content-thumbnail:hover {
   box-shadow: 0 16px 80px $shadow;
   transition: 0.2s ease-in-out;
@@ -112,6 +125,10 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
+.content-home {
+  max-width: 700px;
+  margin: 0 auto;
+}
 .content-body {
   max-width: 700px;
   margin: 0 auto;
@@ -137,6 +154,7 @@ a:active {
   margin: 0 auto;
   background: $COLOR4;
   border-radius: 24px;
+  margin-top: 120px;
 }
 .content-gif {
   width: 80%;
@@ -151,45 +169,75 @@ a:active {
 // Header on home page
 .header-home {
   @extend %base-1;
-  color: $COLOR1;
   font-size: 104px;
-  line-height: 72px;
-  margin-top: 144px;
-  text-align: left;
+  line-height: 1.2em;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 120px;
+  margin-bottom: 24px;
   letter-spacing: $letter;
-  // animation: fadeIn 750ms ease-in-out 0.3s both;
-  // animation-delay: 0.5s;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .header-home {
+    font-family: "blender_pro_bold-webfont";
+    color: $COLOR1;
+    font-size: 56px;
+    line-height: 1.2em;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 136px;
+    margin-bottom: 24px;
+    letter-spacing: $letter;
+    position: relative;
+  }
 }
 
 .tagline-home {
   @extend %base-1;
-  color: $COLOR1;
   font-size: 48px;
-  line-height: 72px;
+  line-height: 1.2em;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-top: 16px;
-  margin-bottom: -100px;
-  text-align: left;
+  margin-bottom: -400px;
   letter-spacing: $letter;
-  // animation: fadeIn 750ms ease-in-out 0.3s both;
-  // animation-delay: 0.5s;
+  position: relative;
 }
 
-// Blue text for header on home page
-.blue-text {
-  color: $accent;
+@media screen and (max-width: 767px) {
+  .tagline-home {
+    font-family: "blender_pro_bold-webfont";
+    color: $COLOR1;
+    font-size: 40px;
+    line-height: 1.2em;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: -400px;
+    letter-spacing: $letter;
+    position: relative;
+  }
 }
-// Center H1
-.center-header-home {
-  max-width: 650px;
-  margin: 0 auto;
-  // position: relative;
+
+.header-about {
+  @extend %base-1;
+  font-size: 56px;
+  margin-top: 120px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  line-height: 83px;
+  letter-spacing: $letter;
+  position: relative;
 }
+
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
 #app-icon {
-  height: 56px;
-  width: 56px;
+  height: 48px;
+  width: 48px;
   margin-left: 24px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -197,20 +245,22 @@ a:active {
 }
 #app-icon-lockup {
   margin-left: 96px;
-  margin-top: -119px;
+  margin-top: -112px;
   margin-right: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
 }
 .project-header {
   @extend %base-1;
-  font-size: 20px;
+  font-size: 24px;
   letter-spacing: $letter;
+  margin-bottom: -8px;
 }
 .project-description {
   @extend %base-3;
   font-size: 18px;
   margin-bottom: 8px;
   color: $COLOR3;
+  line-height: 24px;
 }
 .tag-text {
   @extend %base-3;
@@ -235,15 +285,17 @@ a:active {
 
 // ----------------------------------------------------------------------------------------
 // Case Study Header
-.text-case-study-h1 {
+.header-case-study {
   @extend %base-1;
-  font-size: 40px;
-  text-align: center;
+  font-size: 48px;
   margin-bottom: 32px;
-  line-height: 52px;
+  line-height: 1.2em;
   letter-spacing: $letter;
-  margin-top: 160px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 80px;
 }
+
 .text-subheader-3 {
   @extend %base-1;
   font-size: 24px;
@@ -266,6 +318,7 @@ a:active {
 // Body Text
 .text-body {
   @extend %base-3;
+  color: $COLOR1;
   font-size: 18px;
   line-height: $lead;
   margin-left: 16px;
