@@ -54,8 +54,10 @@ a:active {
 
 .project-card {
   max-height: 400px;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 40px;
   border-radius: 24px;
   -webkit-animation: popIn ease 1.2s;
@@ -64,14 +66,16 @@ a:active {
 
 .header-work {
   max-height: 400px;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
   font-size: 56px;
   margin-top: 120px;
   margin-bottom: 32px;
   line-height: 83px;
   letter-spacing: 0.1px;
-  position: relative; }
+  position: relative;
+  margin-left: 16px;
+  margin-right: 16px; }
 
 .content-thumbnail:hover {
   -webkit-box-shadow: 0 16px 80px #f1f1f1;
@@ -129,12 +133,14 @@ a:active {
 .header-home {
   font-size: 104px;
   line-height: 1.2em;
-  margin-left: 16px;
-  margin-right: 16px;
   margin-top: 120px;
   margin-bottom: 24px;
   letter-spacing: 0.1px;
-  position: relative; }
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 16px;
+  margin-right: 16px; }
 
 @media screen and (max-width: 767px) {
   .header-home {
@@ -157,7 +163,9 @@ a:active {
   margin-top: 16px;
   margin-bottom: -400px;
   letter-spacing: 0.1px;
-  position: relative; }
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto; }
 
 @media screen and (max-width: 767px) {
   .tagline-home {

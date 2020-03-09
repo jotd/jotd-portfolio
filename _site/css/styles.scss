@@ -91,17 +91,20 @@ a:active {
 // Containers for content
 .project-card {
   max-height: 400px;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 40px;
   border-radius: 24px;
   animation: popIn ease 1.2s;
   background: $COLOR4;
 }
+
 .header-work {
   @extend %base-1;
   max-height: 400px;
-  max-width: 550px;
+  max-width: 600px;
   margin: 0 auto;
   font-size: 56px;
   margin-top: 120px;
@@ -109,6 +112,8 @@ a:active {
   line-height: 83px;
   letter-spacing: $letter;
   position: relative;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .content-thumbnail:hover {
@@ -171,12 +176,14 @@ a:active {
   @extend %base-1;
   font-size: 104px;
   line-height: 1.2em;
-  margin-left: 16px;
-  margin-right: 16px;
   margin-top: 120px;
   margin-bottom: 24px;
   letter-spacing: $letter;
   position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -204,6 +211,8 @@ a:active {
   margin-bottom: -400px;
   letter-spacing: $letter;
   position: relative;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
