@@ -9,8 +9,6 @@ $COLOR3: #74797e;
 $COLOR4: #f0f0f0;
 // Winnie Blue
 $accent: #5dcfff;
-// Shadows
-$shadow: #f1f1f1;
 $typeface: "Lato", sans-serif;
 $typeface2: "Playfair Display", serif;
 $lead: 32px;
@@ -29,9 +27,6 @@ body {
 img {
   width: 100%;
   height: auto;
-}
-.shadow {
-  box-shadow: 0 4px 16px $shadow;
 }
 .slightly-rounded-corners {
   border-radius: 16px;
@@ -80,11 +75,6 @@ a:active {
 #margin-below-section {
   margin-bottom: 80px;
 }
-#project-card-margin {
-  margin-top: 160px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
@@ -116,10 +106,6 @@ a:active {
   margin-right: 16px;
 }
 
-.content-thumbnail:hover {
-  box-shadow: 0 16px 80px $shadow;
-  transition: 0.2s ease-in-out;
-}
 .offset-card-1 {
   animation: popIn ease 1.2s 0.1s;
   margin-bottom: 160px;
@@ -130,8 +116,10 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
+.content-project {
+}
 .content-home {
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .content-body {
@@ -176,12 +164,10 @@ a:active {
   @extend %base-1;
   font-size: 104px;
   line-height: 1.2em;
-  margin-top: 120px;
+  margin-top: 120px !important;
   margin-bottom: 24px;
   letter-spacing: $letter;
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
   margin-left: 16px;
   margin-right: 16px;
 }
@@ -211,8 +197,6 @@ a:active {
   margin-bottom: -400px;
   letter-spacing: $letter;
   position: relative;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -655,4 +639,68 @@ a:active {
 
 a.menu-link {
   color: white;
+}
+
+// ----------------------------------------------------------------------------------------
+
+.footer.desktop {
+  max-width: none;
+}
+@media screen and (max-width: 767px) {
+  .footer.desktop {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  display: flex;
+  // width: 100%;
+  // max-width: 1000px;
+  margin-top: 32px;
+  padding: 16px;
+  margin-bottom: 16px;
+  justify-content: space-around;
+  align-items: center;
+  color: $COLOR3;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+    margin-top: 0px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  font-family: $typeface;
+  font-weight: 400;
+}
+
+.footer-link {
+  margin-right: 24px;
+  border-bottom-style: none;
+}
+
+a {
+  display: inline-block;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.2);
+  color: $COLOR1;
+  line-height: 1.1em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footer-block {
+  font-family: $typeface;
+  font-weight: 400;
+  color: $COLOR1;
+}
+@media screen and (max-width: 767px) {
+  .footer-block {
+    margin-top: 8px;
+  }
 }
