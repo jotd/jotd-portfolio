@@ -236,6 +236,17 @@ a:active {
   margin-bottom: 32px;
   border-radius: 8px;
 }
+
+.project-description {
+  @extend %base-3;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: $COLOR3;
+  line-height: 24px;
+  margin-top: -12px;
+  // margin-left: 24px;
+}
+
 #app-icon-lockup {
   margin-left: 96px;
   margin-top: -112px;
@@ -246,14 +257,7 @@ a:active {
   @extend %base-1;
   font-size: 24px;
   letter-spacing: $letter;
-  margin-bottom: -8px;
-}
-.project-description {
-  @extend %base-3;
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: $COLOR3;
-  line-height: 24px;
+  margin-top: 32px;
 }
 .tag-text {
   @extend %base-3;
@@ -266,7 +270,6 @@ a:active {
   padding: 0.1px 16px 0.1px 16px;
   background: $COLOR1;
   border-radius: 10px;
-  // letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 12px;
 }
@@ -658,7 +661,7 @@ a.menu-link {
   // max-width: 1000px;
   margin-top: 32px;
   padding: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   justify-content: space-around;
   align-items: center;
   color: $COLOR3;
@@ -681,7 +684,7 @@ a.menu-link {
 }
 
 .footer-link {
-  margin-right: 24px;
+  margin-right: 16px;
   border-bottom-style: none;
 }
 
@@ -698,4 +701,9 @@ a {
   font-family: $typeface;
   font-weight: 400;
   color: $COLOR1;
+}
+@media screen and (max-width: 767px) {
+  .footer-block {
+    margin-top: 8px;
+  }
 }
