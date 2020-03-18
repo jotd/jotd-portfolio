@@ -78,7 +78,7 @@ a:active {
           animation: popIn ease 1.2s 0.2s; }
 
 .content-home {
-  max-width: 600px;
+  max-width: 580px;
   margin: 0 auto; }
 
 .content-body {
@@ -127,7 +127,7 @@ a:active {
 @media screen and (max-width: 767px) {
   .header-home {
     font-family: "blender_pro_bold-webfont";
-    color: #2a2c2e;
+    color: #5dcfff;
     font-size: 56px;
     line-height: 1.2em;
     margin-left: 16px;
@@ -138,7 +138,7 @@ a:active {
     position: relative; } }
 
 .tagline-home {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.2em;
   margin-left: 16px;
   margin-right: 16px;
@@ -146,19 +146,6 @@ a:active {
   margin-bottom: -400px;
   letter-spacing: 0.1px;
   position: relative; }
-
-@media screen and (max-width: 767px) {
-  .tagline-home {
-    font-family: "blender_pro_bold-webfont";
-    color: #2a2c2e;
-    font-size: 40px;
-    line-height: 1.2em;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 16px;
-    margin-bottom: -400px;
-    letter-spacing: 0.1px;
-    position: relative; } }
 
 .header-about {
   font-size: 56px;
