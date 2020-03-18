@@ -78,7 +78,7 @@ a:active {
           animation: popIn ease 1.2s 0.2s; }
 
 .content-home {
-  max-width: 580px;
+  max-width: 570px;
   margin: 0 auto; }
 
 .content-body {
@@ -127,7 +127,7 @@ a:active {
 @media screen and (max-width: 767px) {
   .header-home {
     font-family: "blender_pro_bold-webfont";
-    color: #5dcfff;
+    color: #2a2c2e;
     font-size: 56px;
     line-height: 1.2em;
     margin-left: 16px;
