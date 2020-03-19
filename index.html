@@ -57,14 +57,24 @@
     <script src="js/wavy.js"></script>
 
     <!-- https://threejs.org/examples/ -->
-    <script>
+    <!-- <script>
       if (
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           navigator.userAgent
         )
       ) {
         // Do nothing if mobile device
-      } else if (screen.width < 500) {
+      } else if (screen.width < 480) {
+        // Do nothing if small browser width
+      } -->
+
+    <script>
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+        // Do nothing if small browser width
+      ) {
         // Do nothing if mobile device
       } else {
         setTimeout(

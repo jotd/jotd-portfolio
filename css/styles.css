@@ -26,7 +26,7 @@ a:active {
   font-family: "blender_pro_bold-webfont";
   color: #2a2c2e; }
 
-.project-description, .tag-text, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+.project-description, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
   font-family: "Lato", sans-serif;
   font-weight: 400; }
 
@@ -124,7 +124,7 @@ a:active {
   margin-left: 16px;
   margin-right: 16px; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_pro_bold-webfont";
     color: #2a2c2e;
@@ -181,20 +181,6 @@ a:active {
   font-size: 24px;
   letter-spacing: 0.1px;
   margin-top: 32px; }
-
-.tag-text {
-  font-size: 14px;
-  line-height: 32px;
-  color: white; }
-
-.tag {
-  padding: 0.1px 16px 0.1px 16px;
-  background: #2a2c2e;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: -12px;
-  margin-left: -32px;
-  margin-bottom: 48px; }
 
 .tag:hover {
   opacity: 0.8; }
@@ -529,10 +515,7 @@ a.menu-link {
 
 a {
   display: inline-block;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   color: #2a2c2e;
-  line-height: 1.1em;
-  font-weight: 300;
   text-decoration: none; }
 
 .footer-block {
@@ -546,27 +529,47 @@ a {
 
 .work-container {
   position: relative;
-  height: 260px;
-  margin-left: 16px;
-  margin-right: 16px;
+  height: 256px;
   margin-bottom: 40px;
   border-radius: 24px;
   -webkit-animation: popIn ease 1.2s;
           animation: popIn ease 1.2s;
   background-color: #f0f0f0; }
 
+@media screen and (max-width: 767px) {
+  .work-container {
+    position: relative;
+    height: 253px;
+    margin-bottom: 40px;
+    border-radius: 24px;
+    -webkit-animation: popIn ease 1.2s;
+            animation: popIn ease 1.2s;
+    background-color: #f0f0f0; } }
+
 .work-description {
   position: absolute;
-  margin-right: 48px;
-  display: block;
-  min-width: auto;
-  margin-top: 64px;
-  margin-left: 64px;
-  margin-bottom: 64px;
+  left: 0%;
+  top: 0%;
+  width: 85%;
+  margin-top: 52px;
+  margin-left: 52px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+@media screen and (max-width: 767px) {
+  .work-description {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 85%;
+    margin-top: 54px;
+    margin-left: 54px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 .work-logo {
   width: 64px;
@@ -629,7 +632,8 @@ a {
   line-height: 1.3em;
   margin-left: -32px;
   margin-top: 32px;
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  width: 97%; }
 
 @media screen and (max-width: 767px) {
   .blurb {
@@ -641,4 +645,17 @@ a {
     line-height: 1.3em;
     margin-left: -32px;
     margin-top: 64px;
-    margin-bottom: 32px; } }
+    margin-bottom: 32px;
+    width: 97%; } }
+
+.tag {
+  padding: 0.1px 16px 0.1px 16px;
+  background: #2a2c2e;
+  border-radius: 10px;
+  margin-top: -12px;
+  margin-left: -32px; }
+
+.tag-text {
+  font-size: 14px;
+  line-height: 32px;
+  color: white; }
