@@ -52,6 +52,7 @@ a:active {
 %base-1 {
   font-family: "blender_pro_bold-webfont";
   color: $COLOR1;
+  $COLOR1: #2a2c2e;
 }
 // Body Text Extend
 %base-3 {
@@ -116,8 +117,7 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
-.content-project {
-}
+
 .content-home {
   max-width: 570px;
   margin: 0 auto;
@@ -256,7 +256,9 @@ a:active {
   background: $COLOR1;
   border-radius: 10px;
   display: inline-block;
-  margin-top: 12px;
+  margin-top: -12px;
+  margin-left: -32px;
+  margin-bottom: 48px;
 }
 
 .tag:hover {
@@ -365,116 +367,6 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
-// Pushing down the whole nav
-// .navbar {
-//   padding-top: 16px;
-//   margin-bottom: 80px !important;
-//   background-color: transparent !important;
-//   border-color: transparent !important;
-//   animation: fadeIn 750ms ease-in-out 0.3s both;
-//   animation-delay: 0.5s;
-// }
-
-// // Links
-// .navbar-default .navbar-nav > li > a {
-//   @extend %base-3;
-//   color: #333333 !important;
-//   font-size: 18px;
-//   text-align: right;
-// }
-// // Toggle Default
-// .navbar-default .navbar-toggle {
-//   background-color: transparent !important;
-//   border-color: transparent !important;
-// }
-// // Toggle on Hover
-// .navbar-default .navbar-toggle:hover {
-//   background-color: transparent !important;
-//   border-color: transparent !important;
-// }
-// // 3 Bars in Toggle
-// .navbar-default .navbar-toggle .icon-bar {
-//   background-color: $COLOR1 !important;
-//   // Animate hamburger menu
-//   transition: all 0.15s;
-// }
-// // Animate hamburger menu
-// .navbar-toggle span:nth-child(2) {
-//   transform: rotate(45deg);
-//   transform-origin: 10% 10%;
-// }
-// .navbar-toggle span:nth-child(3) {
-//   opacity: 0;
-// }
-// .navbar-toggle span:nth-child(4) {
-//   transform: rotate(-45deg);
-//   transform-origin: 10% 90%;
-// }
-// .navbar-toggle.collapsed span:nth-child(2),
-// .navbar-toggle.collapsed span:nth-child(4) {
-//   transform: rotate(0);
-// }
-// .navbar-toggle.collapsed span:nth-child(3) {
-//   opacity: 1;
-// }
-// // Name top left corner
-// .navbar-default .navbar-brand {
-//   @extend %base-1;
-//   color: $COLOR1 !important;
-//   font-size: 18px;
-//   letter-spacing: $letter;
-// }
-// // Hide divider below toggle
-// .navbar-default .navbar-collapse,
-// .navbar-default .navbar-form {
-//   border-color: transparent !important;
-// }
-// // Mobile nav offset
-// @media only screen and (max-width: 500px) {
-//   .offset-nav-1 {
-//     animation: slideRight ease 0.2s;
-//   }
-
-//   .offset-nav-2 {
-//     animation: slideRight ease 0.2s 0.1s;
-//   }
-
-//   .offset-nav-3 {
-//     animation: slideRight ease 0.2s 0.15s;
-//   }
-// }
-// ----------------------------------------------------------------------------------------
-
-// ----------------------------------------------------------------------------------------
-// Footer Styles
-.content-footer {
-  padding-top: 1rem;
-  padding-bottom: 0.3rem;
-  background-color: $COLOR4;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-#text-footer-1 {
-  @extend %base-3;
-  font-size: 18px;
-  margin-top: 5px;
-  text-align: left;
-}
-#text-footer-2 {
-  text-align: right;
-}
-.social-icons-footer {
-  margin-right: 12px;
-  margin-top: 10px;
-}
-#margin-above-footer {
-  margin-bottom: 140px;
-}
-
-// ----------------------------------------------------------------------------------------
-
-// ----------------------------------------------------------------------------------------
 @keyframes popIn {
   0% {
     transform: scale(0.8) translateY(100px);
@@ -512,6 +404,9 @@ a:active {
   }
 }
 // ----------------------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------------------
+// Site Navigation
 
 .header {
   position: fixed;
@@ -631,6 +526,9 @@ a.menu-link {
 
 // ----------------------------------------------------------------------------------------
 
+// ----------------------------------------------------------------------------------------
+// Footer
+
 .footer.desktop {
   max-width: none;
 }
@@ -690,5 +588,124 @@ a {
 @media screen and (max-width: 767px) {
   .footer-block {
     margin-top: 8px;
+  }
+}
+// ----------------------------------------------------------------------------------------
+
+// ----------------------------------------------------------------------------------------
+// Project Cards
+
+.work-container {
+  position: relative;
+  height: 260px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  border-radius: 24px;
+  animation: popIn ease 1.2s;
+  background-color: #f0f0f0;
+}
+
+.work-description {
+  position: absolute;
+  // left: 0%;
+  // top: 0%;
+  margin-right: 48px;
+  // bottom: auto;
+  // z-index: 2;
+  display: block;
+  // width: 50%;
+  // max-width: 350px;
+  min-width: auto;
+  margin-top: 64px;
+  margin-left: 64px;
+  margin-bottom: 64px;
+  justify-content: space-between;
+}
+
+.work-logo {
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .work-logo {
+    width: 56px;
+    height: 56px;
+    margin-left: -32px;
+    margin-top: -32px;
+    border-radius: 16px;
+  }
+}
+
+.title {
+  font-family: "blender_pro_bold-webfont";
+  color: #2a2c2e;
+  font-size: 32px;
+  margin-top: -72px;
+  margin-left: 64px;
+  margin-bottom: -12px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    font-family: "blender_pro_bold-webfont";
+    color: #2a2c2e;
+    font-size: 24px;
+    margin-top: -64px;
+    margin-left: 40px;
+    margin-bottom: -12px;
+    width: 100%;
+  }
+}
+
+.work-metadata {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #74797e;
+  font-size: 18px;
+  margin-left: 64px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .work-metadata {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #74797e;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-bottom: -32px;
+    width: 100%;
+  }
+}
+
+.blurb {
+  position: relative;
+  font-family: $typeface;
+  font-weight: 400;
+  color: #74797e;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-left: -32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .blurb {
+    position: relative;
+    font-family: $typeface;
+    font-weight: 400;
+    color: #74797e;
+    font-size: 18px;
+    line-height: 1.3em;
+    margin-left: -32px;
+    margin-top: 64px;
+    margin-bottom: 32px;
   }
 }
