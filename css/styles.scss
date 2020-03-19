@@ -600,6 +600,7 @@ a {
   position: absolute;
   left: 0%;
   top: 0%;
+  bottom: 5%;
   width: 85%;
   margin-top: 52px;
   margin-left: 52px;
@@ -689,7 +690,8 @@ a {
   margin-left: -32px;
   margin-top: 32px;
   margin-bottom: 32px;
-  width: 97%;
+  // width: 95%;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 767px) {
@@ -703,7 +705,8 @@ a {
     margin-left: -32px;
     margin-top: 64px;
     margin-bottom: 32px;
-    width: 97%;
+    // width: 95%;
+    margin-right: 5%;
   }
 }
 
