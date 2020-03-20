@@ -44,8 +44,11 @@ a:active {
 .hide-scroll {
   overflow: hidden;
 }
-
 // ----------------------------------------------------------------------------------------
+
+.content-fade {
+  transform: translate3d(0, 200px, 0);
+}
 
 // ----------------------------------------------------------------------------------------
 // H1 Extend
@@ -112,7 +115,7 @@ a:active {
   margin-bottom: 160px;
 }
 .offset-card-2 {
-  animation: popIn ease 1.2s 0.2s;
+  animation: popIn ease 1.2s 0.3s;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -513,9 +516,15 @@ a.menu-link {
 // ----------------------------------------------------------------------------------------
 // Footer
 
-.footer.desktop {
-  max-width: none;
+// Homepage Footer
+.footer-home {
+  position: absolute;
+  width: 100%;
+  bottom: 2%;
+  left: 0;
+  right: 0;
 }
+
 @media screen and (max-width: 767px) {
   .footer.desktop {
     flex-direction: column;
@@ -524,35 +533,24 @@ a.menu-link {
 
 .footer {
   display: flex;
-  // width: 100%;
-  // max-width: 1000px;
-  margin-top: 32px;
+  margin-top: 64px;
   padding: 16px;
-  margin-bottom: 16px;
-  justify-content: space-around;
   align-items: center;
   color: $COLOR3;
   font-size: 14px;
 }
 
-@media screen and (max-width: 767px) {
-  .footer {
-    display: flex;
-    margin-top: 0px;
-  }
-}
-
 .footer-links {
+  font-family: $typeface;
+  font-weight: 400;
   display: flex;
   justify-content: flex-start;
   flex: 1;
-  font-family: $typeface;
-  font-weight: 400;
 }
 
 .footer-link {
   margin-right: 16px;
-  border-bottom-style: none;
+  // border-bottom-style: none;
 }
 
 a {
@@ -566,6 +564,7 @@ a {
   font-weight: 400;
   color: $COLOR1;
 }
+
 @media screen and (max-width: 767px) {
   .footer-block {
     margin-top: 8px;
@@ -581,7 +580,6 @@ a {
   height: 256px;
   margin-bottom: 40px;
   border-radius: 24px;
-  animation: popIn ease 1.2s;
   background-color: #f0f0f0;
 }
 
