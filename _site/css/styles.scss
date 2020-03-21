@@ -9,10 +9,12 @@ $COLOR3: #74797e;
 $COLOR4: #f0f0f0;
 // Winnie Blue for Accent
 $accent: #5dcfff;
-// Din Typeface
-$typeface: "dinregular";
-// Blender Typeface
+// Din Regular
+$typeface1: "dinregular";
+// Blender Bold
 $typeface2: "blender_probold";
+// Din Bold
+$typeface3: "DINPro-Bold";
 // Line Height for Body Text
 $lead: 1.7em;
 // Line Height for Headers
@@ -27,6 +29,11 @@ $lead-header: 1.3em;
 @font-face {
   font-family: "dinregular";
   src: url("/css/fonts/din_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url("/css/fonts/DIN-Bold.woff") format("woff");
 }
 // ----------------------------------------------------------------------------------------
 body {
@@ -63,11 +70,11 @@ a:active {
 }
 // Body Text
 %base-3 {
-  font-family: $typeface;
+  font-family: $typeface1;
 }
 // Navigations Links
-%base-4 {
-  font-family: $typeface;
+%base-2 {
+  font-family: $typeface3;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -250,7 +257,7 @@ a:active {
 }
 
 .text-subheader-3 {
-  @extend %base-1;
+  @extend %base-3;
   font-size: 24px;
   margin-bottom: 32px;
   margin-left: 16px;
@@ -258,7 +265,7 @@ a:active {
 }
 // Smallcaps
 .text-subheader-1 {
-  @extend %base-4;
+  @extend %base-3;
   color: $COLOR1;
   font-size: 24px;
   margin-top: 16px;
@@ -404,7 +411,7 @@ a:active {
   padding-top: 10px;
   border-radius: 8px;
   background-color: #4eeba9;
-  font-family: $typeface;
+  font-family: $typeface1;
   color: #000;
   font-size: 14px;
   font-weight: 600;
@@ -438,7 +445,7 @@ a:active {
   border-radius: 8px;
   background-color: #fff;
   opacity: 1;
-  font-family: $typeface;
+  font-family: $typeface1;
   color: $COLOR1;
   text-decoration: none;
 }
@@ -452,7 +459,7 @@ a:active {
   align-items: center;
   border-bottom-style: none;
   border-radius: 20px;
-  font-family: $typeface;
+  font-family: $typeface1;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -498,7 +505,7 @@ a.menu-link {
 }
 
 .footer-links {
-  font-family: $typeface;
+  font-family: $typeface1;
   font-weight: 400;
   display: flex;
   justify-content: flex-start;
@@ -516,7 +523,7 @@ a {
 }
 
 .footer-block {
-  font-family: $typeface;
+  font-family: $typeface1;
   font-weight: 400;
   color: $COLOR1;
 }
@@ -621,7 +628,7 @@ a {
 }
 
 .work-metadata {
-  font-family: $typeface;
+  font-family: $typeface1;
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
@@ -643,7 +650,7 @@ a {
 
 .blurb {
   position: relative;
-  font-family: $typeface;
+  font-family: $typeface1;
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
