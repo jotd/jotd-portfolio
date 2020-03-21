@@ -1,24 +1,29 @@
 // ----------------------------------------------------------------------------------------
 // Headers
 $COLOR1: #2a2c2e;
-// Body Background
+// Page Background
 $COLOR2: #f9f9f9;
 // Gray Text
 $COLOR3: #74797e;
-// Project Thumbnails
+// Project Cards
 $COLOR4: #f0f0f0;
-// Winnie Blue
+// Winnie Blue for Accent
 $accent: #5dcfff;
-$typeface: "Lato", sans-serif;
-$typeface2: "Playfair Display", serif;
-$lead: 32px;
+$typeface: "dinregular";
+$typeface2: "blender_probold";
+$lead: 1.7em;
+$lead-header: 1.3em;
 $letter: 0.1px;
 // ----------------------------------------------------------------------------------------
 
 @font-face {
-  font-family: "blender_pro_bold-webfont";
+  font-family: "blender_probold";
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff");
-  // src: url("/css/fonts/blender_pro_bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "dinregular";
+  src: url("/css/fonts/din_regular-webfont.woff") format("woff");
 }
 // ----------------------------------------------------------------------------------------
 body {
@@ -51,21 +56,19 @@ a:active {
 }
 
 // ----------------------------------------------------------------------------------------
-// H1 Extend
+// Headers
 %base-1 {
-  font-family: "blender_pro_bold-webfont";
+  font-family: $typeface2;
   color: $COLOR1;
   $COLOR1: #2a2c2e;
 }
-// Body Text Extend
+// Body Text
 %base-3 {
   font-family: $typeface;
-  font-weight: 400;
 }
-// Nav Link Extend
+// Navigations Links
 %base-4 {
   font-family: $typeface;
-  font-weight: 900;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -103,7 +106,7 @@ a:active {
   font-size: 56px;
   margin-top: 120px;
   margin-bottom: 32px;
-  line-height: 83px;
+  line-height: $lead;
   letter-spacing: $letter;
   position: relative;
   margin-left: 16px;
@@ -166,7 +169,6 @@ a:active {
 .header-home {
   @extend %base-1;
   font-size: 104px;
-  line-height: 1.2em;
   margin-top: 120px !important;
   margin-bottom: 24px;
   letter-spacing: $letter;
@@ -177,10 +179,9 @@ a:active {
 
 @media screen and (max-width: 500px) {
   .header-home {
-    font-family: "blender_pro_bold-webfont";
+    font-family: "blender_probold";
     color: $COLOR1;
     font-size: 56px;
-    line-height: 1.2em;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 136px;
@@ -191,14 +192,14 @@ a:active {
 }
 
 .tagline-home {
-  @extend %base-1;
-  font-size: 40px;
-  line-height: 1.2em;
+  @extend %base-3;
+  // max-width: 550px;
+  font-size: 32px;
+  line-height: $lead-header;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
   margin-bottom: -400px;
-  letter-spacing: $letter;
   position: relative;
 }
 
@@ -208,8 +209,6 @@ a:active {
   margin-top: 120px;
   margin-left: 16px;
   margin-bottom: 32px;
-  line-height: 83px;
-  letter-spacing: $letter;
   position: relative;
 }
 
@@ -225,16 +224,6 @@ a:active {
   border-radius: 8px;
 }
 
-.project-description {
-  @extend %base-3;
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: $COLOR3;
-  line-height: 24px;
-  margin-top: -12px;
-  // margin-left: 24px;
-}
-
 #app-icon-lockup {
   margin-left: 96px;
   margin-top: -112px;
@@ -244,12 +233,11 @@ a:active {
 .project-header {
   @extend %base-1;
   font-size: 24px;
-  letter-spacing: $letter;
   margin-top: 32px;
 }
 
 .tag:hover {
-  opacity: 0.8;
+  opacity: 0.85;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -259,8 +247,7 @@ a:active {
   @extend %base-1;
   font-size: 48px;
   margin-bottom: 32px;
-  line-height: 1.2em;
-  letter-spacing: $letter;
+  line-height: $lead-header;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 80px;
@@ -272,14 +259,12 @@ a:active {
   margin-bottom: 32px;
   margin-left: 16px;
   color: $COLOR1;
-  letter-spacing: $letter;
 }
 // Smallcaps
 .text-subheader-1 {
   @extend %base-4;
   color: $COLOR1;
   font-size: 24px;
-  letter-spacing: $letter;
   margin-top: 16px;
   margin-bottom: 12px;
   margin-left: 16px;
@@ -315,24 +300,7 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
-// Social Icons
-.social-icons {
-  margin-top: 11px;
-  margin-right: 13px;
-}
-// Social Icons
-.fa-linkedin-in,
-.fa-twitter,
-.fa-medium-m,
-.fa-pinterest {
-  color: $COLOR1;
-}
-.fa-linkedin-in:hover,
-.fa-twitter:hover,
-.fa-medium-m:hover,
-.fa-pinterest:hover {
-  color: $accent;
-}
+
 .highlight {
   background-image: linear-gradient(120deg, $accent, $accent);
   background-repeat: no-repeat;
@@ -464,7 +432,7 @@ a:active {
   // background-color: #3898ec;
   color: white;
   border: 0;
-  line-height: inherit;
+  line-height: $lead;
   text-decoration: none;
   cursor: pointer;
   border-radius: 0;
@@ -516,34 +484,24 @@ a.menu-link {
 // ----------------------------------------------------------------------------------------
 // Footer
 
-// Homepage Footer
+// Home Footer
 .footer-home {
   position: absolute;
-  width: 100%;
-  bottom: 4%;
-  left: 0;
-  right: 0;
+  bottom: 16px;
+  right: 0px;
+  left: 0px;
 }
 
-@media screen and (max-width: 767px) {
-  .footer-home {
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer.desktop {
-    flex-direction: column;
-  }
-}
-
+// Footer on all pages except home
 .footer {
+  // width: 100%;
   display: flex;
-  margin-top: 64px;
   padding: 16px;
   align-items: center;
   color: $COLOR3;
   font-size: 14px;
+  right: 0px;
+  left: 0px;
 }
 
 .footer-links {
@@ -556,7 +514,6 @@ a.menu-link {
 
 .footer-link {
   margin-right: 16px;
-  // border-bottom-style: none;
 }
 
 a {
@@ -576,6 +533,13 @@ a {
     margin-top: 8px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .footer.desktop {
+    flex-direction: column;
+  }
+}
+
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
@@ -642,7 +606,7 @@ a {
 }
 
 .title {
-  font-family: "blender_pro_bold-webfont";
+  font-family: $typeface2;
   color: #2a2c2e;
   font-size: 32px;
   margin-top: -72px;
@@ -653,7 +617,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .title {
-    font-family: "blender_pro_bold-webfont";
+    font-family: "blender_probold";
     color: #2a2c2e;
     font-size: 24px;
     margin-top: -64px;
@@ -664,7 +628,7 @@ a {
 }
 
 .work-metadata {
-  font-family: "Lato", sans-serif;
+  font-family: $typeface;
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
@@ -674,7 +638,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .work-metadata {
-    font-family: "Lato", sans-serif;
+    font-family: "dinregular";
     font-weight: 400;
     color: #74797e;
     font-size: 18px;
@@ -690,7 +654,7 @@ a {
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
-  line-height: 1.3em;
+  line-height: $lead;
   margin-left: -32px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -701,11 +665,11 @@ a {
 @media screen and (max-width: 767px) {
   .blurb {
     position: relative;
-    font-family: $typeface;
+    font-family: "dinregular";
     font-weight: 400;
     color: #74797e;
     font-size: 18px;
-    line-height: 1.3em;
+    line-height: 1.7em;
     margin-left: -32px;
     margin-top: 64px;
     margin-bottom: 32px;
@@ -716,7 +680,7 @@ a {
 
 // Skill tags for projects
 .tag {
-  padding: 0.1px 16px 0.1px 16px;
+  padding: 4px 16px 4px 16px;
   background: $COLOR1;
   border-radius: 10px;
   margin-top: -12px;

@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "blender_pro_bold-webfont";
+  font-family: "blender_probold";
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "dinregular";
+  src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 
 body {
   background-color: #f9f9f9 !important; }
@@ -26,17 +30,15 @@ a:active {
   -webkit-transform: translate3d(0, 200px, 0);
           transform: translate3d(0, 200px, 0); }
 
-.header-work, .header-home, .tagline-home, .header-about, .project-header, .header-case-study, .text-subheader-3 {
-  font-family: "blender_pro_bold-webfont";
+.header-work, .header-home, .header-about, .project-header, .header-case-study, .text-subheader-3 {
+  font-family: "blender_probold";
   color: #2a2c2e; }
 
-.project-description, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
-  font-family: "Lato", sans-serif;
-  font-weight: 400; }
+.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
+  font-family: "dinregular"; }
 
 .text-subheader-1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 900; }
+  font-family: "dinregular"; }
 
 #margin-below-header {
   margin-bottom: 40px; }
@@ -66,7 +68,7 @@ a:active {
   font-size: 56px;
   margin-top: 120px;
   margin-bottom: 32px;
-  line-height: 83px;
+  line-height: 1.7em;
   letter-spacing: 0.1px;
   position: relative;
   margin-left: 16px;
@@ -120,7 +122,6 @@ a:active {
 
 .header-home {
   font-size: 104px;
-  line-height: 1.2em;
   margin-top: 120px !important;
   margin-bottom: 24px;
   letter-spacing: 0.1px;
@@ -130,10 +131,9 @@ a:active {
 
 @media screen and (max-width: 500px) {
   .header-home {
-    font-family: "blender_pro_bold-webfont";
+    font-family: "blender_probold";
     color: #2a2c2e;
     font-size: 56px;
-    line-height: 1.2em;
     margin-left: 16px;
     margin-right: 16px;
     margin-top: 136px;
@@ -142,13 +142,12 @@ a:active {
     position: relative; } }
 
 .tagline-home {
-  font-size: 40px;
-  line-height: 1.2em;
+  font-size: 36px;
+  line-height: 1.3em;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
   margin-bottom: -400px;
-  letter-spacing: 0.1px;
   position: relative; }
 
 .header-about {
@@ -156,8 +155,6 @@ a:active {
   margin-top: 120px;
   margin-left: 16px;
   margin-bottom: 32px;
-  line-height: 83px;
-  letter-spacing: 0.1px;
   position: relative; }
 
 #app-icon {
@@ -168,13 +165,6 @@ a:active {
   margin-bottom: 32px;
   border-radius: 8px; }
 
-.project-description {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #74797e;
-  line-height: 24px;
-  margin-top: -12px; }
-
 #app-icon-lockup {
   margin-left: 96px;
   margin-top: -112px;
@@ -183,17 +173,15 @@ a:active {
 
 .project-header {
   font-size: 24px;
-  letter-spacing: 0.1px;
   margin-top: 32px; }
 
 .tag:hover {
-  opacity: 0.8; }
+  opacity: 0.85; }
 
 .header-case-study {
   font-size: 48px;
   margin-bottom: 32px;
-  line-height: 1.2em;
-  letter-spacing: 0.1px;
+  line-height: 1.3em;
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 80px; }
@@ -202,13 +190,11 @@ a:active {
   font-size: 24px;
   margin-bottom: 32px;
   margin-left: 16px;
-  color: #2a2c2e;
-  letter-spacing: 0.1px; }
+  color: #2a2c2e; }
 
 .text-subheader-1 {
   color: #2a2c2e;
   font-size: 24px;
-  letter-spacing: 0.1px;
   margin-top: 16px;
   margin-bottom: 12px;
   margin-left: 16px;
@@ -217,39 +203,23 @@ a:active {
 .text-body {
   color: #2a2c2e;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.7em;
   margin-left: 16px;
   margin-right: 16px; }
 
 .text-body-secondary-1 {
   color: #2a2c2e;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 1.7em;
   text-align: left;
   margin-left: 16px; }
 
 .text-body-secondary-2 {
   color: #74797e;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 1.7em;
   text-align: left;
   margin-left: 16px; }
-
-.social-icons {
-  margin-top: 11px;
-  margin-right: 13px; }
-
-.fa-linkedin-in,
-.fa-twitter,
-.fa-medium-m,
-.fa-pinterest {
-  color: #2a2c2e; }
-
-.fa-linkedin-in:hover,
-.fa-twitter:hover,
-.fa-medium-m:hover,
-.fa-pinterest:hover {
-  color: #5dcfff; }
 
 .highlight {
   background-image: -o-linear-gradient(330deg, #5dcfff, #5dcfff);
@@ -385,7 +355,7 @@ a:active {
   padding-top: 10px;
   border-radius: 8px;
   background-color: #4eeba9;
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   color: #000;
   font-size: 14px;
   font-weight: 600; }
@@ -406,7 +376,7 @@ a:active {
   padding: 9px 15px;
   color: white;
   border: 0;
-  line-height: inherit;
+  line-height: 1.7em;
   text-decoration: none;
   cursor: pointer;
   border-radius: 0; }
@@ -415,7 +385,7 @@ a:active {
   border-radius: 8px;
   background-color: #fff;
   opacity: 1;
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   color: #2a2c2e;
   text-decoration: none; }
 
@@ -434,7 +404,7 @@ a:active {
           align-items: center;
   border-bottom-style: none;
   border-radius: 20px;
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   font-size: 14px;
   font-weight: 600;
   text-decoration: none; }
@@ -462,25 +432,15 @@ a.menu-link {
 
 .footer-home {
   position: absolute;
-  width: 100%;
-  bottom: 2%;
-  left: 0;
-  right: 0; }
-
-@media screen and (max-width: 767px) {
-  .footer.desktop {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
+  bottom: 16px;
+  right: 0px;
+  left: 0px; }
 
 .footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 64px;
   padding: 16px;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -490,7 +450,7 @@ a.menu-link {
   font-size: 14px; }
 
 .footer-links {
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   font-weight: 400;
   display: -webkit-box;
   display: -webkit-flex;
@@ -514,13 +474,21 @@ a {
   text-decoration: none; }
 
 .footer-block {
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   font-weight: 400;
   color: #2a2c2e; }
 
 @media screen and (max-width: 767px) {
   .footer-block {
     margin-top: 8px; } }
+
+@media screen and (max-width: 500px) {
+  .footer.desktop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
 
 .work-container {
   position: relative;
@@ -532,7 +500,7 @@ a {
 @media screen and (max-width: 767px) {
   .work-container {
     position: relative;
-    height: 253px;
+    height: 272px;
     margin-bottom: 40px;
     border-radius: 24px;
     -webkit-animation: popIn ease 1.2s;
@@ -581,7 +549,7 @@ a {
     border-radius: 16px; } }
 
 .title {
-  font-family: "blender_pro_bold-webfont";
+  font-family: "blender_probold";
   color: #2a2c2e;
   font-size: 32px;
   margin-top: -72px;
@@ -591,7 +559,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .title {
-    font-family: "blender_pro_bold-webfont";
+    font-family: "blender_probold";
     color: #2a2c2e;
     font-size: 24px;
     margin-top: -64px;
@@ -600,7 +568,7 @@ a {
     width: 100%; } }
 
 .work-metadata {
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
@@ -609,7 +577,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .work-metadata {
-    font-family: "Lato", sans-serif;
+    font-family: "dinregular";
     font-weight: 400;
     color: #74797e;
     font-size: 18px;
@@ -619,11 +587,11 @@ a {
 
 .blurb {
   position: relative;
-  font-family: "Lato", sans-serif;
+  font-family: "dinregular";
   font-weight: 400;
   color: #74797e;
   font-size: 18px;
-  line-height: 1.3em;
+  line-height: 1.7em;
   margin-left: -32px;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -632,18 +600,18 @@ a {
 @media screen and (max-width: 767px) {
   .blurb {
     position: relative;
-    font-family: "Lato", sans-serif;
+    font-family: "dinregular";
     font-weight: 400;
     color: #74797e;
     font-size: 18px;
-    line-height: 1.3em;
+    line-height: 1.7em;
     margin-left: -32px;
     margin-top: 64px;
     margin-bottom: 32px;
     margin-right: 5%; } }
 
 .tag {
-  padding: 0.1px 16px 0.1px 16px;
+  padding: 4px 16px 4px 16px;
   background: #2a2c2e;
   border-radius: 10px;
   margin-top: -12px;
@@ -651,5 +619,5 @@ a {
 
 .tag-text {
   font-size: 14px;
-  line-height: 32px;
+  line-height: 1.7em;
   color: white; }
