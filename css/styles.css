@@ -76,6 +76,10 @@ a:active {
   margin-bottom: 160px; }
 
 .offset-card-2 {
+  -webkit-animation: popIn ease 1.2s 0.2s;
+          animation: popIn ease 1.2s 0.2s; }
+
+.offset-card-3 {
   -webkit-animation: popIn ease 1.2s 0.3s;
           animation: popIn ease 1.2s 0.3s; }
 
@@ -488,6 +492,8 @@ a {
   position: relative;
   height: 256px;
   margin-bottom: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
   border-radius: 24px;
   background-color: #f0f0f0; }
 
@@ -565,7 +571,7 @@ a {
   font-family: "dinregular";
   font-weight: 400;
   color: #74797e;
-  font-size: 18px;
+  font-size: 14px;
   margin-left: 64px;
   width: 100%; }
 
@@ -574,7 +580,7 @@ a {
     font-family: "dinregular";
     font-weight: 400;
     color: #74797e;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 40px;
     margin-bottom: -32px;
     width: 100%; } }

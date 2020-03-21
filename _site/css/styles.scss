@@ -123,6 +123,9 @@ a:active {
   margin-bottom: 160px;
 }
 .offset-card-2 {
+  animation: popIn ease 1.2s 0.2s;
+}
+.offset-card-3 {
   animation: popIn ease 1.2s 0.3s;
 }
 // ----------------------------------------------------------------------------------------
