@@ -9,11 +9,14 @@ $COLOR3: #74797e;
 $COLOR4: #f0f0f0;
 // Winnie Blue for Accent
 $accent: #5dcfff;
+// Din Typeface
 $typeface: "dinregular";
+// Blender Typeface
 $typeface2: "blender_probold";
+// Line Height for Body Text
 $lead: 1.7em;
+// Line Height for Headers
 $lead-header: 1.3em;
-$letter: 0.1px;
 // ----------------------------------------------------------------------------------------
 
 @font-face {
@@ -50,10 +53,6 @@ a:active {
   overflow: hidden;
 }
 // ----------------------------------------------------------------------------------------
-
-.content-fade {
-  transform: translate3d(0, 200px, 0);
-}
 
 // ----------------------------------------------------------------------------------------
 // Headers
@@ -107,7 +106,6 @@ a:active {
   margin-top: 120px;
   margin-bottom: 32px;
   line-height: $lead;
-  letter-spacing: $letter;
   position: relative;
   margin-left: 16px;
   margin-right: 16px;
@@ -171,7 +169,6 @@ a:active {
   font-size: 104px;
   margin-top: 120px !important;
   margin-bottom: 24px;
-  letter-spacing: $letter;
   position: relative;
   margin-left: 16px;
   margin-right: 16px;
@@ -186,7 +183,6 @@ a:active {
     margin-right: 16px;
     margin-top: 136px;
     margin-bottom: 24px;
-    letter-spacing: $letter;
     position: relative;
   }
 }
@@ -194,7 +190,7 @@ a:active {
 .tagline-home {
   @extend %base-3;
   // max-width: 550px;
-  font-size: 32px;
+  font-size: 36px;
   line-height: $lead-header;
   margin-left: 16px;
   margin-right: 16px;
@@ -494,14 +490,11 @@ a.menu-link {
 
 // Footer on all pages except home
 .footer {
-  // width: 100%;
   display: flex;
   padding: 16px;
   align-items: center;
   color: $COLOR3;
   font-size: 14px;
-  right: 0px;
-  left: 0px;
 }
 
 .footer-links {
@@ -556,7 +549,7 @@ a {
 @media screen and (max-width: 767px) {
   .work-container {
     position: relative;
-    height: 253px;
+    height: 272px;
     margin-bottom: 40px;
     border-radius: 24px;
     animation: popIn ease 1.2s;
