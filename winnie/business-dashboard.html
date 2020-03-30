@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jot Dhaliwal</title>
+
+    <!-- This stuff sets up the page to be mobile friendly -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- Let search engines read your content only in https site -->
+    <link rel="canonical" href="https://jotd.me" />
+
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <a href="/" class="face w-inline-block w--current"></a>
+        <a href="#" class="btn contact w-button"> Contact</a>
+        <div class="menu">
+          <a href="/work" class="menu-link w--current">Work</a>
+          <a href="/about" class="menu-link">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="margin-below-section" class="content-body">
+      <img
+        class="content-image"
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/cover.png"
+      />
+    </div>
+
+    <div id="margin-below-header" class="content-body">
+      <h5 class="header-case-study">Business Dashboard</h5>
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Overview</h3>
+      <p id="margin-below-sentence" class="text-body">
+        Winnie is a marketplace for child care, kids activities and backed by a
+        trusted community of parents and providers.
+      </p>
+      <span class="text-subheader-1 highlight">project</span>
+      <p id="margin-below-sentence" class="text-body">
+        Providers on Winnie were not regularly updating their child care
+        listings. Analytics showed that less than 30% of providers were updating
+        their listings every month. This created a negative experience for
+        parents who clicked through from search results only to see outdated or
+        missing information about a daycare or preschool.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        From the provider perspective, there was no visibility into how their
+        listing was performing on the platform so they lacked incentive to
+        update their business information. Up this point, Winnie had not
+        invested in business tools for providers so it became apparent that we
+        needed to create a dashboard for providers to manage their listings.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        My hypothesis was that if providers could both measure their performance
+        and update their listings from a centralized dashboard, it would improve
+        data quality on the platform and strengthen Winnie's long term
+        relationship with providers.
+      </p>
+      <span class="text-subheader-1 highlight">results</span>
+      <p id="margin-below-section" class="text-body">
+        Launching the business dashboard meaningfully increased the number of
+        providers who updated their listings on a monthly basis. This improved
+        data quality and provided more parents with accurate information about
+        daycares and preschools.
+      </p>
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">First Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        I started off by thinking through the navigation on mobile web and
+        desktop. On mobile web, the default state would be a table view so
+        providers could see a list of all possible actions they could take on
+        the dashboard. On desktop, providers would see a list of actions in a
+        column to the left of the content.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        If a provider had multiple listings, they could tap the chevron next to
+        the business name and select another listing from a modal.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Then I thought through how to display the three key performance metrics
+        for a listing — reach, views and referrals. Hovering/tapping on the
+        information icon would reveal a tooltip that provided context about the
+        associated metric.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        After metrics, I displayed a simple prompt to encourage providers to
+        upgrade to a featured listing.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/first-iteration-1.png"
+      />
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/first-iteration-2.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Second Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        After reflecting on how the performance metrics were displayed, I
+        realized that raw numbers by themsleves weren't useful unless a provider
+        could filter by time period and also see the percentage change over
+        time.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        Providers also needed a way to visualize their performance in a chart so
+        initially I looked into a stacked bar chart. However its difficult to
+        compare the length of stacked bars and when the numbers are similar or
+        there is no clear trend, its harder to make inferences based on the
+        data.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/second-iteration-1.png"
+      />
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/second-iteration-2.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Shipped Design</h3>
+      <p id="margin-below-sentence" class="text-body">
+        In the final design, the key performance metrics were accompanied by
+        gray explainer text so that providers wouldn't have to hover over
+        tooltips to understand what each metric meant.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        To make the percentage change more useful, the triangle icons were
+        replaced with descriptions that also allowed me to deal with edge cases
+        in the data. If there was no previous data and current data is not zero,
+        the description would say "Over 100% increase from last month". If there
+        was no change in the data, the description would saY "Holding steady
+        from last month". Otherwise the description would state the percentage
+        increase or decrease.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/third-iteration-1.png"
+      />
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/business%20dashboard/third-iteration-2.png"
+      />
+    </div>
+
+    <div class="footer desktop">
+      <div class="footer-links">
+        <a
+          href="https://twitter.com/jotd?lang=en"
+          target="_blank"
+          class="footer-link"
+          >Twitter</a
+        >
+        <a
+          href="https://www.linkedin.com/in/jotdhaliwal/"
+          target="_blank"
+          class="footer-link"
+          >LinkedIn</a
+        >
+        <a
+          href="mailto:info@jotd.m?subject=Inquiry%20from%20website"
+          class="footer-link"
+          >Email</a
+        >
+      </div>
+      <div class="footer-block">© 2020 Jot Dhaliwal</div>
+    </div>
+  </body>
+</html>

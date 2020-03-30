@@ -21,20 +21,24 @@ $lead: 1.7em;
 $lead-header: 1.3em;
 // ----------------------------------------------------------------------------------------
 
+// Blender Bold
 @font-face {
   font-family: "blender_probold";
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff");
 }
 
+// DIN Bold
+@font-face {
+  font-family: "DINPro-Bold";
+  src: url("/css/fonts/DIN-Bold.woff") format("woff");
+}
+
+// DIN Regular
 @font-face {
   font-family: "dinregular";
   src: url("/css/fonts/din_regular-webfont.woff") format("woff");
 }
 
-@font-face {
-  font-family: "DINPro-Bold";
-  src: url("/css/fonts/DIN-Bold.woff") format("woff");
-}
 // ----------------------------------------------------------------------------------------
 body {
   background-color: $COLOR2 !important;
@@ -66,7 +70,6 @@ a:active {
 %base-1 {
   font-family: $typeface2;
   color: $COLOR1;
-  $COLOR1: #2a2c2e;
 }
 // Body Text
 %base-3 {
@@ -91,19 +94,6 @@ a:active {
 // ----------------------------------------------------------------------------------------
 
 // ----------------------------------------------------------------------------------------
-// Containers for content
-.project-card {
-  max-height: 400px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 40px;
-  border-radius: 24px;
-  animation: popIn ease 1.2s;
-  background: $COLOR4;
-}
-
 .header-work {
   @extend %base-1;
   max-height: 400px;
@@ -120,7 +110,6 @@ a:active {
 
 .offset-card-1 {
   animation: popIn ease 1.2s 0.1s;
-  margin-bottom: 160px;
 }
 .offset-card-2 {
   animation: popIn ease 1.2s 0.2s;
@@ -177,7 +166,7 @@ a:active {
 .header-home {
   @extend %base-1;
   font-size: 104px;
-  margin-top: 120px !important;
+  margin-top: 136px !important;
   margin-bottom: 24px;
   position: relative;
   margin-left: 16px;
@@ -191,7 +180,7 @@ a:active {
     font-size: 56px;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 136px;
+    margin-top: 120px;
     margin-bottom: 24px;
     position: relative;
   }
@@ -310,8 +299,8 @@ a:active {
 .highlight {
   background-image: linear-gradient(120deg, $accent, $accent);
   background-repeat: no-repeat;
-  background-size: 100% 0.25em;
-  background-position: 0 90%;
+  background-size: 100% 0.35em;
+  background-position: 0 95%;
   transition: background-size 0.2s ease-in-out;
   color: inherit;
   text-decoration: none;
@@ -663,7 +652,7 @@ a {
   margin-left: -32px;
   margin-top: 32px;
   margin-bottom: 32px;
-  // width: 95%;
+  width: 100%;
   margin-right: 5%;
 }
 
@@ -678,7 +667,7 @@ a {
     margin-left: -32px;
     margin-top: 64px;
     margin-bottom: 32px;
-    // width: 95%;
+    width: 100%;
     margin-right: 5%;
   }
 }

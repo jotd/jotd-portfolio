@@ -3,12 +3,12 @@
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff"); }
 
 @font-face {
-  font-family: "dinregular";
-  src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
-
-@font-face {
   font-family: "DINPro-Bold";
   src: url("/css/fonts/DIN-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "dinregular";
+  src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 
 body {
   background-color: #f9f9f9 !important; }
@@ -46,18 +46,6 @@ a:active {
 #margin-below-section {
   margin-bottom: 80px; }
 
-.project-card {
-  max-height: 400px;
-  max-width: 600px;
-  margin: 0 auto;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 40px;
-  border-radius: 24px;
-  -webkit-animation: popIn ease 1.2s;
-          animation: popIn ease 1.2s;
-  background: #f0f0f0; }
-
 .header-work {
   max-height: 400px;
   max-width: 600px;
@@ -72,8 +60,7 @@ a:active {
 
 .offset-card-1 {
   -webkit-animation: popIn ease 1.2s 0.1s;
-          animation: popIn ease 1.2s 0.1s;
-  margin-bottom: 160px; }
+          animation: popIn ease 1.2s 0.1s; }
 
 .offset-card-2 {
   -webkit-animation: popIn ease 1.2s 0.2s;
@@ -122,7 +109,7 @@ a:active {
 
 .header-home {
   font-size: 104px;
-  margin-top: 120px !important;
+  margin-top: 136px !important;
   margin-bottom: 24px;
   position: relative;
   margin-left: 16px;
@@ -135,7 +122,7 @@ a:active {
     font-size: 56px;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 136px;
+    margin-top: 120px;
     margin-bottom: 24px;
     position: relative; } }
 
@@ -223,8 +210,8 @@ a:active {
   background-image: -o-linear-gradient(330deg, #5dcfff, #5dcfff);
   background-image: linear-gradient(120deg, #5dcfff, #5dcfff);
   background-repeat: no-repeat;
-  background-size: 100% 0.25em;
-  background-position: 0 90%;
+  background-size: 100% 0.35em;
+  background-position: 0 95%;
   -webkit-transition: background-size 0.2s ease-in-out;
   -o-transition: background-size 0.2s ease-in-out;
   transition: background-size 0.2s ease-in-out;
@@ -595,6 +582,7 @@ a {
   margin-left: -32px;
   margin-top: 32px;
   margin-bottom: 32px;
+  width: 100%;
   margin-right: 5%; }
 
 @media screen and (max-width: 767px) {
@@ -608,6 +596,7 @@ a {
     margin-left: -32px;
     margin-top: 64px;
     margin-bottom: 32px;
+    width: 100%;
     margin-right: 5%; } }
 
 .tag {
