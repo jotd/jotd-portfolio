@@ -48,7 +48,10 @@ a:active {
   margin-bottom: 40px; }
 
 #margin-below-section {
-  margin-bottom: 80px; }
+  margin-bottom: 96px; }
+
+#margin-below-results {
+  margin-bottom: 136px !important; }
 
 .offset-card-1 {
   -webkit-animation: popIn ease 1.2s 0.1s;
@@ -82,16 +85,24 @@ a:active {
   margin-bottom: 64px;
   margin-top: 160px; }
 
+.content-hero-image {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 120px;
+  background: #f0f0f0;
+  border-radius: 24px; }
+
 .content-image {
   max-width: 950px;
   margin: 0 auto;
+  margin-bottom: 136px !important;
   background: #f0f0f0;
-  border-radius: 24px;
-  margin-top: 120px; }
+  border-radius: 24px; }
 
 .content-wireframe {
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 136px !important;
   background: #f0f0f0;
   border-radius: 24px; }
 

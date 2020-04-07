@@ -94,7 +94,10 @@ a:active {
   margin-bottom: 40px;
 }
 #margin-below-section {
-  margin-bottom: 80px;
+  margin-bottom: 96px;
+}
+#margin-below-results {
+  margin-bottom: 136px !important;
 }
 // ----------------------------------------------------------------------------------------
 
@@ -133,16 +136,24 @@ a:active {
   margin-bottom: 64px;
   margin-top: 160px;
 }
+.content-hero-image {
+  max-width: 950px;
+  margin: 0 auto;
+  margin-top: 120px;
+  background: $COLOR4;
+  border-radius: 24px;
+}
 .content-image {
   max-width: 950px;
   margin: 0 auto;
+  margin-bottom: 136px !important;
   background: $COLOR4;
   border-radius: 24px;
-  margin-top: 120px;
 }
 .content-wireframe {
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 136px !important;
   background: $COLOR4;
   border-radius: 24px;
 }
