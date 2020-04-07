@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Jot Dhaliwal</title>
+
+    <!-- This stuff sets up the page to be mobile friendly -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- Let search engines read your content only in https site -->
+    <link rel="canonical" href="https://jotd.me" />
+
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <a href="/" class="face w-inline-block w--current"></a>
+        <a href="#" class="btn contact w-button"> Contact</a>
+        <div class="menu">
+          <a href="/work" class="menu-link w--current">Work</a>
+          <a href="/about" class="menu-link">About</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="margin-below-section" class="content-body">
+      <img
+        class="content-image"
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/cover.png"
+      />
+    </div>
+
+    <div id="margin-below-header" class="content-body">
+      <h5 class="header-case-study">Onboarding</h5>
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Overview</h3>
+      <p id="margin-below-sentence" class="text-body">
+        Winnie is a marketplace for child care and backed by a trusted community
+        of parents and providers.
+      </p>
+      <span class="text-subheader-1 highlight">project</span>
+      <p id="margin-below-sentence" class="text-body">
+        Winnie needed an onboarding flow to personalize the content shown to
+        users in home feed. The home feed was an important lever to retain users
+        not actively searching for local child care providers. Analytics
+        revealed a high churn rate in users who signed up but were not in the
+        market for child care.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        By default, the home feed was not personalized so users would see posts
+        about a wide range of parenting topics. Although users had the
+        affordance to follow and hide certain topics, very few users took
+        advantage of this feature.
+      </p>
+      <p id="margin-below-sentence" class="text-body"></p>
+      <p id="margin-below-sentence" class="text-body">
+        My hypothesis was that if the home feed was personalized based on
+        information collected in onboarding, there would be increased engagement
+        and content contribution in feed.
+      </p>
+      <span class="text-subheader-1 highlight">results</span>
+      <p id="margin-below-section" class="text-body">
+        Users who provided the age of their kids during onboarding were almost
+        twice as likely to like a post and create content – includes posts,
+        reviews, and replies.
+      </p>
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Approach</h3>
+      <p id="margin-below-sentence" class="text-body">
+        The onboarding flow would consist of three sections to capture the
+        intent, location and age of a user's kids. By using these three inputs,
+        the home feed could be personalized to automatically follow and hide
+        certain parenting topics.
+      </p>
+    </div>
+
+    <!-- Wireframe -->
+    <div id="margin-below-section" class="content-wireframe">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/wireframe.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">First Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        I started off by thinking through how a user could express intent for
+        the types of local providers they were looking for with a multiselect
+        table view.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        The location field would be prefilled if the user gave location
+        permission after signup. Otherwise location could be entered manually in
+        the form of address, city, zip or neighborhood.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/first-iteration.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Second Iteration</h3>
+      <p id="margin-below-sentence" class="text-body">
+        At this point I explored how to use separate month and year pickers to
+        allow users to provide the age of their kids. Once a user applied either
+        month or year for a child, the other picker would appear on screen.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        The issue with this design was around the error states that would have
+        to be displayed if the user only provided month or year.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/second-iteration.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <h3 class="text-subheader-3">Shipped Design</h3>
+      <p id="margin-below-sentence" class="text-body">
+        In the final design, the list of providers in the table view was
+        shortened. If a user selected any of the child care options, two
+        additional questoins would appear at the bottom of the screen to
+        understand what schedule and timing was desired.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        If a user didn't select any of the child care options, then that user
+        would not see posts in feed about child care.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/third-iteration-1.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <p id="margin-below-sentence" class="text-body">
+        A user could provide the age of their kids with one bottom sheet
+        containing a month and year picker. By default the 'Apply' button would
+        be inactive until the user interacted with either the month or year
+        picker.
+      </p>
+      <p id="margin-below-sentence" class="text-body">
+        To edit the age of a particular child, a user could tap on the relevant
+        table cell which would bring up a bottom sheet. Multiple children could
+        be added and users could remove a child by tapping the minus icon.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/third-iteration-2.png"
+      />
+    </div>
+
+    <div class="content-body">
+      <p id="margin-below-sentence" class="text-body">
+        If users wanted to manage this information at a later time, they could
+        go to settings. From there a user could also add, edit and delete the
+        age of their kids.
+      </p>
+    </div>
+
+    <!-- Mockup -->
+    <div id="margin-below-section" class="content-image">
+      <img
+        src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/onboarding/third-iteration-3.png"
+      />
+    </div>
+
+    <div class="footer desktop">
+      <div class="footer-links">
+        <a
+          href="https://twitter.com/jotd?lang=en"
+          target="_blank"
+          class="footer-link"
+          >Twitter</a
+        >
+        <a
+          href="https://www.linkedin.com/in/jotdhaliwal/"
+          target="_blank"
+          class="footer-link"
+          >LinkedIn</a
+        >
+        <a
+          href="mailto:info@jotd.m?subject=Inquiry%20from%20website"
+          class="footer-link"
+          >Email</a
+        >
+      </div>
+      <div class="footer-block">© 2020 Jot Dhaliwal</div>
+    </div>
+  </body>
+</html>

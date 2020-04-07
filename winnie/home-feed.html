@@ -49,25 +49,24 @@
     <div class="content-body">
       <h3 class="text-subheader-3">Overview</h3>
       <p id="margin-below-sentence" class="text-body">
-        Winnie is a marketplace for child care, kids activities and backed by a
-        trusted community of parents and providers.
+        Winnie is a marketplace for child care and backed by a trusted community
+        of parents and providers.
       </p>
       <span class="text-subheader-1 highlight">project</span>
       <p id="margin-below-sentence" class="text-body">
-        Winnie's home feed needed a redesign to surface local data. Based on
-        support tickets and App Store Reviews, it was clear users were confused
-        by seeeing a feed consisting entirely of parenting discussions. Users
-        expected to find local child care and kids activities immediately after
-        opening the app but the feed was originally designed for content
-        contribution and engagement.
+        Winnie's home feed needed a redesign in order to help users search and
+        discover local child care providers. Based on support tickets and App
+        Store Reviews, it was clear users were confused by seeeing a feed
+        consisting entirely of parenting discussions. Instead users expected to
+        find local daycares and preschools immediately after opening the app.
       </p>
       <p id="margin-below-sentence" class="text-body">
-        Although Winnie was making a big investment to collect local data across
-        different markets, it was not being surfaced in the home feed. This
-        created a negative experience for new users who were presented with a
-        feed of discussions instead of affordances for local search and
-        discovery. Monetization was also a consideration because child care
-        providers pay to be promoted in search results. So additional
+        Although Winnie was making a big investment to collect local child care
+        data across different markets, it was not being surfaced in the home
+        feed. This created a negative experience for new users who were
+        presented with a feed of discussions instead of affordances for local
+        search and discovery. Monetization was also a consideration because
+        child care providers pay to be promoted in search results. So additional
         advertising inventory could be created in the home feed.
       </p>
       <p id="margin-below-sentence" class="text-body">
@@ -95,7 +94,7 @@
       <h3 class="text-subheader-3">Survey Data</h3>
 
       <p id="margin-below-sentence" class="text-body">
-        To inform my design decisions, I surveyed a random sample of 1K parents
+        To inform my design decisions, I surveyed a random sample of 1K users
         who had used the iOS app in the past three months.
       </p>
       <!-- <p id="margin-below-sentence" class="text-body">
@@ -105,8 +104,8 @@
       <div class="text-subheader-1">key insights</div>
       <p id="margin-below-sentence" class="text-body">
         A majority of users said their goal in using Winnie was to find local
-        child care (8%) and activities (52%) which made sense since Winnie's
-        maine value prop is local data.
+        child care and activities which made sense since Winnie's maine value
+        prop is local data.
       </p>
       <p id="margin-below-sentence" class="text-body">
         Only 18% of users said they wanted advice or support from other parents.
@@ -114,10 +113,10 @@
         most users didn't find value in it.
       </p>
       <p id="margin-below-sentence" class="text-body">
-        In terms of how users wanted to acommplish this goal, a majority said
-        they wanted to use search queries (14%) and explore a map (26%) to see a
-        ranked list of results. This meant that shortcuts to create search
-        queries and explore a map could be added above the home feed.
+        A majority said they wanted to use search queries (14%) and explore a
+        map (26%) to see a ranked list of local providers. This meant that
+        shortcuts to create search queries and explore a map could potentially
+        be added to the top of feed.
       </p>
 
       <!-- Survey -->
@@ -214,21 +213,16 @@
     <div class="content-body">
       <h3 class="text-subheader-3">Approach</h3>
       <p id="margin-below-sentence" class="text-body">
-        My strategy for creating a new home feed architecture revolved around
-        intent, browse and nurture.
-      </p>
-      <p id="margin-below-sentence" class="text-body">
         At the top of feed, a user would be able to quickly create a search
         based on intent. Below search affordances, a user could browse local
-        providers for child care and kids activities. The rest of feed would
-        show parenting discussions and static resources.
+        providers. The rest of feed would show parenting discussions and static
+        resources.
       </p>
     </div>
 
     <!-- Wireframe -->
     <div id="margin-below-section" class="content-wireframe">
       <img
-        class="slightly-rounded-corners"
         src="https://jotsd.s3.us-west-1.amazonaws.com/winnie/home%20feed%20redesign/wireframe.png"
       />
     </div>
@@ -267,11 +261,9 @@
       <p id="margin-below-sentence" class="text-body">
         To increase CTR from feed to place detail, I proposed personalizing the
         places shown in the segmented control based on their search intent.
-        During onboarding, users are shown a simple form where they can use
-        checkboxes to state whether they are looking for daycares, preschools,
-        kids activitie or drop-in care. The responses to this question were then
-        used to populate the segmented control. The default state would show a
-        mix of child care and kids activities.
+        During onboarding users can state what types of local providers they are
+        looking for. The default state would show a mix of child care and kids
+        activities.
       </p>
       <p id="margin-below-sentence" class="text-body"></p>
     </div>
@@ -288,30 +280,19 @@
       <p id="margin-below-sentence" class="text-body">
         The Nearby button launches a full screen map view with a carousel of
         places. As a user scrolls through the carousel, the associated map pin
-        scales up to provide feedback. In terms of visual treatment, the active
-        map pin would have a white icon against a colored background for
-        contrast against inactive map pins. The point of each map pin would
-        denote the latitutde and longitude.
+        scales up to provide feedback. The other search buttons would trigger a
+        search with results based on the category.
       </p>
       <p id="margin-below-sentence" class="text-body">
-        The other search buttons would trigger a search with results based on
-        the category such as Daycares, Preschools, Activities etc. Below the
-        search shortcuts, I placed a segmented control allowing the user to
+        Below the search shortcuts, a segmented control would allow the user to
         toggle between featured and viewed places. The default state for the
-        featured places section would be local child care and kids activities
-        based on the user's device location. Some randomness and a quality
-        filter (description, reviews) was added so this section felt curated to
-        users. If the device location can't be detected then the user's home
-        location captured in onboarding would be used. If no places are found,
-        the radius would be expanded until the max limit is reached. If no
-        places are found after reaching the max radius, then the segmented
-        control would be hidden altogether.
-      </p>
-      <p id="margin-below-sentence" class="text-body">
-        Furthermore, the places that populate the carousel would be personalized
-        based on onboarding. If a user has no saved places, there would be a
-        prompt urging the user to create a search to discover local places.
-        Tapping on the prompt would take the user to the search tab.
+        featured places section would show local child care providers based on
+        the user's device location. Some randomness and a quality filter
+        (description, reviews) was added so this section felt curated. If the
+        device location couldn't be detected then the user's home location would
+        be used. If no places are found, the radius would be expanded until the
+        max limit is reached. If no places are found after reaching the max
+        radius, then the segmented control would be hidden altogether.
       </p>
     </div>
 
