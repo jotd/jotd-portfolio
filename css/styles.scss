@@ -267,7 +267,7 @@ a:active {
 // Body Text
 .text-body {
   @extend %base-3;
-  color: $COLOR1;
+  color: $COLOR3;
   font-size: 18px;
   line-height: $lead;
   margin-left: 16px;
@@ -276,7 +276,7 @@ a:active {
 // Survey Questions
 .text-body-secondary-1 {
   @extend %base-3;
-  color: $COLOR1;
+  color: $COLOR3;
   font-size: 18px;
   line-height: $lead;
   text-align: left;
