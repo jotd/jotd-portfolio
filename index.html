@@ -60,7 +60,7 @@
         // Do nothing if mobile device
       } else {
         setTimeout(
-          function() {
+          function () {
             var SEPARATION = 100,
               AMOUNTX = 50,
               AMOUNTY = 50;
@@ -96,11 +96,11 @@
               var material = new THREE.SpriteCanvasMaterial({
                 // change color of floating dots
                 color: 0x5dcfff,
-                program: function(context) {
+                program: function (context) {
                   context.beginPath();
                   context.arc(0, 0, 0.5, 0, PI2, true);
                   context.fill();
-                }
+                },
               });
               var i = 0;
               for (var ix = 0; ix < AMOUNTX; ix++) {
@@ -216,7 +216,7 @@
             >LinkedIn</a
           >
           <a
-            href="mailto:info@jotd.m?subject=Inquiry%20from%20website"
+            href="mailto:info@jotd.me?subject=Inquiry%20from%20website"
             class="footer-link"
             >Email</a
           >
