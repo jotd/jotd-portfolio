@@ -610,7 +610,7 @@ a {
 
 .tag {
   padding: 4px 16px 4px 16px;
-  background: #2a2c2e;
+  background: #ffffff;
   border-radius: 10px;
   margin-top: -12px;
   margin-left: -32px; }
@@ -621,7 +621,7 @@ a {
 .tag-text {
   font-size: 14px;
   line-height: 1.7em;
-  color: white; }
+  color: ffffff; }
 
 .table {
   display: -webkit-box;
