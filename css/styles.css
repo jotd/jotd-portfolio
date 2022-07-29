@@ -39,7 +39,8 @@ a:active {
   color: #ffffff; }
 
 .tagline-home, .text-subheader-3, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
-  font-family: "dinregular"; }
+  font-family: "dinregular";
+ color: #ffffff;}
 
 #margin-below-header {
   margin-bottom: 40px; }
