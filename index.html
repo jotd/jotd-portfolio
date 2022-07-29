@@ -89,13 +89,13 @@
 
               // change default bg color of canvas
               // source: https://stackoverflow.com/questions/16177056/changing-three-js-background-to-transparent-or-other-color
-              scene.background = new THREE.Color(0xf9f9f9);
+              scene.background = new THREE.Color(0x000000);
 
               particles = new Array();
               var PI2 = Math.PI * 2;
               var material = new THREE.SpriteCanvasMaterial({
                 // change color of floating dots
-                color: 0x5dcfff,
+                color: 0xffffff,
                 program: function (context) {
                   context.beginPath();
                   context.arc(0, 0, 0.5, 0, PI2, true);
