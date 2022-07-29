@@ -621,6 +621,7 @@ a {
   line-height: 1.7em;
   color: #000000; }
 
+/* 
 .table {
   display: -webkit-box;
   display: -webkit-flex;
@@ -643,4 +644,4 @@ a {
           justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap; } */
