@@ -36,7 +36,7 @@ a:active {
 
 .header-home, .header-work, .header-about, .header-case-study {
   font-family: "blender_probold";
-  color: #2a2c2e; }
+  color: #ffffff; }
 
 .tagline-home, .text-subheader-3, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
   font-family: "dinregular"; }
@@ -125,7 +125,7 @@ a:active {
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
-    color: #2a2c2e;
+    color: #ffffff;
     font-size: 56px;
     margin-left: 16px;
     margin-right: 16px;
@@ -204,7 +204,7 @@ a:active {
   text-align: left;
   margin-left: 16px; }
 
-.highlight {
+/* .highlight {
   background-image: -o-linear-gradient(330deg, #5dcfff, #5dcfff);
   background-image: linear-gradient(120deg, #5dcfff, #5dcfff);
   background-repeat: no-repeat;
@@ -226,7 +226,7 @@ a:active {
 
 ::-moz-selection {
   background: #2a2c2e;
-  color: #fff; }
+  color: #fff; } */
 
 @-webkit-keyframes popIn {
   0% {
@@ -431,7 +431,7 @@ a.menu-link {
           align-items: center;
   padding: 16px;
   font-size: 14px;
-  color: #74797e; }
+  color: #ffffff; }
 
 .footer-links {
   display: -webkit-box;
