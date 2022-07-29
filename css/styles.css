@@ -15,7 +15,7 @@ canvas {
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 
 body {
-  background-color: #f9f9f9 !important; }
+  background-color: #000000 !important; }
 
 img {
   width: 100%;
@@ -173,10 +173,10 @@ a:active {
   font-size: 24px;
   margin-bottom: 32px;
   margin-left: 16px;
-  color: #2a2c2e; }
+  color: #ffffff; }
 
 .text-subheader-1 {
-  color: #2a2c2e;
+  color: #ffffff;
   font-size: 24px;
   margin-top: 16px;
   margin-bottom: 12px;
@@ -184,21 +184,21 @@ a:active {
   font-variant: small-caps; }
 
 .text-body {
-  color: #74797e;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.7em;
   margin-left: 16px;
   margin-right: 16px; }
 
 .text-body-secondary-1 {
-  color: #74797e;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.7em;
   text-align: left;
   margin-left: 16px; }
 
 .text-body-secondary-2 {
-  color: #74797e;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.7em;
   text-align: left;
@@ -544,7 +544,7 @@ a {
 
 .title {
   font-family: "blender_probold";
-  color: #2a2c2e;
+  color: #ffffff;
   font-size: 32px;
   margin-top: -72px;
   margin-left: 64px;
@@ -583,7 +583,7 @@ a {
   position: relative;
   font-family: "dinregular";
   font-weight: 400;
-  color: #74797e;
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.7em;
   margin-left: -32px;
