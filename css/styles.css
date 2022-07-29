@@ -516,6 +516,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .work-description {
+    color: #ffffff
     position: absolute;
     left: 0%;
     top: 0%;
@@ -554,7 +555,7 @@ a {
 @media screen and (max-width: 767px) {
   .title {
     font-family: "blender_probold";
-    color: #000000;
+    color: #ffffff;
     font-size: 24px;
     margin-top: -64px;
     margin-left: 40px;
