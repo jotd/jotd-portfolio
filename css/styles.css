@@ -83,8 +83,8 @@ a:active {
   margin: 0 auto;
   background: #edeff1;
   border-radius: 24px;
-  margin-bottom: 64px;
-  margin-top: 32px; }
+  margin-bottom: 0px;
+  margin-top: 0px; }
 
 .content-hero-image {
   max-width: 950px;
