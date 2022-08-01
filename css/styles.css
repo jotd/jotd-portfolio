@@ -1,6 +1,3 @@
-/* canvas {
-  margin: 0 !important;
-  padding: 0 !important; } */
 
 @font-face {
   font-family: "blender_probold";
@@ -29,7 +26,7 @@ a:hover,
 a:visited,
 a:focus,
 a:active {
-  text-decoration: none !important; }
+  text-decoration: underline !important; }
 
 .hide-scroll {
   overflow: hidden; }
@@ -204,7 +201,7 @@ a:active {
   text-align: left;
   margin-left: 16px; }
 
-/* .highlight {
+.highlight {
   background-image: -o-linear-gradient(330deg, #5dcfff, #5dcfff);
   background-image: linear-gradient(120deg, #5dcfff, #5dcfff);
   background-repeat: no-repeat;
@@ -226,7 +223,7 @@ a:active {
 
 ::-moz-selection {
   background: #2a2c2e;
-  color: #fff; } */
+  color: #fff; }
 
 @-webkit-keyframes popIn {
   0% {
