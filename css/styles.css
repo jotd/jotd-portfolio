@@ -507,8 +507,8 @@ a {
   margin-left: 16px;
   margin-right: 16px;
   border-radius: 24px;
-  background-color: #ffffff; }
-  opacity: 10%;
+  background-color: #ffffff; 
+  opacity: 10%; }
 
 @media screen and (max-width: 767px) {
   .work-container {
