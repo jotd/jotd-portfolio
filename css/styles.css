@@ -455,7 +455,7 @@ a.menu-link {
 a {
   display: inline-block;
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .footer-block {
   display: -webkit-box;
@@ -533,7 +533,7 @@ a {
   height: 64px;
   margin-left: -32px;
   margin-top: -32px;
-  border-radius: 16px; }
+  border-radius: 12px; }
 
 @media screen and (max-width: 767px) {
   .work-logo {
