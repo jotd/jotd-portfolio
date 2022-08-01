@@ -35,6 +35,11 @@ a:active {
   font-family: "blender_probold";
   color: #ffffff; }
 
+
+.text-subheader-3 {
+  font-family: "DINPro-Bold";
+ color: #ffffff;}
+
 .tagline-home, .text-subheader-3, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
   font-family: "dinregular";
  color: #ffffff;}
