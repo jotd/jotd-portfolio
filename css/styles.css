@@ -507,7 +507,7 @@ a {
   margin-left: 16px;
   margin-right: 16px;
   border-radius: 24px;
-  background-color: #ffffff;
+  background-color: #191919;
  }
 
 @media screen and (max-width: 767px) {
@@ -518,7 +518,7 @@ a {
     border-radius: 24px;
     -webkit-animation: popIn ease 1.2s;
             animation: popIn ease 1.2s;
-    background-color: #ffffff;
+    background-color: #191919;
      } }
 
 
