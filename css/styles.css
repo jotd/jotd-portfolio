@@ -25,6 +25,10 @@ img {
 .slightly-rounded-corners {
   border-radius: 16px; }
 
+hr {
+  color: #ffffff;
+}
+
 a,
 a:hover,
 a:visited,
