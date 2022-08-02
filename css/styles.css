@@ -471,7 +471,7 @@ a.menu-link {
 a {
   display: inline-block;
   color: #ffffff;
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .footer-block {
   display: -webkit-box;
