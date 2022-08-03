@@ -652,11 +652,15 @@ a {
   margin-left: -32px; }
 
 .tag:hover {
-  opacity: 0.85; }
+  background-color: #000000; }
 
 .tag-text {
   font-size: 14px;
   line-height: 1.7em;
   color: #000000; }
+
+.tag-text:hover {
+  color: #ffffff;
+}
 /* -------------------------------------- */
 
