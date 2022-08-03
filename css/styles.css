@@ -44,7 +44,7 @@ a:active {
   font-family: "blender_probold";
   color: #ffffff; }
 
-.text-subheader-3 .tag-text {
+.text-subheader-3, .tag-text {
  font-family: "DINPro-Bold";
  color: #ffffff; }
 
