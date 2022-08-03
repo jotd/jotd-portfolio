@@ -1,18 +1,19 @@
 
-/* Font Face */
+/* Blender Bold */
 @font-face {
   font-family: "blender_probold";
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff"); }
 
+  /* DIN Bold */
 @font-face {
   font-family: "DINPro-Bold";
   src: url("/css/fonts/DIN-Bold.woff") format("woff"); }
 
+/* DIN Regular */
 @font-face {
   font-family: "dinregular";
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 /* ----------------- */
-
 
 
 body {
@@ -28,6 +29,7 @@ img {
 hr {
   color: #ffffff;
   opacity: 10%;
+  margin-top: 40px;
 }
 
 a,
