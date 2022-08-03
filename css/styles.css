@@ -26,6 +26,9 @@ img {
 .slightly-rounded-corners {
   border-radius: 16px; }
 
+.rounded-corners {
+  border-radius: 16px; }
+
 hr {
   color: #ffffff;
   opacity: 10%;
@@ -36,11 +39,10 @@ a:hover,
 a:visited,
 a:focus,
 a:active {
-  text-decoration: underline; }
+  text-decoration: none; }
 
 .hide-scroll {
   overflow: hidden; }
-
 
 
   /* Variables – Text Styles */
@@ -108,8 +110,6 @@ a:active {
   margin-bottom: 136px !important;
   background: #edeff1;
   border-radius: 24px; }
-.rounded-corners {
-  border-radius: 16px; }
 .content-gif {
   width: 80%;
   margin-left: 10%;
@@ -163,16 +163,12 @@ a:active {
   margin-right: 16px; }
 /* ---------------------- */
 
-.header-blogpost {
-
-}
 
 .header-about {
   font-size: 56px;
   margin-top: 120px;
   margin-left: 16px;
   position: relative; }
-
 .header-case-study {
   font-size: 48px;
   margin-bottom: 32px;
@@ -180,13 +176,11 @@ a:active {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 80px; }
-
 .text-subheader-3 {
   font-size: 24px;
   margin-bottom: 32px;
   margin-left: 16px;
   color: #ffffff; }
-
 .text-subheader-1 {
   color: #ffffff;
   font-size: 24px;
