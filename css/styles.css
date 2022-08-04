@@ -115,6 +115,9 @@ a:active {
   margin-left: 10%;
   background: #edeff1;
   border-radius: 24px; }
+
+
+
 /* Homepage – Header */
 .header-home {
   font-size: 104px;
@@ -138,7 +141,7 @@ a:active {
 
 /* Homepage – Tagline */
 .tagline-home {
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.3em;
   margin-left: 16px;
   margin-right: 16px;
@@ -181,6 +184,7 @@ a:active {
   margin-bottom: 32px;
   margin-left: 16px;
   color: #ffffff; }
+
 .text-subheader-1 {
   color: #ffffff;
   font-size: 24px;
@@ -211,7 +215,7 @@ a:active {
   margin-left: 16px; }
 
 
-@-webkit-keyframes popIn {
+/* @-webkit-keyframes popIn {
   0% {
     -webkit-transform: scale(0.8) translateY(100px);
             transform: scale(0.8) translateY(100px);
@@ -255,9 +259,9 @@ a:active {
   100% {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
-    opacity: 1; } }
+    opacity: 1; } } */
 
-@-webkit-keyframes fadeIn {
+/* @-webkit-keyframes fadeIn {
   0% {
     opacity: 0; }
   50% {
@@ -271,7 +275,7 @@ a:active {
   50% {
     opacity: 0.5; }
   100% {
-    opacity: 1; } }
+    opacity: 1; } } */
 
 .header {
   position: fixed;
@@ -417,7 +421,6 @@ a.menu-link {
   color: #ffffff; }
 
 .footer-links {
-  color: ##2797FE;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -610,7 +613,7 @@ a {
 /* -------------------------------------- */
 
 
-/* Case Study Project – Read More Button */
+/* Case Study Project – CTA */
 .tag {
   padding: 1px 8px 1px 8px;
   /* padding: 4px 16px 4px 16px; */
