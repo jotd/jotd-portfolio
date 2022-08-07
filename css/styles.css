@@ -673,7 +673,8 @@ a {
             flex: 1;
     font-family: "dinregular";
     font-weight: 400; 
-    color: #ffffff; }
+    color: #ffffff; 
+    margin-left: 16px;}
 
 
 .text-block-right {
@@ -687,4 +688,5 @@ a {
           justify-content: flex-end;
   font-family: "dinregular";
   font-weight: 400;
-  color: #ffffff; }
+  color: #ffffff; 
+  margin-left: 16px;}
