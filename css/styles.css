@@ -47,7 +47,7 @@ hr {
   text-decoration: none;
   background-color: white;
   border-radius: 10px;
-  padding: 2px;
+  padding: 12px;
 }
 .cta:hover {
   text-decoration: underline;
