@@ -61,6 +61,9 @@ hr {
 }
 .cta:hover {
   text-decoration: underline;
+  color: white;
+  background-color: black;
+  transition: ease;
 }
 
 a,
