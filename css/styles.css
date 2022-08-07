@@ -474,7 +474,8 @@ a {
           justify-content: flex-end;
   font-family: "dinregular";
   font-weight: 400;
-  color: #ffffff; }
+  color: #ffffff; 
+text-decoration: none;}
 /* 
 @media screen and (max-width: 767px) {
   .footer-block {
