@@ -34,6 +34,11 @@ hr {
   opacity: 10%;
 }
 
+bg {
+  background-color: #000000;
+  opacity: 10%;
+}
+
 a,
 a:hover,
 a:visited,
