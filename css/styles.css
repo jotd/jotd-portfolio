@@ -674,7 +674,7 @@ a {
     font-family: "dinregular";
     font-weight: 400; 
     color: #ffffff; 
-    margin-left: 16px;
+    padding-left: 16px;
   margin-bottom: 32px;}
 
 
@@ -690,4 +690,4 @@ a {
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
-  margin-left: 16px;}
+  padding-left: 16px;}
