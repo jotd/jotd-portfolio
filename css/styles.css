@@ -41,8 +41,8 @@ hr {
 }
 
 .dot {
-    height: 12px;
-    width: 12px;
+    height: 8px;
+    width: 8px;
     background-color: #fff;
     border-radius: 50%;
     color: #FFE000;
@@ -478,7 +478,6 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  flex: 1;
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
@@ -487,6 +486,17 @@ a {
   font-weight: 400;
   color: #ffffff; 
 text-decoration: none;}
+
+.nav-block { 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "dinregular";
+  font-weight: 400;
+  color: #ffffff; 
+  text-decoration: none;}
+}
 /* 
 @media screen and (max-width: 767px) {
   .footer-block {
