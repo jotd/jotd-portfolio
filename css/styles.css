@@ -656,6 +656,8 @@ a {
   color: #ffffff; 
   background-color: #191919;
   border-radius: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-bottom: 8px;
   height: 32px;
   padding-top:16px;
