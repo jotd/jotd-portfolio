@@ -45,9 +45,8 @@ hr {
     width: 12px;
     background-color: #fff;
     border-radius: 50%;
-    display: flex;
-    flex: 1;
     color: #FFE000;
+    margin-right: 16px;
   }
 
 
