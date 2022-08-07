@@ -46,7 +46,9 @@ hr {
   color: #4D95F7;
   text-decoration: none;
 }
-
+.cta:hover {
+  text-decoration: underline;
+}
 
 a,
 a:hover,
