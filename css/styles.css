@@ -40,6 +40,15 @@ hr {
   border-radius: 8px;
 }
 
+.dot {
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
 .cta {
   font-family: "dinregular";
   font-size: 14px;
