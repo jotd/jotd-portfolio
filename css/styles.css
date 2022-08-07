@@ -651,11 +651,12 @@ a {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: baseline;
   font-size: 14px;
   color: #ffffff; 
   background-color: #191919;
   border-radius: 8px;
+  margin-bottom: 32px;
 }
 
   .text-block-left {
@@ -690,4 +691,4 @@ a {
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
-  padding-left: 16px;}
+  padding-right: 16px;}
