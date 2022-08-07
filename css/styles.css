@@ -34,11 +34,18 @@ hr {
   opacity: 10%;
 }
 
-bg {
+.bg {
   background-color: #fff;
   opacity: 10%;
   border-radius: 8px;
 }
+
+.cta {
+  font-family: "DINPro-Bold";
+  font-size: 14px;
+  color: #4D95F7;
+}
+
 
 a,
 a:hover,
