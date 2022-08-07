@@ -41,8 +41,8 @@ hr {
 }
 
 .dot {
-    height: 24px;
-    width: 24px;
+    height: 12px;
+    width: 12px;
     background-color: #fff;
     border-radius: 50%;
     display: inline-block;
