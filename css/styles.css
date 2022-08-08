@@ -27,7 +27,7 @@ hr {
   border: 1 px solid;
 }
 
-.darkbg, .menu-link, .hr, .work-container, .tag{
+.darkbg, .menu-link, .hr, .work-container, .tag, .text-container {
   background-color: #141414;
 }
 .slightly-rounded-corners {
