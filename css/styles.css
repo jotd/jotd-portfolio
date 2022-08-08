@@ -60,7 +60,6 @@ hr {
   padding: 12px;
 }
 .cta:hover {
-  text-decoration: underline;
   color: white;
   background-color: black;
   transition: ease;
@@ -479,10 +478,7 @@ a {
 .footer-block {
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
+  display: -ms-flexbox;   
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: "dinregular";
