@@ -40,6 +40,23 @@ hr {
   border-radius: 8px;
 }
 
+/* Navigation //////////////////////////// */
+
+.availability-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+
+/* White Dot */
 .dot {
     height: 8px;
     width: 8px;
@@ -49,7 +66,7 @@ hr {
     margin-right: 16px;
   }
 
-
+/* Email CTA */
 .cta {
   font-family: "dinregular";
   font-size: 14px;
@@ -65,6 +82,8 @@ hr {
   background-color: black;
   transition: ease;
 }
+/* ///////////////////////////////////////// */
+
 
 a,
 a:hover,
