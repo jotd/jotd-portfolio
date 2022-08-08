@@ -80,9 +80,8 @@ img {
   padding: 12px;
 }
 .cta:hover {
-  font-family: "DINPro-Bold";
   color: white;
-  background-color: black;
+  background-color: #292C2E;
   transition: ease;
 }
 
