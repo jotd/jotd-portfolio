@@ -17,7 +17,8 @@
 
 /* Components */
 body {
-  background-color: #000000; }
+  background-color: #000000;
+  color: white; }
 
 img {
   width: 100%;
@@ -124,7 +125,7 @@ a:active {
 .text-subheader-3{
  font-family: "DINPro-Bold";
  color: #ffffff; }
- .tag-text, .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+ .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
  font-family: "dinregular";
  color: #ffffff;}
  .text-2 {
