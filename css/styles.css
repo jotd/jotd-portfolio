@@ -33,6 +33,8 @@ a {
   color: #ffffff;
   text-decoration: none; }
 
+
+
 /* Underlined Links + Hover Effect  */
 .underline { text-decoration: underline; }
 .underline:hover { text-decoration: none; transition: ease;}
@@ -360,7 +362,12 @@ a:active {
   background-color: #fff;
   opacity: 1;
   color: #2a2c2e;
-  text-decoration: none; }
+  text-decoration: none; 
+  }
+  .menu-link.w--current:hover {
+    background-color: #fff;
+    transition: ease;
+  }
 
 .menu-link {
   display: -webkit-box;
