@@ -33,7 +33,7 @@ a {
   text-decoration: none; }
 
 /* Styles */
-.menu, hr, .work-container, .tag, .text-container {
+.card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container {
   background-color: #141414;
 }
 .slightly-rounded-corners {
