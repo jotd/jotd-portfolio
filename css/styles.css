@@ -632,6 +632,8 @@ text-decoration: none;}
   background-color: #000000; }
 
 .tag-text {
+  font-family: "dinregular";
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.7em;
    }
