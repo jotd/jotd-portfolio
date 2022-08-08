@@ -84,6 +84,16 @@ img {
   background-color: black;
   transition: ease;
 }
+
+.nav-block { 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "dinregular";
+  font-weight: 400;
+  color: #ffffff; 
+  text-decoration: none;}
 /* ///////////////////////////////////////// */
 
 
@@ -415,16 +425,8 @@ a {
   color: #ffffff; 
 text-decoration: none;}
 
-.nav-block { 
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "dinregular";
-  font-weight: 400;
-  color: #ffffff; 
-  text-decoration: none;}
-}
+
+
 /* 
 @media screen and (max-width: 767px) {
   .footer-block {
