@@ -122,7 +122,7 @@ a:active {
 .text-subheader-3{
  font-family: "DINPro-Bold";
  color: #ffffff; }
- .tag-text, .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+ .colophon, .tag-text, .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
  font-family: "dinregular";
  color: #ffffff;}
 
@@ -269,6 +269,14 @@ a:active {
   line-height: 1.7em;
   margin-left: 16px;
   margin-right: 16px; }
+
+.colophon {
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #fffef2;
+}
 
 .text-body-secondary-1 {
   color: #ffffff;
