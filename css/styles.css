@@ -24,7 +24,7 @@ img {
   height: auto; }
 
   hr {
-    color: #ffffff;
+    border: 1 px solid white;
     opacity: 10%;
   }
   
