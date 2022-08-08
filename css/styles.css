@@ -624,7 +624,9 @@ text-decoration: none;}
   /* padding: 4px 16px 4px 16px; */
   border-radius: 10px;
   margin-top: -12px;
-  margin-left: -32px; }
+  margin-left: -32px; 
+  background-color: #0D0D0D;
+}
 
 .tag:hover {
   background-color: #000000; }
@@ -632,7 +634,7 @@ text-decoration: none;}
 .tag-text {
   font-size: 14px;
   line-height: 1.7em;
-  color: #000000; }
+   }
 
 .tag-text:hover {
   color: #ffffff;
