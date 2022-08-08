@@ -311,7 +311,7 @@ a:active {
           align-items: center; }
 
 @media screen and (max-width: 500px) {
-  .nav-block {
+  .dot, .nav-block {
     display:none;
   }}
 
