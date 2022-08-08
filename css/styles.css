@@ -90,11 +90,14 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
   text-decoration: none;
-margin-right: 16px;}
+margin-right: 16px;
+}
 /* ///////////////////////////////////////// */
 
 
