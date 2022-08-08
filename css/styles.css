@@ -33,6 +33,10 @@ a {
   color: #ffffff;
   text-decoration: none; }
 
+/* Underlined Links + Hover Effect  */
+.underline { text-decoration: underline; }
+.underline:hover { text-decoration: none; }
+
 /* Styles */
 .card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container {
   background-color: #141414;
