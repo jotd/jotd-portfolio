@@ -83,7 +83,10 @@ img {
 }
 .cta:hover {
   color: white;
-  background-color: #0D0D0D;
+  /* white with 5% opacity  */
+  /* background-color: #0D0D0D; */
+  /* white with 10% opacity  */
+  background-color: #141414;
   transition: ease;
 }
 
