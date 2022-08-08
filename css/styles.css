@@ -23,12 +23,13 @@ img {
   width: 100%;
   height: auto; }
 
-  hr {
-    border: 1 px solid white;
-    opacity: 10%;
-  }
-  
+hr {
+  border: 1 px solid;
+}
 
+.darkbg, .menu-link, .menu-link:hover, .hr, .work-container, .tag, .  {
+  background-color: #141414;
+}
 .slightly-rounded-corners {
   border-radius: 16px; }
 
