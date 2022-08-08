@@ -15,7 +15,7 @@
 /* ----------------- */
 
 
-/* Style Defaults */
+/* Components */
 body {
   background-color: #000000; }
 
@@ -24,9 +24,10 @@ img {
   height: auto; }
 
 hr {
-  border: 1 px solid;
+  border: 1px solid;
 }
 
+/* Styles */
 .darkbg, .menu-link, hr, .work-container, .tag, .text-container {
   background-color: #141414;
 }
@@ -36,11 +37,6 @@ hr {
 .rounded-corners {
   border-radius: 16px; }
 
-.bg {
-  background-color: #fff;
-  opacity: 10%;
-  border-radius: 8px;
-}
 
 /* Navigation //////////////////////////// */
 
