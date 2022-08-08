@@ -28,7 +28,7 @@ hr {
 }
 
 /* Styles */
-.darkbg, .menu-link, hr, .work-container, .tag, .text-container {
+.darkbg, hr, .work-container, .tag, .text-container {
   background-color: #141414;
 }
 .slightly-rounded-corners {
