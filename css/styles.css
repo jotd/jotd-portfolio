@@ -119,7 +119,7 @@ a:active {
 .text-subheader-3{
  font-family: "DINPro-Bold";
  color: #ffffff; }
-.tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+ .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
  font-family: "dinregular";
  color: #ffffff;}
 
@@ -328,7 +328,7 @@ a:active {
 .face.w--current {
   width: 72px;
   height: 72px; }
-
+  
 
 .menu-link.w--current {
   border-radius: 8px;
