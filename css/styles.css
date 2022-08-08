@@ -116,7 +116,7 @@ a:active {
 .header-home, .header-work, .header-about, .header-case-study {
   font-family: "blender_probold";
   color: #ffffff; }
-.text-subheader-3, .tag-text, .menu-link, .menu-link.w--current{
+.text-subheader-3{
  font-family: "DINPro-Bold";
  color: #ffffff; }
 .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
