@@ -60,6 +60,7 @@ hr {
   padding: 12px;
 }
 .cta:hover {
+  font-family: "DINPro-Bold";
   color: white;
   background-color: black;
   transition: ease;
