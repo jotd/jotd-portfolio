@@ -393,7 +393,7 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
-  background-color: #2a2c2e; }
+  }
 
 a.menu-link {
   color: white; }
