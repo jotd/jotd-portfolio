@@ -87,7 +87,6 @@ a {
   font-family: "dinregular";
   font-size: 14px;
   color: black;
-  text-decoration: none;
   background-color: white;
   border-radius: 10px;
   padding: 12px;
@@ -111,7 +110,6 @@ a {
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
-  text-decoration: none;
   margin-right: 16px;
 }
 /* ///////////////////////////////////////// */
@@ -380,7 +378,6 @@ a:active {
   background-color: #0D0D0D;
   opacity: 1;
   color: white;
-  text-decoration: none; 
   }
  
 
@@ -402,7 +399,7 @@ a:active {
   /* font-family: "dinregular"; */
   font-size: 14px;
   font-weight: 600;
-  text-decoration: none; }
+ }
 
 .menu {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -476,7 +473,7 @@ a.menu-link {
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
-text-decoration: none;}
+}
 
 
 
