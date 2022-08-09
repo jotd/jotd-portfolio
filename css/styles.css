@@ -639,7 +639,8 @@ a.menu-link {
 }
 
 .tag:hover {
-  background-color: #000000; }
+  color: black;
+  background-color: white; }
 
 .tag-text {
   font-family: "dinregular";
