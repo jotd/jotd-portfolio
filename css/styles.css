@@ -134,6 +134,8 @@ a:active {
  .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
  font-family: "dinregular";
  color: #ffffff;}
+
+ /* Text / Grey 14px */
  .text-2 {
   font-family: "dinregular";
   color: #ffffff;
