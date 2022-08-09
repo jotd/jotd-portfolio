@@ -673,7 +673,6 @@ a.menu-link {
   height: 32px;
   justify-content: center;
   align-items: center;
-
 }
 
 .text-container-2 {
@@ -690,11 +689,13 @@ a.menu-link {
   border-radius: 8px;
   margin-left: 16px;
   margin-right: 16px;
+  margin-top: 32px;
   margin-bottom: 8px;
   height: 32px;
   justify-content: center;
   align-items: center;
-
+  max-width: 375px;
+  margin: 0 auto; }
 }
   .text-block-left {
     display: -webkit-box;
