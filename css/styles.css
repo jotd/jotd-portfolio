@@ -343,10 +343,11 @@ a:active {
           align-items: center; }
 
 @media screen and (max-width: 500px) {
-  .face, .dot, .nav-block {
+  .dot, .nav-block {
     display:none;
   }}
 
+/* Memoji */
 .face {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
   background-size: cover; }
@@ -359,6 +360,7 @@ a:active {
   width: 72px;
   height: 72px; }
   
+/* ///////////////////////  */
 
 .menu-link.w--current {
   border-radius: 8px;
@@ -367,10 +369,7 @@ a:active {
   color: white;
   text-decoration: none; 
   }
-  .menu-link:hover {
-    background-color: #0D0D0D;
-    transition: ease;
-  }
+ 
 
 .menu-link {
   display: -webkit-box;
