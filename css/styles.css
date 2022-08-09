@@ -364,11 +364,11 @@ a:active {
   border-radius: 8px;
   background-color: #0D0D0D;
   opacity: 1;
-  color: #2a2c2e;
+  color: white;
   text-decoration: none; 
   }
-  .menu-link.w--current:hover {
-    background-color: #fff;
+  .menu-link:hover {
+    background-color: #0D0D0D;
     transition: ease;
   }
 
