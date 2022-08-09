@@ -639,7 +639,6 @@ a.menu-link {
 }
 
 .tag:hover {
-  color: black;
   background-color: white; }
 
 .tag-text {
@@ -650,7 +649,7 @@ a.menu-link {
    }
 
 .tag-text:hover {
-  color: #ffffff;
+  color: black;
 }
 /* -------------------------------------- */
 
