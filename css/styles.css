@@ -489,6 +489,9 @@ text-decoration: none;}
   margin-right: 16px;
   border-radius: 24px;
  }
+ @media screen and (max-width: 500px) {
+  .card-gemini { height: 300px; }
+ }
 
  .card-square {
   position: relative;
@@ -498,6 +501,11 @@ text-decoration: none;}
   margin-right: 16px;
   border-radius: 24px;
  }
+
+ @media screen and (max-width: 500px) {
+  .card-square { height: 300px; }
+ }
+
 
 
 @media screen and (max-width: 767px) {
