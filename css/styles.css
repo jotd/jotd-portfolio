@@ -151,6 +151,10 @@ a:active {
 
 
  /* Variables – Spacing */
+ #spacer-sm {
+  margin-bottom: 48px;
+ }
+
 #margin-below-header {
   margin-bottom: 40px; }
 #margin-below-sentence {
@@ -180,7 +184,8 @@ a:active {
   margin: 0 auto; }
 .content-about {
   max-width: 600px;
-  margin: 0 auto; }
+  margin: 0 auto; 
+  margin-bottom: 64px;}
 .content-headshot {
   max-width: 700px;
   margin: 0 auto;
