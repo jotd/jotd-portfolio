@@ -1,9 +1,12 @@
+
+
+/* Typography + Colors ///////////////////////////////////////////////////////////// */
 /* Blender Bold */
 @font-face {
   font-family: "blender_probold";
   src: url("/css/fonts/blender_pro_bold-webfont.woff") format("woff"); }
 
-  /* DIN Bold */
+/* DIN Bold */
 @font-face {
   font-family: "DINPro-Bold";
   src: url("/css/fonts/DIN-Bold.woff") format("woff"); }
@@ -12,50 +15,66 @@
 @font-face {
   font-family: "dinregular";
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
-/* ----------------- */
+
+/* Greys */
+.card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container {
+  background-color: #141414;
+}
+/* Text Styles */
+.header-home, .header-work, .header-about, .header-case-study {
+  font-family: "blender_probold";
+  color: #ffffff; }
+  .text-subheader-3{
+  font-family: "DINPro-Bold";
+  color: #ffffff; }
+  .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+  font-family: "dinregular";
+  color: #ffffff;}
+
+/* Text / Grey 14px */
+.text-2 {
+  font-family: "dinregular";
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+/* ///////////////////////////////////////////////////////////////////// */
 
 
-/* Components */
+/* Default Styles ////////////////////////////////////////////////////////////*/
+/* Black Bg + White Text */
 body {
   background-color: #000000;
   color: white; }
-
+/* Images occupy full available space */
 img {
   width: 100%;
   height: auto; }
-
+/* Horizontal Line  */
 hr {
-  border: 1px solid #141414;
+  border: 1px;
+  border-style: solid;
 }
-
+/* Links */
 a {
   display: inline-block;
   color: #ffffff;
   text-decoration: none; }
-
-
-
-/* Underlined Links  */
+/* Links with underline */
 .underline { 
   text-decoration: underline; }
-
+/* Links without underline on hover */
 .underline:hover { 
   text-decoration: none; 
   transition: ease; }
-
-/* Styles */
-.card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container {
-  background-color: #141414;
-}
-.slightly-rounded-corners {
-  border-radius: 16px; }
-
-.rounded-corners {
-  border-radius: 16px; }
+.hide-scroll {
+  overflow: hidden; }
+/* ///////////////////////////////////////////////////////////////////// */
 
 
-/* Navigation //////////////////////////// */
-
+/* Navigation ///////////////////////////////////////////////////////////////////// */
 .availability-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -71,7 +90,6 @@ a {
           flex: 1; 
   align-items: center;
   margin-right: 16px; }
-
 /* White Dot */
 .dot {
     height: 8px;
@@ -81,7 +99,6 @@ a {
     background-color: #00D54B;
     margin-right: 16px;
   }
-
 /* Email CTA */
 .cta {
   font-family: "dinregular";
@@ -101,7 +118,6 @@ a {
   background-color: #141414;
   transition: ease;
 }
-
 .nav-block { 
   display: -webkit-box;
   display: -webkit-flex;
@@ -112,46 +128,9 @@ a {
   color: #ffffff; 
   margin-right: 16px;
 }
-/* ///////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////// */
 
 
-/* a,
-a:hover,
-a:visited,
-a:focus,
-a:active {
-  text-decoration: none; } */
-
-.hide-scroll {
-  overflow: hidden; }
-
-
-  /* Variables – Text Styles */
-.header-home, .header-work, .header-about, .header-case-study {
-  font-family: "blender_probold";
-  color: #ffffff; }
-.text-subheader-3{
- font-family: "DINPro-Bold";
- color: #ffffff; }
- .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
- font-family: "dinregular";
- color: #ffffff;}
-
- /* Text / Grey 14px */
- .text-2 {
-  font-family: "dinregular";
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.7em;
-  margin-left: 16px;
-  margin-right: 16px;
- }
-
-
- /* Variables – Spacing */
- #spacer-sm {
-  margin-bottom: 48px;
- }
 
 #margin-below-header {
   margin-bottom: 40px; }
@@ -652,8 +631,7 @@ a.menu-link {
 
 /* Case Study Project – CTA */
 .tag {
-  padding: 1px 8px 1px 8px;
-  /* padding: 4px 16px 4px 16px; */
+  padding: 8px 16px 8px 16px;
   border-radius: 10px;
   margin-top: -12px;
   margin-left: -32px; 
