@@ -17,7 +17,7 @@
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 
 /* Greys */
-.card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container .text-container-2 {
+.card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container {
   background-color: #141414;
 }
 /* Text Styles */
@@ -695,7 +695,7 @@ a.menu-link {
   justify-content: center;
   align-items: center;
   max-width: 375px;
-  margin: 0 auto; }
+  margin: 0 auto; 
 }
   .text-block-left {
     display: -webkit-box;
