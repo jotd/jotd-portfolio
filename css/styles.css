@@ -718,7 +718,7 @@ a.menu-link {
   justify-content: center;
   align-items: center;
   max-width: 250px;
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
   .text-block-left {
     display: -webkit-box;
