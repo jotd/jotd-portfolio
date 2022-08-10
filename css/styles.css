@@ -74,7 +74,7 @@
 
 /* Colors /////////////////////////////////////////////////////////////////// */
 /* Light Grey  */
-.cta:hover, .card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
+.card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
   background-color: #141414;
 }
 /* Dark Grey  */
@@ -169,8 +169,10 @@ a {
 .cta {
   font-family: "dinregular";
   font-size: 14px;
-  color: black;
-  background-color: white;
+  /* color: black; */
+  /* background-color: white; */
+  color: #3478F6;
+  background-color: #081225;
   border-radius: 10px;
   padding: 8px;
   justify-content: center;
@@ -323,7 +325,7 @@ a {
   margin-bottom: -150px;
   position: relative; 
   color: #ffffff;
-  max-width: 430px;}
+  max-width: 500px;}
 .header-work {
   max-height: 400px;
   max-width: 600px;
