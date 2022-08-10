@@ -195,7 +195,7 @@ a {
 
 
 
-/* Homepage – Header */
+
 .header-home {
   font-size: 80px;
   margin-top: 148px;
@@ -312,7 +312,7 @@ a {
         width: 72px;
         height: 72px; }
 
-
+/* //////////////////////////////////////////// */
 
 /* Text Styles  */
 .tagline-home {
@@ -385,16 +385,13 @@ a {
   text-align: left;
   margin-left: 16px; }
 
-
-
+/* Navigation */
 .menu-link.w--current {
   border-radius: 8px;
   background-color: #0D0D0D;
   opacity: 1;
   color: white;
   }
- 
-
 .menu-link {
   display: -webkit-box;
   display: -webkit-flex;
@@ -414,11 +411,9 @@ a {
   font-size: 14px;
   font-weight: 600;
  }
-
 .menu {
   -webkit-backdrop-filter: saturate(180%) blur(20px);
           backdrop-filter: saturate(180%) blur(20px); }
-
 .menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -432,17 +427,14 @@ a {
           align-items: center;
   border-radius: 10px;
   }
-
 a.menu-link {
   color: white; }
-
 .footer-home {
   position: absolute;
   width: auto;
   bottom: 16px;
   right: 16px;
   left: 16px; }
-
 .footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -456,7 +448,6 @@ a.menu-link {
   font-size: 14px;
   color: #ffffff;
   margin-top: 20%; }
-
 .footer-links {
   display: -webkit-box;
   display: -webkit-flex;
@@ -472,12 +463,8 @@ a.menu-link {
           flex: 1;
   font-family: "dinregular";
   font-weight: 400; }
-
 .footer-link {
   margin-right: 16px; }
-
-
-
 .footer-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -488,14 +475,10 @@ a.menu-link {
   font-weight: 400;
   color: #ffffff; 
 }
-
-
-
 /* 
 @media screen and (max-width: 767px) {
   .footer-block {
     margin-top: 8px; } } */
-
 @media screen and (max-width: 500px) {
   .footer.desktop {
     -webkit-box-orient: vertical;
@@ -503,8 +486,10 @@ a.menu-link {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; } }
+/* ///////////////////////////////////////////////////// */
 
-/* Case Study Project – Card Bg */
+
+/* Project Cards /////////////////////////////////////  */
 .card-gemini {
   position: relative;
   height: 280px;
@@ -516,7 +501,6 @@ a.menu-link {
  @media screen and (max-width: 500px) {
   .card-gemini { height: 300px; }
  }
-
  .card-square {
   position: relative;
   height: 280px;
@@ -525,13 +509,9 @@ a.menu-link {
   margin-right: 16px;
   border-radius: 24px;
  }
-
  @media screen and (max-width: 500px) {
   .card-square { height: 300px; }
  }
-
-
-
 @media screen and (max-width: 767px) {
   .work-container {
     position: relative;
@@ -541,9 +521,6 @@ a.menu-link {
     -webkit-animation: popIn ease 1.2s;
             animation: popIn ease 1.2s;
      } }
-
-
-/* Case Study Project – Left Align Text Inside Cards */
 .work-description {
   position: absolute;
   left: 0%;
@@ -570,16 +547,12 @@ a.menu-link {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
-
-
-/* Case Study Project – Logo  */
 .work-logo {
   width: 64px;
   height: 64px;
   margin-left: -32px;
   margin-top: -32px;
   border-radius: 12px; }
-
 @media screen and (max-width: 767px) {
   .work-logo {
     width: 56px;
@@ -587,10 +560,6 @@ a.menu-link {
     margin-left: -32px;
     margin-top: -32px;
     border-radius: 16px; } }
-/* -------------------------------------- */
-
-
-/* Case Study Project – Title  */
 .title {
   font-family: "blender_probold";
   color: #ffffff;
@@ -599,8 +568,6 @@ a.menu-link {
   margin-left: 64px;
   margin-bottom: -12px;
   width: 100%; }
-
-
 @media screen and (max-width: 767px) {
   .title {
     font-family: "blender_probold";
@@ -610,10 +577,6 @@ a.menu-link {
     margin-left: 40px;
     margin-bottom: -12px;
     width: 100%; } }
-/* -------------------------------------- */
-
-
-/* Case Study Project – Metadata  */
 .work-metadata {
   font-family: "dinregular";
   font-weight: 400;
@@ -621,7 +584,6 @@ a.menu-link {
   font-size: 14px;
   margin-left: 64px;
   width: 100%; }
-
 @media screen and (max-width: 767px) {
   .work-metadata {
     font-family: "dinregular";
@@ -631,10 +593,6 @@ a.menu-link {
     margin-left: 40px;
     margin-bottom: -32px;
     width: 100%; } }
-/* -------------------------------------- */
-
-
-/* Case Study Project – Description */
 .blurb {
   position: relative;
   font-family: "dinregular";
@@ -647,7 +605,6 @@ a.menu-link {
   margin-bottom: 32px;
   width: 100%;
   margin-right: 5%; }
-
 @media screen and (max-width: 767px) {
   .blurb {
     position: relative;
@@ -661,17 +618,12 @@ a.menu-link {
     margin-bottom: 32px;
     width: 100%;
     margin-right: 5%; } }
-/* -------------------------------------- */
-
-
-/* Case Study Project – CTA */
 .tag {
   padding: 8px 16px 8px 16px;
   border-radius: 10px;
   margin-top: -12px;
   margin-left: -32px; 
 }
-
 .tag:hover {
   background-color: white;
   color: black; }
@@ -680,12 +632,9 @@ a.menu-link {
   font-size: 14px;
   line-height: 1.7em;
    }
-
-
 /* -------------------------------------- */
 
-/* Table Row */
-
+/* Table Row /////////////////////////////// */
 .text-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -705,7 +654,6 @@ a.menu-link {
   justify-content: center;
   align-items: center;
 }
-
 .text-container-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -744,8 +692,6 @@ a.menu-link {
     font-weight: 400; 
     color: #ffffff; 
     padding-left: 16px;}
-
-
 .text-block-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -759,4 +705,4 @@ a.menu-link {
   font-weight: 400;
   color: #ffffff; 
   padding-right: 16px;}
-
+/* ////////////////////////////////////// */
