@@ -719,7 +719,7 @@ a.menu-link {
   height: 32px;
   justify-content: center;
   align-items: center;
-  max-width: 375px;
+  max-width: 250px;
 }
   .text-block-left {
     display: -webkit-box;
