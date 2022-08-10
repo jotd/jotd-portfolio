@@ -17,7 +17,7 @@
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 
 /* Light Grey  */
-.cta:hover, .card-gemini, .card-square, .menu, hr, .work-container, .tag, .text-container, .text-container-2 {
+.cta:hover, .card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
   background-color: #141414;
 }
 /* Dark Grey  */
@@ -29,12 +29,17 @@
 .header-home, .header-work, .header-about, .header-case-study {
   font-family: "blender_probold";
   color: #ffffff; }
+
   .text-subheader-3{
   font-family: "DINPro-Bold";
   color: #ffffff; }
-  .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2 {
+
+  .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
   font-family: "dinregular";
   color: #ffffff;}
+
+
+
 
 /* Text / Grey 14px */
 .text-2 {
@@ -636,22 +641,18 @@ a.menu-link {
   border-radius: 10px;
   margin-top: -12px;
   margin-left: -32px; 
-  background-color: #0D0D0D;
 }
 
 .tag:hover {
-  background-color: white; }
+  background-color: white;
+  color: black; }
 
 .tag-text {
-  font-family: "dinregular";
-  color: #ffffff;
   font-size: 14px;
   line-height: 1.7em;
    }
 
-.tag-text:hover {
-  color: black;
-}
+
 /* -------------------------------------- */
 
 /* Table Row */
