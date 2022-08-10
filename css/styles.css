@@ -322,7 +322,8 @@ a {
   margin-right: 16px;
   margin-bottom: -150px;
   position: relative; 
-  color: #ffffff;}
+  color: #ffffff;
+  max-width: 350px;}
 .header-work {
   max-height: 400px;
   max-width: 600px;
