@@ -1,6 +1,16 @@
 
 
-/* Typography + Colors ///////////////////////////////////////////////////////////// */
+/* Spacing ///////////////////////////////////////////////////////////// */
+#margin-below-header {
+  margin-bottom: 40px; }
+#margin-below-sentence {
+  margin-bottom: 40px; }
+#margin-below-section {
+  margin-bottom: 96px; }
+#margin-below-results {
+  margin-bottom: 136px !important; }
+
+/* Typography ///////////////////////////////////////////////////////////// */
 /* Blender Bold */
 @font-face {
   font-family: "blender_probold";
@@ -15,7 +25,10 @@
 @font-face {
   font-family: "dinregular";
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
+/* ///////////////////////////////////////////////////////////////////// */
 
+
+/* Colors /////////////////////////////////////////////////////////////////// */
 /* Light Grey  */
 .cta:hover, .card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
   background-color: #141414;
@@ -24,40 +37,41 @@
 .menu-link.w--current, .tag, .text-container, .text-container-2 {
   background-color: #0D0D0D;
 }
+/* ///////////////////////////////////////////////////////////////////// */
 
-/* Text Styles */
+
+/* Text Styles ///////////////////////////////////////////////////////////////////// */
 .header-home, .header-work, .header-about, .header-case-study {
   font-family: "blender_probold";
   color: #ffffff; }
 
-  .text-subheader-3{
-  font-family: "DINPro-Bold";
-  color: #ffffff; }
+.text-subheader-3{
+font-family: "DINPro-Bold";
+color: #ffffff; }
 
-  .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
-  font-family: "dinregular";
-  color: #ffffff;}
-
-
-
+.menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, .text-body-secondary-1, .text-body-secondary-2, .tag-text {
+font-family: "dinregular";
+color: #ffffff;}
 
 /* Text / Grey 14px */
 .text-2 {
-  font-family: "dinregular";
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 1.7em;
-  margin-left: 16px;
-  margin-right: 16px;
+font-family: "dinregular";
+color: #ffffff;
+font-size: 14px;
+line-height: 1.7em;
+margin-left: 16px;
+margin-right: 16px;
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
 
-/* Default Styles ////////////////////////////////////////////////////////////*/
+/* System Components ////////////////////////////////////////////////////////////*/
 /* Black Bg + White Text */
 body {
   background-color: #000000;
   color: white; }
+.hide-scroll {
+  overflow: hidden; }
 /* Images occupy full available space */
 img {
   width: 100%;
@@ -79,8 +93,6 @@ a {
 .underline:hover { 
   text-decoration: none; 
   transition: ease; }
-.hide-scroll {
-  overflow: hidden; }
 /* ///////////////////////////////////////////////////////////////////// */
 
 
@@ -138,26 +150,8 @@ a {
 
 
 
-#margin-below-header {
-  margin-bottom: 40px; }
-#margin-below-sentence {
-  margin-bottom: 40px; }
-#margin-below-section {
-  margin-bottom: 96px; }
-#margin-below-results {
-  margin-bottom: 136px !important; }
 
-  /* Card Animation */
-.offset-card-1 {
-  -webkit-animation: popIn ease 1.2s 0.1s;
-          animation: popIn ease 1.2s 0.1s; }
-.offset-card-2 {
-  -webkit-animation: popIn ease 1.2s 0.2s;
-          animation: popIn ease 1.2s 0.2s; }
-.offset-card-3 {
-  -webkit-animation: popIn ease 1.2s 0.3s;
-          animation: popIn ease 1.2s 0.3s; }
-/* ///////////////////////////////////////////// */
+
 
 .content-home {
   max-width: 570px;
