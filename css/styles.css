@@ -316,7 +316,7 @@ a {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
   position: relative; 
   color: #ffffff;}
 .header-work {
@@ -720,6 +720,7 @@ a.menu-link {
   justify-content: center;
   align-items: center;
   max-width: 250px;
+  margin-bottom: -300px;
 }
   .text-block-left {
     display: -webkit-box;
