@@ -78,7 +78,7 @@
   background-color: #141414;
 }
 /* Dark Grey  */
-.menu-link.w--current, .tag, .text-container, .text-container-2 {
+a.menu-link, .menu-link.w--current, .tag, .text-container, .text-container-2 {
   background-color: #0D0D0D;
 }
 /* ///////////////////////////////////////////////////////////////////// */
