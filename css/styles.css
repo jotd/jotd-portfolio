@@ -95,12 +95,12 @@
   background-color: #0D0D0D;
 }
 ::selection {
-  background: black;
-  color: white; }
+  color: black;
+  background-color: white; }
 
 ::-moz-selection {
-  background: black;
-  color: white;}
+  color: black;
+  background-color: white;}
 /* ///////////////////////////////////////////////////////////////////// */
 
 
