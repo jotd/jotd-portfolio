@@ -156,7 +156,8 @@ a {
       -ms-flex: 1;
           flex: 1; 
   align-items: center;
-  margin-right: 16px; }
+  margin-right: 16px; 
+  margin-left: 24px;}
 /* White Dot */
 .dot {
     height: 8px;
