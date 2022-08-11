@@ -10,6 +10,9 @@
 .content-home {
   max-width: 570px;
   margin: 0 auto; }
+.content-home-2 {
+  display: flex;
+}
 .content-body {
   max-width: 700px;
   margin: 0 auto; }
