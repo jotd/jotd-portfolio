@@ -82,7 +82,7 @@
 
 /* Colors /////////////////////////////////////////////////////////////////// */
 /* Light Grey  */ 
-.card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
+.card-gemini, .card-square, .menu, .work-container, .text-container, .text-container-2 {
   background-color: #191919; 
 }
 
@@ -141,8 +141,7 @@ img {
   height: auto;
 }
 hr {
-  border: 1px;
-  border-style: solid;
+  border: 1px solid #141414;
 }
 /* Links */
 a {
