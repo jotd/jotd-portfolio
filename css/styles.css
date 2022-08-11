@@ -334,7 +334,8 @@ a {
     margin-bottom: -150px;
     position: relative;
     color: #ffffff;
-    max-width: 500px;}
+    max-width: 500px;
+    z-index: 10;}
 .header-work {
   max-height: 400px;
   max-width: 600px;
