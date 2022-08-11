@@ -215,17 +215,13 @@ a {
 .header-home {
   font-size: 88px;
   margin-top: 148px;
-  margin-bottom: 16px;
-   /* margin-left: 16px; */
-    /* margin-right: 16px; */}
+  margin-bottom: 16px;}
 
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
     color: #ffffff;
     font-size: 56px;
-    margin-left: 16px;
-    margin-right: 16px;
     margin-top: 120px;
     margin-bottom: 24px;
     position: relative; } }
