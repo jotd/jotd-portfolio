@@ -168,6 +168,7 @@ img {
   height: auto;
 }
 hr {
+  margin-top: 40px;
   border: 1px solid #141414;
 }
 /* Links */
