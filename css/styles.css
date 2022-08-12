@@ -1,3 +1,11 @@
+
+.big-emoji {
+  font-size: 14px;
+  background-color: #141414;
+  border-radius: 8px;
+  padding: 8px;
+}
+
 /* Spacing ///////////////////////////////////////////////////////////// */
 #margin-below-header {
   margin-bottom: 40px; }
@@ -81,10 +89,8 @@
 
 
 /* Colors /////////////////////////////////////////////////////////////////// */
-/* Light Grey  */ 
-.card-gemini, .card-square, .menu, .work-container, .text-container, .text-container-2 {
-  background-color: #191919; 
-}
+/* Light Grey only used by dots animation on homepage #191919 */ 
+/*  */
 
 /* Medium Grey  */
 .card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
