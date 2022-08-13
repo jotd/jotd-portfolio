@@ -56,9 +56,9 @@
   }
   .logos {
   max-width: 250px;
-  border-radius: 20px;
-  background-color: #141414;
-  padding: 16px;
+  /* border-radius: 20px; */
+  /* background-color: #141414; */
+  /* padding: 16px; */
   }
 .content-hero-image {
   max-width: 950px;
