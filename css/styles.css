@@ -25,6 +25,8 @@
   align-content: center;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 @media screen and (max-width: 500px) {
   .content-home-2 {
