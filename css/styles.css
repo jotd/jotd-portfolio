@@ -248,7 +248,10 @@ a {
 .cta-2 {
   font-family: "dinregular";
   font-size: 14px;
+  /* color: black; */
+  /* background-color: white; */
   color: white;
+  background-color: #081225;
   border-radius: 16px;
   padding: 8px;
   justify-content: center;
