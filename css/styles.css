@@ -108,7 +108,7 @@
 /*  */
 
 /* Medium Grey  */
-.card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
+.cta-2, .card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
   background-color: #141414;
 }
 /* Dark Grey  */
@@ -243,7 +243,17 @@ a {
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
-
+.cta-2 {
+  font-family: "dinregular";
+  font-size: 14px;
+  color: white;
+  border-radius: 16px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 343px; 
+  height: 84px;
+}
 
 
 .header-home {
