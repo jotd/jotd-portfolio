@@ -4,25 +4,27 @@
   }
 } */
 
-.big-emoji {
+/* .big-emoji {
   font-size: 14px;
   background-color: #141414;
   border-radius: 8px;
   padding: 8px;
-}
+} */
 
 /* Spacing ///////////////////////////////////////////////////////////// */
-#margin-below-header {
+/* #margin-below-header {
   margin-bottom: 40px; }
 #margin-below-sentence {
   margin-bottom: 40px; }
 #margin-below-section {
   margin-bottom: 96px; }
 #margin-below-results {
-  margin-bottom: 136px !important; }
-.content-home {
+  margin-bottom: 136px !important; } */
+/* .content-home {
   max-width: 570px;
-  margin: 0 auto; }
+  margin: 0 auto; } */
+
+  /* Home Page  */
 .content-home-2 {
   display: flex;
   flex-direction: column;
@@ -46,6 +48,8 @@
     margin-top: 20%;
   }
 } 
+
+
 @media screen and (max-width: 300px) {
   .availability-block-2 {
     display: -webkit-box;
