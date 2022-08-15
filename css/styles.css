@@ -245,6 +245,8 @@ a {
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
+
+/* Large CTA */
 .cta-2 {
   font-size: 18px;
   color: black;
@@ -258,11 +260,16 @@ a {
   display: flex;
   margin-top: 24px;
 }
+.cta-2:hover {
+  color: white;
+  background-color: black;
+}
+/* ///////////////////////////////////////////////////////////////////// */
 
 
 .header-home {
-  font-size: 88px;
-  margin-top: 132px;
+  font-size: 80px;
+  margin-top: 96px;
   margin-bottom: 16px;}
 
 @media screen and (max-width: 500px) {
