@@ -1,3 +1,8 @@
+/* @media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+} */
 
 .big-emoji {
   font-size: 14px;
