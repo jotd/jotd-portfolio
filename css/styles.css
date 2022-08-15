@@ -263,6 +263,7 @@ a {
 .cta-2:hover {
   color: white;
   background-color: black;
+  transition: ease; }
 }
 /* ///////////////////////////////////////////////////////////////////// */
 
@@ -697,6 +698,7 @@ a.menu-link {
   margin-left: -32px; 
 }
 .tag:hover {
+  transition: ease;
   background-color: white;
   color: black; }
 
