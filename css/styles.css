@@ -27,6 +27,7 @@
   align-items: flex-start;
   margin-left: 24px;
   margin-right: 24px;
+  z-index: 10;
 }
 @media screen and (max-width: 500px) {
   .content-home-2 {
@@ -303,7 +304,7 @@ a {
       top: 0%;
       right: 0%;
       bottom: auto;
-      z-index: 9; }
+       }
     
     .header-container {
       position: fixed;
@@ -311,7 +312,6 @@ a {
       top: auto;
       right: 0%;
       bottom: auto;
-      z-index: 10;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -352,7 +352,7 @@ a {
         top: 0%;
         right: 0%;
         bottom: auto;
-        z-index: 9; }
+        ; }
       
       .header-container {
         position: fixed;
@@ -360,7 +360,6 @@ a {
         top: auto;
         right: 0%;
         bottom: auto;
-        z-index: 10;
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -402,8 +401,8 @@ a {
     line-height: 1.3em;
     position: relative;
     color: #ffffff;
-    max-width: 500px;
-    z-index: 10;}
+    max-width: 450px;
+    }
 .header-work {
   max-height: 400px;
   max-width: 600px;
