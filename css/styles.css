@@ -132,7 +132,7 @@
   font-family: "blender_probold";
   color: #ffffff; }
 
-.text-subheader-3{
+.text-subheader-3, .cta-2{
 font-family: "DINPro-Bold";
 color: #ffffff; }
 
@@ -246,24 +246,23 @@ a {
 /* ///////////////////////////////////////////////////////////////////// */
 
 .cta-2 {
-  font-family: "dinregular";
-  font-size: 14px;
-  /* color: black; */
-  /* background-color: white; */
-  color: white;
-  background-color: #081225;
+  font-size: 18px;
+  color: black;
+  background-color: white;
   border-radius: 16px;
   padding: 8px;
   justify-content: center;
   align-items: center;
-  width: 343px; 
-  height: 84px;
+  width: 300px;
+  height: 32px;
+  display: flex;
+  margin-top: 24px;
 }
 
 
 .header-home {
   font-size: 88px;
-  margin-top: 148px;
+  margin-top: 132px;
   margin-bottom: 16px;}
 
 @media screen and (max-width: 500px) {
@@ -378,9 +377,6 @@ a {
 .tagline-home {
   font-size: 32px;
     line-height: 1.3em;
-    /* margin-left: 16px; */
-    /* margin-right: 16px; */
-    margin-bottom: -150px;
     position: relative;
     color: #ffffff;
     max-width: 500px;
