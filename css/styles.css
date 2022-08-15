@@ -50,7 +50,7 @@
   }
 } 
 
-/* @media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
   .availability-block-2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -68,7 +68,13 @@
     margin-right: 16px; 
     margin-left: 24px;
   }
-}  */
+} 
+
+
+@media screen and (max-width: 500px) {
+  .dot, .nav-block {
+    display:none;
+  }}
 /* //////////////////////////////////////// */
  
 /* Containers /////////////////////////////*/
@@ -132,10 +138,6 @@
 
 /* Colors /////////////////////////////////////////////////////////////////// */
 
-/*  
-    Availability Dots on Homepage's 3D Animation
-    #00D54B
-*/
 
 .cta-2 {
   background-color: #FF375F;
@@ -144,8 +146,6 @@
 .dot {
   background-color: #00D54B;
 }
-
-
 
 /* Light Grey only used by dots animation on homepage 
    #191919 
