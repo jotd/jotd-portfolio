@@ -523,12 +523,12 @@ a.menu-link {
 
 
 /* Footer ////////////////////////////////////////////////////////////////////////////*/
-.footer-home {
+/* .footer-home {
   position: absolute;
   width: auto;
   bottom: 16px;
   right: 16px;
-  left: 16px; }
+  left: 16px; } */
 .footer {
   display: -webkit-box;
   display: -webkit-flex;
