@@ -371,8 +371,8 @@ display: flex;
 margin-top: 24px;
 }
 .cta-2:hover {
-color: white;
-background-color: black;
+color: black;
+background-color: white;
 transition: ease; }
 /* ///////////////////////////////////////////////////////////////////// */
 
