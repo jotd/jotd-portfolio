@@ -88,7 +88,7 @@ margin-left: 24px;
   align-content: center;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 20%;
+  margin-top: 20%;f
   }
   } 
   /* ///////////////////////////////////////////////////////////*/
@@ -547,7 +547,7 @@ a.menu-link {
   padding: 16px;
   font-size: 14px;
   color: #ffffff;
-  margin-top: 20%; }
+  margin-top: 10%; }
 .footer-links {
   display: -webkit-box;
   display: -webkit-flex;
