@@ -49,7 +49,7 @@
     margin-top: 20%;
   }
 } 
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   .availability-block-2 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -67,7 +67,7 @@
     margin-right: 16px; 
     margin-left: 24px;
   }
-} 
+}  */
 
 /* //////////////////////////////////////// */
  
