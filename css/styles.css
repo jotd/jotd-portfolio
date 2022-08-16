@@ -1,15 +1,27 @@
+
+
+
+/* Media Query for Landscape Orientation ////////////////*/
 /* @media only screen and (orientation: landscape) {
   body {
     background-color: lightblue;
   }
 } */
+/* //////////////////////////////////////////////////// */
 
+
+
+
+/* Card Component / Services ////////////////////////////*/
 /* .big-emoji {
   font-size: 14px;
   background-color: #141414;
   border-radius: 8px;
   padding: 8px;
 } */
+/* //////////////////////////////////////////////////// */
+
+
 
 /* Spacing ///////////////////////////////////////////////////////////// */
 /* #margin-below-header {
@@ -23,8 +35,11 @@
 /* .content-home {
   max-width: 570px;
   margin: 0 auto; } */
+/* ///////////////////////////////////////////////////////////// */
 
-  /* Home Page //////////////////////////// */
+
+
+/* Home Page ////////////////////////////////////////////////////*/
 .content-home-2 {
   display: flex;
   flex-direction: column;
@@ -36,7 +51,6 @@
   margin-right: 24px;
   z-index: 10;
 }
-
 @media screen and (max-width: 500px) {
   .content-home-2 {
     display: flex;
@@ -49,6 +63,10 @@
     margin-top: 20%;
   }
 } 
+/* ///////////////////////////////////////////////////////////*/
+
+
+/* Availability Block Below CTA on Mobile ///////////////////// */
 /* @media screen and (max-width: 300px) {
   .availability-block-2 {
     display: -webkit-box;
@@ -68,10 +86,10 @@
     margin-left: 24px;
   }
 }  */
-
-/* //////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////*/
  
-/* Containers /////////////////////////////*/
+
+/* Containers /////////////////////////////////////////////////*/
 .content-body {
   max-width: 700px;
   margin: 0 auto; }
@@ -109,7 +127,7 @@
   margin-left: 10%;
   background: #edeff1;
   border-radius: 24px; }
-/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////*/
 
 
 /* Typography ///////////////////////////////////////////////////////////// */
@@ -149,14 +167,15 @@
 .text-container, .text-container-2 {
   background-color: #0D0D0D;
 }
+
+/* Text Selection */
 ::selection {
   color: black;
   background-color: white; }
-
 ::-moz-selection {
   color: black;
   background-color: white;}
-/* ///////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////*/
 
 
 /* Text Styles ///////////////////////////////////////////////////////////////////// */
@@ -183,7 +202,7 @@ margin-left: 16px;
 margin-right: 16px;
 margin-bottom: 40px;
 }
-/* ///////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////*/
 
 
 /* System Components ////////////////////////////////////////////////////////////*/
@@ -207,7 +226,8 @@ hr {
   margin-top: 24px;
   border: 1px solid #141414;
 }
-/* Links */
+
+/* Links ////////////////////////////////////////////////////////////*/
 a {
   display: inline-block;
   color: #ffffff;
@@ -247,10 +267,10 @@ a {
     background-color: #00D54B;
     margin-right: 16px;
   }
-  @media screen and (max-width: 500px) {
-    .dot, .nav-block {
-      display:none;
-    }}
+@media screen and (max-width: 500px) {
+  .dot, .nav-block {
+    display:none;
+  }}
   .nav-block { 
   display: -webkit-box;
   display: -webkit-flex;
@@ -355,71 +375,58 @@ a {
           -ms-flex-align: center;
               align-items: center; }
     
+
+  .w-inline-block {
+    max-width: 100%;
+    display: inline-block; }
   
+  .face.w--current {
+    width: 72px;
+    height: 72px; }
    
+  
+  /* Memoji */
+  .face {
+    background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
+    background-size: cover; }
+  
+
+  .header {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    ; }
     
-    /* Memoji */
-    .face {
-      background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
-      background-size: cover; }
-    
-    .w-inline-block {
-      max-width: 100%;
-      display: inline-block; }
-    
-    .face.w--current {
-      width: 72px;
-      height: 72px; }
+  .header-container {
+    position: fixed;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    padding: 16px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 
-      .header {
-        position: fixed;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: auto;
-        ; }
-      
-      .header-container {
-        position: fixed;
-        left: 0%;
-        top: auto;
-        right: 0%;
-        bottom: auto;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        margin: auto;
-        padding: 16px;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-      
-      @media screen and (max-width: 500px) {
-        .dot, .nav-block {
-          display:none;
-        }}
-      
-      /* Memoji */
-      .face {
-        background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
-        background-size: cover; }
-      
-      .w-inline-block {
-        max-width: 100%;
-        display: inline-block; }
-      
-      .face.w--current {
-        width: 72px;
-        height: 72px; }
-
-/* //////////////////////////////////////////// */
+    @media screen and (max-width: 500px) {
+      .dot, .nav-block {
+        display:none;
+      }}
+    
+/* /////////////////////////////////////////////////////*/
 
 /* Text Styles  */
 .tagline-home {
@@ -534,6 +541,9 @@ a {
   }
 a.menu-link {
   color: white; }
+
+
+/* Footer /////////////////////////////////////////////////// */
 .footer-home {
   position: absolute;
   width: auto;
@@ -598,7 +608,9 @@ a.menu-link {
 /* ///////////////////////////////////////////////////// */
 
 
-/* Project Cards /////////////////////////////////////  */
+/* Card Component /////////////////////////////////////  */
+
+/* Gemini Card /////////////////////////////////////////////*/
 .card-gemini {
   position: relative;
   height: 280px;
@@ -610,8 +622,9 @@ a.menu-link {
  @media screen and (max-width: 500px) {
   .card-gemini { height: 340px; }
  }
+ /* ////////////////////////////////////////////////////// */
 
-
+/* Square Card ///////////////////////////////////////////// */
  .card-square {
   position: relative;
   height: 280px;
@@ -623,8 +636,26 @@ a.menu-link {
  @media screen and (max-width: 500px) {
   .card-square { height: 340px; }
  }
+  /* ////////////////////////////////////////////////////// */
+
+/* Project App Icon ///////////////////////////////////// */
+.work-logo {
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  border-radius: 12px; }
+@media screen and (max-width: 767px) {
+  .work-logo {
+    width: 56px;
+    height: 56px;
+    margin-left: -32px;
+    margin-top: -32px;
+    border-radius: 16px; } }
+/* /////////////////////////////////////////////////////// */
 
 
+/* Project Text Container ////////////////////////////////// */
 @media screen and (max-width: 767px) {
   .work-container {
     position: relative;
@@ -634,6 +665,8 @@ a.menu-link {
     -webkit-animation: popIn ease 1.2s;
             animation: popIn ease 1.2s;
      } }
+
+/* Project */
 .work-description {
   position: absolute;
   left: 0%;
@@ -660,19 +693,11 @@ a.menu-link {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
-.work-logo {
-  width: 64px;
-  height: 64px;
-  margin-left: -32px;
-  margin-top: -32px;
-  border-radius: 12px; }
-@media screen and (max-width: 767px) {
-  .work-logo {
-    width: 56px;
-    height: 56px;
-    margin-left: -32px;
-    margin-top: -32px;
-    border-radius: 16px; } }
+/* //////////////////////////////////////////////////////// */
+
+
+
+/* Project Title ///////////////////////////////////////// */
 .title {
   font-family: "blender_probold";
   color: #ffffff;
@@ -690,6 +715,7 @@ a.menu-link {
     margin-left: 40px;
     margin-bottom: -12px;
     width: 100%; } }
+/* Project Metadata ///////////////////////////////////// */
 .work-metadata {
   font-family: "dinregular";
   font-weight: 400;
@@ -706,6 +732,9 @@ a.menu-link {
     margin-left: 40px;
     margin-bottom: -32px;
     width: 100%; } }
+/* ///////////////////////////////////////////////////////////////// */
+
+/* Project Description //////////////////////////////////*/
 .blurb {
   position: relative;
   font-family: "dinregular";
@@ -731,6 +760,9 @@ a.menu-link {
     margin-bottom: 32px;
     width: 100%;
     margin-right: 5%; } }
+/* ///////////////////////////////////////////////////////////////// */
+
+/* Medium CTAs //////////////////////////////////////////////////// */
 .tag {
   padding: 8px 16px 8px 16px;
   border-radius: 10px;
@@ -746,9 +778,9 @@ a.menu-link {
   font-size: 14px;
   line-height: 1.7em;
    }
-/* -------------------------------------- */
+/* ///////////////////////////////////////////////////////////////// */
 
-/* Table Row /////////////////////////////// */
+/* Row Component //////////////////////////////////////////////////////////*/
 .text-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -768,7 +800,7 @@ a.menu-link {
   justify-content: center;
   align-items: center;
 }
-.text-container-2 {
+/* .text-container-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -788,7 +820,7 @@ a.menu-link {
   align-items: center;
   max-width: 250px;
   /* margin-bottom: -50px; */
-}
+} */
   .text-block-left {
     display: -webkit-box;
     display: -webkit-flex;
@@ -819,4 +851,4 @@ a.menu-link {
   font-weight: 400;
   color: #ffffff; 
   padding-right: 16px;}
-/* ////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////*/
