@@ -289,8 +289,9 @@ color: #ffffff;}
 /* System Components ////////////////////////////////////////////////////////////*/
 /* Black Bg + White Text */
 
-.hide-scroll {
-  overflow: hidden; }
+/* .hide-scroll {
+  overflow: hidden; } */
+
 /* Images occupy full available space */
 img {
   width: 100%;
