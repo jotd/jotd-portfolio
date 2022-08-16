@@ -49,7 +49,6 @@
     margin-top: 20%;
   }
 } 
-
 @media screen and (max-width: 300px) {
   .availability-block-2 {
     display: -webkit-box;
@@ -70,11 +69,6 @@
   }
 } 
 
-
-@media screen and (max-width: 500px) {
-  .dot, .nav-block {
-    display:none;
-  }}
 /* //////////////////////////////////////// */
  
 /* Containers /////////////////////////////*/
@@ -137,26 +131,22 @@
 
 
 /* Colors /////////////////////////////////////////////////////////////////// */
+/* Pink CTA Color */
+.cta-2 { background-color: #FF375F; }
 
+/* Green Availability Dot */
+.dot { background-color: #00D54B; }
 
-.cta-2 {
-  background-color: #FF375F;
-}
-
-.dot {
-  background-color: #00D54B;
-}
-
-/* Light Grey only used by dots animation on homepage 
-   #191919 
-*/ 
+/* Light Grey only used by dots animation on homepage #191919 */ 
 
 /* Medium Grey  */
-.card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 {
+.card-gemini, .card-square, .menu, hr, 
+.work-container, .text-container, .text-container-2 {
   background-color: #141414;
 }
 /* Dark Grey  */
-.menu-link.w--current, .tag, .text-container, .text-container-2 {
+.menu-link.w--current, .tag, 
+.text-container, .text-container-2 {
   background-color: #0D0D0D;
 }
 ::selection {
@@ -183,7 +173,7 @@ color: #ffffff; }
 font-family: "dinregular";
 color: #ffffff;}
 
-/* Text / Grey 14px */
+/* Small Text 14px */
 .text-2 {
 font-family: "dinregular";
 color: #ffffff;
@@ -257,7 +247,28 @@ a {
     background-color: #00D54B;
     margin-right: 16px;
   }
-/* Email CTA */
+  @media screen and (max-width: 500px) {
+    .dot, .nav-block {
+      display:none;
+    }}
+  .nav-block { 
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "dinregular";
+  font-weight: 400;
+  color: #ffffff; 
+  margin-right: 16px;
+}
+@media screen and (max-width: 500px) {
+  .dot, .nav-block {
+    display:none;
+  }}
+/* ///////////////////////////////////////////////////////////////////// */
+
+
+/* Small CTA ///////////////////////////////////////////////////////////*/
 .cta {
   font-family: "dinregular";
   font-size: 14px;
@@ -275,20 +286,6 @@ a {
   background-color: #141414;
   transition: ease;
 }
-.nav-block { 
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "dinregular";
-  font-weight: 400;
-  color: #ffffff; 
-  margin-right: 16px;
-}
-@media screen and (max-width: 500px) {
-  .dot, .nav-block {
-    display:none;
-  }}
 /* ///////////////////////////////////////////////////////////////////// */
 
 
@@ -308,16 +305,16 @@ a {
   color: white;
   background-color: black;
   transition: ease; }
-
-
 /* ///////////////////////////////////////////////////////////////////// */
 
 
+/* Homepage Header – Jot Dhaliwal */
 .header-home {
   font-size: 80px;
   margin-top: 96px;
   margin-bottom: 16px;}
 
+/* Mobile – Homepage Header – Jot Dhaliwal */
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
@@ -326,6 +323,8 @@ a {
     margin-top: 120px;
     margin-bottom: 24px;
     position: relative; } }
+/* ///////////////////////////////////////// */
+
 
     .header {
       position: fixed;
