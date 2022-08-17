@@ -194,7 +194,7 @@ color: #ffffff;}
 
 /* Text Styles /////////////////////////////////////////////////////////////////// */
 .header-home {
-  font-size: 72px;
+  font-size: 88px;
   margin-top: 148px;
   margin-bottom: 16px;
   }
@@ -208,11 +208,11 @@ color: #ffffff;}
     position: relative; } }
 
 .tagline-home {
-  font-size: 32px;
+    font-size: 24px;
     line-height: 1.3em;
     position: relative;
     color: #ffffff;
-    max-width: 500px;
+    max-width: 450px;
     text-align: center;}
 
 @media screen and (max-width: 500px) {
