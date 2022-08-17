@@ -185,7 +185,7 @@ font-family: "DINPro-Bold";
 color: #ffffff; }
 
 .tag, .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, 
-.text-body-secondary-1, .text-body-secondary-2 {
+.text-body-secondary-1, .text-body-secondary-2. .nav-block {
 font-family: "dinregular";
 color: #ffffff;}
 /* /////////////////////////////////////////////////////////////////////////////// */
@@ -387,16 +387,17 @@ transition: ease; }
 
 /* Large CTA Pink Homepage /////////////////////////////*/
 .cta-3 {
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 8px;
   padding: 8px;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  height: 32px;
+  max-width: 600px;
+  height: 20px;
   display: flex;
   margin-top: 24px;
   margin-left: 16px;
+  margin-right: 16px;
   color: black;
   background-color: white;
   }
@@ -486,6 +487,7 @@ font-family: "dinregular";
 font-weight: 400;
 color: #ffffff; 
 margin-right: 16px;
+font-size: 14px;
 }
 
 /* Mobile – Hide Dot, Status, Location */
