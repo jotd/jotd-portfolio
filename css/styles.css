@@ -1,4 +1,8 @@
 
+.bg-3d {
+  background-image: url("https://jotsd.s3.us-west-1.amazonaws.com/home/3D+Wallpaper.png");
+  background-color: #cccccc;
+}
 
 body {
   /* background-color: #000000; */
