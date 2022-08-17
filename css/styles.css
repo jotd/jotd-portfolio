@@ -377,7 +377,7 @@ transition: ease;
    }
 /* ///////////////////////////////////////////////////////////////// */
 
-/* Large CTA Pink Homepage /////////////////////////////*/
+/* Large CTA Homepage /////////////////////////////*/
 .cta-2 {
 font-size: 18px;
 border-radius: 8px;
@@ -391,8 +391,8 @@ margin-top: 24px;
 color: black;
 }
 .cta-2:hover {
-color: black;
-background-color: white;
+background-color: #141414;
+color: white;
 transition: ease; }
 /* ///////////////////////////////////////////////////////////////////// */
 
