@@ -161,7 +161,8 @@ margin-left: 24px;
 /* Light Grey only used by dots animation on homepage #191919 */ 
 
 /* Medium Grey  */
-.card-gemini, .card-square, .menu, hr, .work-container, .text-container, .text-container-2 { 
+.card-gemini, .card-square, .menu, hr, .work-container, .text-container, 
+.text-container-2 { 
   background-color: #141414;}
 
 /* Dark Grey  */
@@ -783,27 +784,6 @@ a.menu-link {
   justify-content: center;
   align-items: center;
 }
-/* .text-container-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: baseline;
-  font-size: 14px;
-  color: #ffffff; 
-  border-radius: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 8px;
-  height: 32px;
-  justify-content: center;
-  align-items: center;
-  max-width: 250px;
-  /* margin-bottom: -50px; */
-} */
   .text-block-left {
     display: -webkit-box;
     display: -webkit-flex;
