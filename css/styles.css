@@ -594,7 +594,8 @@ a.menu-link {
   padding: 16px;
   font-size: 14px;
   color: #ffffff;
-  margin-top: 15%; }
+  margin-top: 40%; 
+  height: 100%;}
 .footer-links {
   display: -webkit-box;
   display: -webkit-flex;
