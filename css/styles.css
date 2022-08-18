@@ -232,7 +232,7 @@ color: #ffffff;}
     position: relative;
     color: #ffffff;
     max-width: 450px;
-    text-align: center;}
+    }
 
 @media screen and (max-width: 500px) {
   .tagline-home {
