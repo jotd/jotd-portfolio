@@ -117,6 +117,12 @@ margin-left: 24px;
   margin: 0 auto;
   border-radius: 24px;
   }
+.img-hero-headshot {
+  max-width: 300px;
+  max-height: 400px;
+  margin: 0 auto;
+  border-radius: 24px;
+}
 .content-hero-image {
   max-width: 950px;
   margin: 0 auto;
