@@ -80,9 +80,10 @@ margin-left: 24px;
 /* Layout – Home Page ///////////////////////////////*/
 .content-home-2 {
   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-end;
   }
   @media screen and (max-width: 500px) {
   .content-home-2 {
