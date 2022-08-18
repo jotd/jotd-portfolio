@@ -214,7 +214,7 @@ color: #ffffff;}
 /* Text Styles /////////////////////////////////////////////////////////////////// */
 .header-home {
   font-size: 88px;
-  margin-top: 148px;
+  /* margin-top: 148px; */
   margin-bottom: 16px;
   }
 @media screen and (max-width: 500px) {
