@@ -170,7 +170,7 @@ margin-left: 24px;
 /* Light Grey only used by dots animation on homepage #191919 */ 
 
 /* Medium Grey  */
-.card-gemini, .card-square, .menu, hr, .work-container, .text-container, 
+.card-gemini, .card-square, .menu, .work-container, .text-container, 
 .text-container-2 { 
   background-color: #141414;}
 
