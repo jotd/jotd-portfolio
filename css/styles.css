@@ -1,4 +1,8 @@
 
+.layout-home {
+  display: flex;
+}
+
 /* Default Page Background */
 body {
   background-color: #000000;
