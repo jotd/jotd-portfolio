@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: flex-end;
   margin-top: 120px;
+  margin-bottom: 16px;
   padding: 64px;
 }
 @media screen and (max-width: 500px) {
@@ -29,6 +30,7 @@
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 16px;
   }
   } 
 
@@ -256,9 +258,10 @@ color: #ffffff;}
 
 /* Text Styles /////////////////////////////////////////////////////////////////// */
 .header-home {
-  font-size: 88px;
+  font-size: 96px;
   margin-top: 16px;
   margin-bottom: 16px;
+  max-width: 200px;
   }
 @media screen and (max-width: 500px) {
   .header-home {
