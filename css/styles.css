@@ -8,6 +8,18 @@
   margin-top: 120px;
   padding: 64px;
 }
+@media screen and (max-width: 500px) {
+  .layout-home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20%;
+  }
+  } 
+
 
 /* Default Page Background */
 body {
@@ -103,7 +115,7 @@ margin-left: 24px;
   align-content: center;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 20%;f
+  margin-top: 20%;
   }
   } 
 
