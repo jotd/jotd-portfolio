@@ -1,4 +1,17 @@
 
+
+.card-services {
+  display: flex;
+  width: 200px;
+  height: 200px;
+
+}
+.app-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+}
+
 .layout-home {
   display: flex;
   flex-direction: row;
