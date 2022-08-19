@@ -149,6 +149,15 @@ margin-left: 24px;
   border-radius: 24px;
   margin-right: 64px;
 }
+@media screen and (max-width: 500px) {
+  .img-hero-headshot {
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 24px;
+  }
+  }
+
+
 .content-hero-image {
   max-width: 950px;
   margin: 0 auto;
@@ -245,7 +254,6 @@ color: #ffffff;}
     font-family: "blender_probold";
     color: #ffffff;
     font-size: 72px;
-    margin-top: 120px;
     margin-bottom: 24px;
     position: relative; } }
 
