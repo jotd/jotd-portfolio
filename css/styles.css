@@ -4,7 +4,7 @@
   display: flex;
   width: 200px;
   height: 200px;
-
+  background-color: #0D0D0D;
 }
 .app-icon {
     width: 64px;
