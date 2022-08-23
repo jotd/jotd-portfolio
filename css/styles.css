@@ -388,6 +388,9 @@ color: #ffffff;}
 img {
   width: 100%;
   height: auto; }
+.border {
+  border: 2px solid white;
+}
 /* Horizontal Line  */
 .thumbnail-movie {
   border-radius: 16px;
