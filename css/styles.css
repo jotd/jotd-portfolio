@@ -226,6 +226,11 @@ margin-left: 24px;
 /* Green Availability Dot */
 .dot { background-color: #00D54B; }
 
+/* Yellow Text */
+.yellow { color: #ca9c46;}
+/* Yellow Text Hover */
+.yellow:hover { color: #f5c05f;}
+
 /* Light Grey only used by dots animation on homepage #191919 */ 
 
 /* Medium Grey  */
@@ -263,7 +268,7 @@ color: #ffffff;}
 
 /* Text Styles /////////////////////////////////////////////////////////////////// */
 .header-home {
-  font-size: 96px;
+  font-size: 80px;
   margin-top: 16px;
   margin-bottom: 16px;
   max-width: 200px;
@@ -567,7 +572,7 @@ font-size: 14px;
 
 /* Mobile – Hide Dot, Status, Location */
 @media screen and (max-width: 500px) {
-  .dot, .nav-block {
+  .dot, .nav-block, .cta {
     display:none;
   }}
 /* ///////////////////////////////////////////////////////////////////// */
