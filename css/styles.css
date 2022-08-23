@@ -372,11 +372,9 @@ img {
 }
 hr {
   /* margin-top: 24px; */
-  margin-top: 40%;
-  border-color: #141414;
+  border-color: #191919;
   border-style: solid;
   border-width: 1px;
-  /* border: 1px solid #141414; */
 }
 
 /* Links /////////////////////////////////////////////////////////////////////*/
