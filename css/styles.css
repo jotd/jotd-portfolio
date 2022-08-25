@@ -245,7 +245,7 @@ color: #ffffff;}
   font-size: 80px;
   margin-top: 16px;
   margin-bottom: 16px;
-  max-width: 200px;
+  max-width: 300px;
   }
 @media screen and (max-width: 500px) {
   .header-home {
