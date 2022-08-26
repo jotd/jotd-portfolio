@@ -149,9 +149,9 @@ background-color: lightblue;
 
 
 /* Yellow Text */
-.link-large { color: #ca9c46;}
+#link-large { color: #ca9c46;}
 /* Yellow Text Hover */
-.link-large:hover { color: #f5c05f;}
+#link-large:hover { color: #f5c05f;}
 
 
 /* Grey – Light   */
