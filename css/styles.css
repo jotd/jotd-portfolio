@@ -202,9 +202,9 @@ margin: 0 auto; } */
 .dot { background-color: #00D54B; }
 
 /* Yellow Text */
-.yellow { color: #ca9c46;}
+.link-large { color: #ca9c46;}
 /* Yellow Text Hover */
-.yellow:hover { color: #f5c05f;}
+.link-large:hover { color: #f5c05f;}
 
 /* Light Grey only used by dots animation on homepage #191919 */ 
 
@@ -248,6 +248,12 @@ color: #ffffff;}
   margin-bottom: 16px;
   max-width: 400px;
   }
+.link-large {
+  font-size: 64px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 400px;
+}
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
