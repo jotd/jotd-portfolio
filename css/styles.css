@@ -1,22 +1,6 @@
 
 
-.card-services {
-  position: relative;
-  height: 280px;
-  margin-bottom: 40px;
-  margin-left: 16px;
-  margin-right: 16px;
-  border-radius: 24px;
-  background-color: #0D0D0D;
-  max-width: 200px;
-  max-height: 400px;
-}
-.app-icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 12px;
-}
-
+/* Layout – Home ///////////////////////////////*/
 .layout-home {
   display: flex;
   flex-direction: row;
@@ -38,18 +22,8 @@
     margin-bottom: 16px;
   }
   } 
+/* ///////////////////////////////////////// */
 
-
-/* Default Page Background */
-body {
-  background-color: #000000;
-  color: white;
-}
-
-/* 3D Render Background on 3D Art Direction Project*/
-.bg-3d {
-  background-image: url("https://jotsd.s3.us-west-1.amazonaws.com/home/3D+Wallpaper.png");
-}
 
 
 /* Media Query for Landscape Orientation ////////////////*/
@@ -61,32 +35,6 @@ background-color: lightblue;
 /* //////////////////////////////////////////////////// */
 
 
-/* Card Component / Services ////////////////////////////*/
-/* .big-emoji {
-font-size: 14px;
-background-color: #141414;
-border-radius: 8px;
-padding: 8px;
-} */
-/* //////////////////////////////////////////////////// */
-
-
-/* Spacing ///////////////////////////////////////////////////////////// */
-/* #margin-below-header {
-margin-bottom: 40px; }
-#margin-below-sentence {
-margin-bottom: 40px; }
-#margin-below-section {
-margin-bottom: 96px; }
-#margin-below-results {
-margin-bottom: 136px !important; } */
-/* .content-home {
-max-width: 570px;
-margin: 0 auto; } */
-/* ///////////////////////////////////////////////////////////*/
- 
-
-/* Containers /////////////////////////////////////////////////////////////////////////*/
 
 /* Layout – Home Page ///////////////////////////////*/
 .content-home-2 {
@@ -221,7 +169,7 @@ margin: 0 auto; } */
 
 
 /* Text Variables for Font + Color ////////////////////////////////////////////////// */
-.header-home, .header-work, .header-about, .header-case-study {
+.header-home, .header-work, .header-about, .header-case-study, .link-large {
   font-family: "blender_probold";
   color: #ffffff; }
 
@@ -881,6 +829,18 @@ a.menu-link {
   color: #ffffff; 
   padding-right: 16px;}
 /* //////////////////////////////////////////////////////////////*/
+
+
+/* Default Page Background */
+body {
+  background-color: #000000;
+  color: white;
+}
+
+/* 3D Render Background on 3D Art Direction Project*/
+.bg-3d {
+  background-image: url("https://jotsd.s3.us-west-1.amazonaws.com/home/3D+Wallpaper.png");
+}
 
 /* Topographic Background on Homepage */
 .bg-topographic {
