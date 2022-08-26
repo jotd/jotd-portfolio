@@ -139,27 +139,35 @@ background-color: lightblue;
 
 
 /* Colors /////////////////////////////////////////////////////////////////// */
+
 /* Homepage CTA Color */
 .cta-2 { background-color: white; }
 
+
 /* Green Availability Dot */
 .dot { background-color: #00D54B; }
+
 
 /* Yellow Text */
 .link-large { color: #ca9c46;}
 /* Yellow Text Hover */
 .link-large:hover { color: #f5c05f;}
 
-/* Light Grey only used by dots animation on homepage #191919 */ 
 
-/* Medium Grey  */
+/* Grey – Light   */
+.grey-light {
+  color: #191919;
+} 
+
+/* Grey – Medium   */
 .card-gemini, .card-square, .menu, .work-container, .text-container, 
 .text-container-2 { 
   background-color: #141414;}
 
-/* Dark Grey  */
+/* Grey – Dark */
 .menu-link.w--current, .tag, .text-container, .text-container-2 { 
   background-color: #0D0D0D;}
+
 
 /* Text Selection */
 ::selection { color: black; background-color: white; }
