@@ -519,7 +519,7 @@ font-size: 14px;
 
 /* Mobile – Hide Dot, Status, Location */
 @media screen and (max-width: 500px) {
-  .dot, .nav-block, .cta {
+  .face, .dot, .nav-block, .cta {
     display:none;
   }}
 /* ///////////////////////////////////////////////////////////////////// */
