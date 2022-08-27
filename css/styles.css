@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: flex-end;
   margin-top: 120px;
+  margin-right: 80px;
 }
 
 @media screen and (max-width: 500px) {
@@ -100,7 +101,6 @@ background-color: lightblue;
   max-width: 400px;
   max-height: 400px;
   border-radius: 24px;
-  margin-right: 64px;
 }
 @media screen and (max-width: 500px) {
   .img-hero-headshot {
