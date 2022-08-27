@@ -522,6 +522,12 @@ font-size: 14px;
   .face, .dot, .nav-block, .cta {
     display:none;
   }}
+
+@media screen and (max-width: 500px) {
+  .header-container {
+    flex-direction: column;
+  }
+}
 /* ///////////////////////////////////////////////////////////////////// */
 
 
