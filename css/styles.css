@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: flex-end;
     margin-top: 120px;
+    margin-right: 80px;
   }
   @media screen and (max-width: 500px) {
     .layout-home-2 {
