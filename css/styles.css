@@ -1,6 +1,6 @@
 
 
-/* Layout – Home ///////////////////////////////*/
+/* Layout – Hero Module /*/
 .layout-home {
   display: flex;
   flex-direction: row;
@@ -482,7 +482,7 @@ padding: 16px;
 -webkit-align-items: center;
     -ms-flex-align: center;
         align-items: center; 
-flex-direction: column;}
+flex-direction: row;}
 
 /* Memoji */
 .face {
