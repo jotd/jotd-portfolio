@@ -5,11 +5,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
   margin-top: 120px;
-  margin-bottom: 16px;
-  padding: 64px;
+  margin-left: 64px;
 }
 .layout-home-2 {
   display: flex;
@@ -27,12 +26,22 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 16px;
+    align-items: flex-end;
+    margin-top: 120px;
   }
   } 
+
+  @media screen and (max-width: 500px) {
+    .layout-home-2 {
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 120px;
+    }
+    } 
 /* ///////////////////////////////////////// */
 
 
