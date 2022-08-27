@@ -1,24 +1,15 @@
 
 
-/* Layout – Hero Module /*/
+/* Photo Left Component /*/
 .layout-home {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: 120px;
-  margin-left: 64px;
-}
-.layout-home-2 {
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: nowrap;
+  /* centered container */
   justify-content: center;
+  /* bottom aligned items */
   align-items: flex-end;
   margin-top: 120px;
-  margin-bottom: 16px;
-  padding: 64px;
 }
 
 @media screen and (max-width: 500px) {
@@ -32,6 +23,15 @@
   }
   } 
 
+/* Photo Right Component /*/
+  .layout-home-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 120px;
+  }
   @media screen and (max-width: 500px) {
     .layout-home-2 {
       display: flex;
@@ -81,6 +81,7 @@ background-color: lightblue;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-right: 32px;
     }
   /* ///////////////////////////////////////////////////////////*/
 
