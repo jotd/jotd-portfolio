@@ -234,7 +234,6 @@ color: #ffffff;}
 .tagline-home {
     font-size: 28px;
     line-height: 1.3em;
-    position: relative;
     color: #ffffff;
     max-width: 350px;
     }
@@ -260,7 +259,7 @@ color: #ffffff;}
   margin-top: 148px;
   margin-left: 16px;
   margin-bottom: 8px;
-  position: relative; }
+  }
 .header-case-study {
   font-size: 48px;
   margin-bottom: 32px;
