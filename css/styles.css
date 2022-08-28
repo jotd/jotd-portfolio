@@ -630,7 +630,6 @@ a.menu-link {
   font-weight: 400; 
   flex-direction: column;}
 .footer-link {
-  margin-right: 16px;
   margin-bottom: 8px; }
 .footer-block {
   display: -webkit-box;
