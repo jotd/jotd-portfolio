@@ -153,11 +153,8 @@ background-color: lightblue;
   src: url("/css/fonts/din_regular-webfont.woff") format("woff"); }
 /* ///////////////////////////////////////////////////////////////////// */
 
-/* Shadows /////////////////////////////////////////////////////////////// */
 
-.shadow {
-  box-shadow: 0 6px 14px #1f2132;
-}
+
 
 
 
@@ -346,6 +343,11 @@ img {
   /* border: 2px solid white; */
   border: 1px solid #272732;
 }
+.border:hover {
+  box-shadow: 0 6px 14px #1f2132;
+}
+
+
 /* Horizontal Line  */
 .thumbnail-movie {
   border-radius: 16px;
