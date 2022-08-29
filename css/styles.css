@@ -631,12 +631,10 @@ a.menu-link {
   flex-direction: column;}
 .footer-link {
   margin-bottom: 8px; }
+
 .footer-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;   
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
   font-family: "dinregular";
   font-weight: 400;
   color: #ffffff; 
