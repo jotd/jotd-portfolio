@@ -236,9 +236,7 @@ color: #ffffff; }
 font-family: "dinregular";
 color: #ffffff;}
 
-.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2, {
-  color: #acb1bf;
-}
+.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2 { color: #acb1bf; }
 
 
 
@@ -267,13 +265,8 @@ color: #ffffff;}
 .tagline-home {
     font-size: 28px;
     line-height: 1.3em;
-    color: #ffffff;
     max-width: 350px;
     }
-
-@media screen and (max-width: 500px) {
-  .tagline-home {
-    text-align: left; } }
 
 
 .header-work {
