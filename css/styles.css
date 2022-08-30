@@ -516,25 +516,18 @@ backdrop-filter: blur(10px);}
 
 
 /* Memoji */
-.memoji {
+.face {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
   background-size: cover; 
-
-  width: 72px;
-  height: 72px; 
-
-  max-width: 100%;
-  display: inline-block;
-
 }
     
-/* .w-inline-block {
+.w-inline-block {
 max-width: 100%;
 display: inline-block; }
 
 .face.w--current {
 width: 72px;
-height: 72px; } */
+height: 72px; }
 
 /* Availability Block ///////////////////////////////////////////////////////// */
 .availability-block {
