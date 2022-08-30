@@ -220,23 +220,27 @@ img {
 
 
 /* Headers */
-.header-home, .header-work, .header-about, .header-case-study, {
+.header-home, .header-work, .header-about, .header-case-study {
   font-family: "blender_probold";
   color: #ffffff; }
 
 
 
-.text-subheader-3, .cta-2, .cta-3{
+.text-subheader-3, .cta-2, .cta-3 {
 font-family: "DINPro-Bold";
-color: #ffffff; }
+color: #ffffff; 
+}
 
 
 .tag, .menu-link, .menu-link.w--current, .text-subheader-1, 
 .nav-block {
 font-family: "dinregular";
-color: #ffffff;}
+color: #ffffff;
+}
 
-.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2 { color: #acb1bf; }
+
+.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2 { color: #acb1bf; 
+}
 
 
 
@@ -256,7 +260,6 @@ color: #ffffff;}
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
-    color: #ffffff;
     font-size: 72px;
     margin-top: 16px;
     margin-bottom: 24px;
