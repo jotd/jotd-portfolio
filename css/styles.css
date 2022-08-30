@@ -226,10 +226,11 @@ img {
 
 
 
-.text-subheader-3, .cta-2, .cta-3 {
+.text-subheader-3, .cta-2, .cta-3, #text-white {
 font-family: "DINPro-Bold";
 color: #ffffff; 
 }
+
 
 
 .tag, .menu-link, .menu-link.w--current, .text-subheader-1, 
@@ -239,7 +240,8 @@ color: #ffffff;
 }
 
 
-.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2 { color: #acb1bf; 
+.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2 { 
+color: #acb1bf; 
 font-family: "dinregular";
 }
 
