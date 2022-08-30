@@ -3,7 +3,7 @@ overflow-y: scroll;
 overflow-x: hidden;
 }
 
-/* Photo Left Component /*/
+/* Photo Left Component //////////////////// */
 .layout-home {
   display: flex;
   flex-direction: row;
@@ -22,7 +22,7 @@ overflow-x: hidden;
     margin-right: 16px;
   }
   } 
-
+/* ///////////////////////////////////////// */
 
 .hero-text-left {
   display: flex;
@@ -43,7 +43,7 @@ overflow-x: hidden;
 
 
 
-/* Photo Right Component /*/
+/* Photo Right Component /////////////////// */
   .layout-home-2 {
     display: flex;
     flex-direction: row;
