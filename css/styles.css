@@ -23,6 +23,26 @@ overflow-x: hidden;
   }
   } 
 
+
+.hero-text-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-end;
+  max-width: 400px;
+}
+
+.hero-img-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-right: 88px;
+}
+
+
+
 /* Photo Right Component /*/
   .layout-home-2 {
     display: flex;
