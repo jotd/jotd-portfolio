@@ -381,10 +381,17 @@ img {
   height: auto;
 }
 hr {
+  border-color: white;
+  border-style: solid;
+  border-width: 1px;
+  width: 100%;
+}
+.footer-divider {
   margin-top: 120px;
   border-color: white;
   border-style: solid;
   border-width: 1px;
+  width: 100%;
 }
 
 /* Links /////////////////////////////////////////////////////////////////////*/
