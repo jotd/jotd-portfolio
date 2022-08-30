@@ -676,8 +676,8 @@ a.menu-link {
   .footer-links-row {
     display: flex;
     /* justify-content: flex-start; */
-    flex-direction: row;
     /* flex: 1; */
+    flex-direction: column;
     font-family: "dinregular";
     font-weight: 400; 
     }
