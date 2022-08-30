@@ -514,6 +514,11 @@ padding: 16px;
 flex-direction: row;
 backdrop-filter: blur(10px);}
 
+.footer-jsd-logo {
+  display: flex;
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
+  background-size: cover; 
+}
 
 /* Memoji */
 .face {
