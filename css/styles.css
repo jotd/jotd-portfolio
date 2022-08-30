@@ -527,6 +527,7 @@ backdrop-filter: blur(10px);}
   background-size: cover; 
   width: 72px;
   height: 72px;
+  border-radius: 12px;
 }
 
 /* Memoji */
