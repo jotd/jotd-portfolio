@@ -196,24 +196,29 @@ img {
 /* Text Selection */
 ::selection { color: black; background-color: white; }
 ::-moz-selection { color: black; background-color: white;}
-/* //////////////////////////////////////////////////////////////////////////////////*/
 
 
 
-/* Text Variables for Font + Color ////////////////////////////////////////////////// */
-.header-home, .header-work, .header-about, .header-case-study, .link-large {
+/* Headers */
+.header-home, .header-work, .header-about, .header-case-study, {
   font-family: "blender_probold";
   color: #ffffff; }
+
+
 
 .text-subheader-3, .cta-2, .cta-3{
 font-family: "DINPro-Bold";
 color: #ffffff; }
 
-.tag, .menu-link, .menu-link.w--current, .tagline-home, .text-subheader-1, .text-body, 
-.text-body-secondary-1, .text-body-secondary-2,.nav-block {
+
+.tag, .menu-link, .menu-link.w--current, .text-subheader-1, 
+.nav-block {
 font-family: "dinregular";
 color: #ffffff;}
-/* /////////////////////////////////////////////////////////////////////////////// */
+
+.tagline-home, .text-body, .text-body-secondary-1, .text-body-secondary-2, {
+  color: #acb1bf;
+}
 
 
 
