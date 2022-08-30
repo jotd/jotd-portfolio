@@ -46,11 +46,12 @@ overflow-x: hidden;
 
 
 /* Media Query for Landscape Orientation ////////////////*/
-/* @media only screen and (orientation: landscape) {
-body {
-background-color: lightblue;
+@media only screen and (orientation: landscape) {
+img {
+  width: auto;
+  height: auto;
 }
-} */
+}
 /* //////////////////////////////////////////////////// */
 
 
