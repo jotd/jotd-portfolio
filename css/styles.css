@@ -670,6 +670,16 @@ a.menu-link {
   font-family: "dinregular";
   font-weight: 400; 
   flex-direction: column;}
+
+  .footer-links-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex: 1;
+    font-family: "dinregular";
+    font-weight: 400; 
+    }
+
 .footer-link {
   margin-bottom: 8px; }
 
