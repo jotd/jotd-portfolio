@@ -649,7 +649,7 @@ a.menu-link {
   /* -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center; */
-    align-items: flex-start;
+  align-items: flex-start;
   padding: 16px;
   font-size: 14px;
   color: #ffffff;
@@ -681,10 +681,6 @@ a.menu-link {
   color: #ffffff; 
 }
 
-/* 
-@media screen and (max-width: 767px) {
-  .footer-block {
-    margin-top: 8px; } } */
 
 @media screen and (max-width: 500px) {
   .footer.desktop {
