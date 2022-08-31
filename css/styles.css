@@ -542,7 +542,6 @@ backdrop-filter: blur(10px);}
   height: 48px;
   border-radius: 12px;
   /* margin-right:16px; */
-  margin-bottom: 12px;
 }
 
 /* Memoji */
@@ -706,17 +705,11 @@ a.menu-link {
     font-weight: 400;
     }
 
-    /* @media screen and (max-width: 500px) {
-      .footer-links-row {
-        display: flex;
-        justify-content: flex-start;
-        flex: 1;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: "dinregular";
-        font-weight: 400;
-        }
-      }  */
+  @media screen and (max-width: 500px) {
+    .footer-links-row { flex-direction: column; }
+  
+    .footer-jsd-logo { margin-bottom: 8px; }
+    } 
 
 .footer-link {
   margin-bottom: 8px; }
