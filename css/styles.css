@@ -115,6 +115,10 @@ overflow-x: hidden;
     height: 64px;
     border-radius: 12px;
   }
+
+  .hero-app-screen {
+    display: none;
+  }
   } 
 
   
