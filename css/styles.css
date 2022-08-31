@@ -1,3 +1,5 @@
+
+/* Hack to disable horizontal scroll on /work page */
 html, body {
 overflow-y: scroll;
 overflow-x: hidden;
@@ -9,7 +11,7 @@ overflow-x: hidden;
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 120px;
+  margin-top: 192px;
 }
 
 @media screen and (max-width: 500px) {
@@ -17,30 +19,39 @@ overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 120px;
+    margin-top: 192px;
     margin-left: 16px;
     margin-right: 16px;
   }
   } 
+
+  .content-home-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-end;
+    max-width: 400px;
+    }
+    /* @media screen and (max-width: 500px) {
+    .content-home-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    }  */
+  
+  .content-home-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 88px;
+    }
 /* ///////////////////////////////////////// */
-
-.hero-text-left {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-end;
-  max-width: 400px;
-}
-
-.hero-img-right {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-left: 88px;
-}
-
 
 
 /* Photo Right Component /////////////////// */
@@ -61,6 +72,24 @@ overflow-x: hidden;
       margin-right: 16px;
     }
     } 
+
+
+.hero-text-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  max-width: 400px;
+}
+
+.hero-img-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 88px;
+}
+
 /* ///////////////////////////////////////// */
 
 
@@ -76,34 +105,9 @@ img {
 
 
 
-/* Layout – Home Page ///////////////////////////////*/
-.content-home-2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-end;
-  max-width: 400px;
-  }
-  @media screen and (max-width: 500px) {
-  .content-home-2 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: flex-start;
-  }
-  } 
 
-  .content-home-3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-right: 88px;
-    }
-  /* ///////////////////////////////////////////////////////////*/
+
+  
 
 .content-body {
   max-width: 700px;
