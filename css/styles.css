@@ -367,14 +367,13 @@ font-family: "dinregular";
 img {
   width: 100%;
   height: auto; }
-.border {
-  /* border: 2px solid white; */
-  border: 1px solid #272732;
-}
-.border:hover {
-  box-shadow: 0 6px 14px #1f2132;
-}
 
+/* Border  */
+.border { border: 1px solid #272732; }
+/* Border Hover */
+.border:hover { box-shadow: 0 6px 14px #1f2132; }
+
+.border-img { border: 1px solid #272732; }
 
 /* Horizontal Line  */
 .thumbnail-movie {
