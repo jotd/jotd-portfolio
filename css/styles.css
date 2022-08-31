@@ -99,18 +99,25 @@ overflow-x: hidden;
   justify-content: space-evenly;
   margin-left: 88px;
 }
+@media screen and (max-width: 500px) {
+  .hero-img-right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  } 
 
 /* ///////////////////////////////////////// */
 
 
 
 /* Media Query for Landscape Orientation ////////////////*/
-@media only screen and (orientation: landscape) {
-img {
-  width: auto;
-  height: auto;
-}
-}
+/* @media only screen and (orientation: landscape) {
+.content-home-3, .hero-img-right {
+  display: none;
+} */
+
 /* //////////////////////////////////////////////////// */
 
 
