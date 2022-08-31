@@ -528,8 +528,8 @@ backdrop-filter: blur(10px);}
 .footer-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
   background-size: cover; 
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   border-radius: 12px;
   margin-right:16px;
 }
