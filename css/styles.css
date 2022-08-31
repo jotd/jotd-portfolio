@@ -371,7 +371,7 @@ img {
 /* Border Hover */
 .border:hover { box-shadow: 0 6px 14px #1f2132; }
 
-.border-img { border: 1px solid #272732; }
+.border-img { border: 1px solid white; }
 
 /* Horizontal Line  */
 .thumbnail-movie {
