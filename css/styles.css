@@ -689,14 +689,22 @@ a.menu-link {
     display: flex;
     justify-content: flex-start;
     flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     font-family: "dinregular";
     font-weight: 400;
     }
 
     @media screen and (max-width: 500px) {
-    
+      .footer-links-row {
+        display: flex;
+        justify-content: flex-start;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: "dinregular";
+        font-weight: 400;
+        }
       } 
 
 .footer-link {
