@@ -25,6 +25,18 @@ overflow-x: hidden;
   }
   } 
 
+  
+  /* Image Left */
+  .content-home-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-right: 88px;
+    }
+
+
+  /* Text Right */
   .content-home-2 {
     display: flex;
     flex-direction: column;
@@ -33,6 +45,9 @@ overflow-x: hidden;
     align-content: flex-end;
     max-width: 400px;
     }
+
+
+
     /* @media screen and (max-width: 500px) {
     .content-home-2 {
     display: flex;
@@ -44,13 +59,8 @@ overflow-x: hidden;
     }
     }  */
   
-  .content-home-3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-right: 88px;
-    }
+
+  
 /* ///////////////////////////////////////// */
 
 
