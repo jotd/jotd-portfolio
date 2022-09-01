@@ -96,9 +96,11 @@ overflow-x: hidden;
 
 /* Media Query for Landscape Orientation ////////////////*/
 
-@media only screen and (orientation: landscape) {
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
 
-  /* Show App Icon */
+     /* Show App Icon */
   .hero-afterpay-app-icon {
     background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
     background-size: cover; 
@@ -122,8 +124,8 @@ overflow-x: hidden;
     margin-left: 16px;
     margin-right: 16px;
   }
+  }
 }
-
 /* //////////////////////////////////////////////////// */
 
 
