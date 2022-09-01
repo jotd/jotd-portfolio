@@ -609,7 +609,7 @@ flex-direction: row;
 backdrop-filter: blur(10px);}
 
 .nav-jsd-logo {
-  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD-red.png);
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
   background-size: cover; 
   border: solid 2px #CE1141;
   border-radius: 12px;
@@ -638,6 +638,7 @@ backdrop-filter: blur(10px);}
 .face {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
   background-size: cover; 
+  border-radius: 12px;
 }
 
 
