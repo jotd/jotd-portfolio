@@ -209,9 +209,16 @@ overflow-x: hidden;
 .cta-2 { background-color: white; }
 
 
-/* Green Availability Dot */
+/* Cash Green – Availability Dot */
 .dot { background-color: #00D54B; }
 
+/* Apple Blue – Persistent Nav CTA */
+.apple-blue {color: #3478F6;}
+
+/* Laker Yellow */
+.laker-yellow {
+  color: #fdb927;
+}
 
 /* Yellow Text */
 #link-large { color: #ca9c46;}
@@ -716,14 +723,14 @@ a.menu-link {
     }
 
   @media screen and (max-width: 500px) {
-    .footer-links-row { flex-direction: column; }
+    .footer-links-row { flex-direction: column;align-items: flex-start; }
   
     .footer-jsd-logo { margin-bottom: 8px; }
     } 
 
-.footer-link {
-  margin-bottom: 8px; }
-
+.footer-header {
+  margin-bottom: 16px; }
+.footer-body
 
 
 .footer-block {
