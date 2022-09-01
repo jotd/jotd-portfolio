@@ -1,11 +1,17 @@
 
+/* Start – System Level /////////////////////////////////////// */
+
 /* Hack to disable horizontal scroll on /work page */
 html, body {
 overflow-y: scroll;
 overflow-x: hidden;
 }
+/* End – System Level /////////////////////////////////////// */
 
-/* Photo Left Component //////////////////// */
+
+
+
+/* Start – Photo Left Component //////////////////// */
 .layout-home {
   display: flex;
   flex-direction: row;
@@ -25,7 +31,6 @@ overflow-x: hidden;
   }
   } 
 
-  
   /* Image Left */
   .content-home-3 {
     display: flex;
@@ -34,7 +39,6 @@ overflow-x: hidden;
     justify-content: space-evenly;
     margin-right: 88px;
     }
-
 
   /* Text Right */
   .content-home-2 {
@@ -46,10 +50,10 @@ overflow-x: hidden;
     max-width: 400px;
     }
   
-/* ///////////////////////////////////////// */
+/* End – Photo Left Component //////////////////// */
 
 
-/* Photo Right Component /////////////////// */
+/* Start – Photo Right Component //////////////////// */
   .layout-home-2 {
     display: flex;
     flex-direction: row;
@@ -67,7 +71,6 @@ overflow-x: hidden;
       margin-right: 16px;
     }
     } 
-
 
 .hero-text-left {
   display: flex;
@@ -89,11 +92,31 @@ overflow-x: hidden;
     margin-left: 0px;
   }
   } 
+/* End – Photo Right Component //////////////////// */
 
-/* ///////////////////////////////////////// */
 
+
+
+/* End – Your CSS to target only landscape mobile users /////////////////////// */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
-  /* your CSS to target only landscape mobile users */
+
+
+/* Start – Card Components – Lanscape  //////  */
+  .tagline-home {
+    font-size: 20px;
+    line-height: 1.3em;
+    /* max-width: 800px; */
+}
+
+  .layout-home {
+    background-color: #0D0D0D;
+    padding: 32px;
+    border-radius: 12px;
+  }
+  /* End – Card Components – Landscape //////  */
+
+
+/* Start – Swapped Objects //////////////////////////////////////////////////////*/
 /* Show App Icon */
 .hero-afterpay-app-icon {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
@@ -108,6 +131,9 @@ overflow-x: hidden;
 .hero-app-screen {
   display: none;
 }
+/* End – Swapped Objects //////////////////////////////////////////////////////*/
+
+
 
 /* Photo Left Component //////////////////// */
 .layout-home {
@@ -119,6 +145,7 @@ overflow-x: hidden;
   margin-right: 16px;
 }
 
+/* Makes headshot half the size so it looks like thumbnail */
 .img-hero-headshot {
   max-width: 200px;
   max-height: 2200px;
@@ -128,11 +155,12 @@ overflow-x: hidden;
 
   }
 
+/* End – Your CSS to target only landscape mobile users /////////////////////// */
 
 
 
 
-/* Media Query for Landscape Orientation ////////////////*/
+
 
 @media only screen 
 and (max-width: 500px) { 
@@ -275,6 +303,12 @@ and (max-width: 500px) {
 
 /* Cash Green – Availability Dot */
 .dot { background-color: #00D54B; }
+
+
+/* Bulls Red */
+.bulls-red {
+  color: #CE1141;
+}
 
 /* Apple Blue – Persistent Nav CTA */
 .apple-blue {color: #3478F6;}
@@ -618,7 +652,7 @@ backdrop-filter: blur(10px);}
 .nav-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
   background-size: cover; 
-  border: solid 2px #CE1141;
+  border: solid 2px white;
   border-radius: 12px;
   max-width: 100%;
   display: inline-block;
