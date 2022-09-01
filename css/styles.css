@@ -92,33 +92,36 @@ overflow-x: hidden;
 
 /* ///////////////////////////////////////// */
 
-
-@media only screen and (orientation: landscape) {
-      /* Show App Icon */
-      .hero-afterpay-app-icon {
-        background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
-        background-size: cover; 
-        width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        margin-bottom: 24px;
-      }
-    
-      /* Hide App Screen */
-      .hero-app-screen {
-        display: none;
-      }
-    
-      /* Photo Left Component //////////////////// */
-      .layout-home {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 192px;
-        margin-left: 16px;
-        margin-right: 16px;
-      }
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  /* your CSS to target only landscape mobile users */
+/* Show App Icon */
+.hero-afterpay-app-icon {
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
+  background-size: cover; 
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 24px;
 }
+
+/* Hide App Screen */
+.hero-app-screen {
+  display: none;
+}
+
+/* Photo Left Component //////////////////// */
+.layout-home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 192px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+  }
+
+
 
 
 
