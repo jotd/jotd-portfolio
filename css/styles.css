@@ -601,11 +601,7 @@ backdrop-filter: blur(10px);}
   margin-bottom: 12px;
 }
 
-@media screen and (max-width: 500px) {
-  .mobile-hidden {
-    display: none;
-  }
-}
+
 
 
 /* Memoji */
@@ -665,7 +661,7 @@ font-size: 14px;
 
 /* Mobile – Hide Dot, Status, Location */
 @media screen and (max-width: 500px) {
-  .face, .dot, .nav-block, .cta {
+  .face, .dot, .nav-block, .cta, .mobile-hidden {
     display:none;
   }}
 
