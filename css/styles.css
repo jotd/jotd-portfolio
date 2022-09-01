@@ -581,6 +581,8 @@ backdrop-filter: blur(10px);}
 .nav-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD-red.png);
   background-size: cover; 
+  border: solid 2px white;
+  border-radius: 12px;
 }
 .footer-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
