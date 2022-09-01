@@ -124,7 +124,7 @@ and (orientation: landscape)  {
     margin-left: 16px;
     margin-right: 16px;
   }
-  
+
 }
 
 /* //////////////////////////////////////////////////// */
@@ -578,6 +578,10 @@ padding: 16px;
 flex-direction: row;
 backdrop-filter: blur(10px);}
 
+.nav-jsd-logo {
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD-red.png);
+  background-size: cover; 
+}
 .footer-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
   background-size: cover; 
@@ -603,7 +607,8 @@ backdrop-filter: blur(10px);}
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/home/memoji.png);
   background-size: cover; 
 }
-    
+
+
 .w-inline-block {
 max-width: 100%;
 display: inline-block; }
