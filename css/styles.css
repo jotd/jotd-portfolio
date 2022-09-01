@@ -561,6 +561,9 @@ backdrop-filter: blur(10px);}
   margin-right: 8px;
 }
 
+.footer-body{
+  margin-bottom: 4px;
+}
 
 /* Memoji */
 .face {
