@@ -718,12 +718,24 @@ a.menu-link {
 
   .footer-links-row {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-family: "dinregular";
     font-weight: 400;
+    flex-wrap: nowrap;
+    }
+
+    .footer-links-row-2 {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      flex-direction: row;
+      align-items: center;
+      font-family: "dinregular";
+      font-weight: 400;
+      flex-wrap: nowrap;
     }
 
   @media screen and (max-width: 500px) {
