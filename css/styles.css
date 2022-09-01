@@ -96,10 +96,20 @@ overflow-x: hidden;
 
 /* Media Query for Landscape Orientation ////////////////*/
 
-/* @media only screen and (orientation: landscape) {
-.content-home-3, .hero-img-right {
-  display: none;
-} */
+@media only screen and (orientation: landscape) {
+  .hero-afterpay-app-icon {
+    background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
+    background-size: cover; 
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+
+  .hero-app-screen {
+    display: none;
+  }
+}
 
 /* //////////////////////////////////////////////////// */
 
