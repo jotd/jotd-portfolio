@@ -428,7 +428,7 @@ img {
 /* Border Hover */
 .border:hover { box-shadow: 0 6px 14px #1f2132; }
 
-.border-img { border: 1px solid white; }
+.border-img { border: 1px solid #272732; }
 
 /* Horizontal Line  */
 .thumbnail-movie {
@@ -581,7 +581,7 @@ backdrop-filter: blur(10px);}
 .nav-jsd-logo {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD-red.png);
   background-size: cover; 
-  border: solid 2px white;
+  border: solid 2px #CE1141;
   border-radius: 12px;
   max-width: 100%;
   display: inline-block;
