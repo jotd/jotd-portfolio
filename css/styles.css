@@ -96,9 +96,9 @@ overflow-x: hidden;
 
 /* Media Query for Landscape Orientation ////////////////*/
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
+@media only screen 
+and (max-width: 500px) 
+and (orientation: landscape)  { 
 
      /* Show App Icon */
   .hero-afterpay-app-icon {
@@ -124,8 +124,9 @@ overflow-x: hidden;
     margin-left: 16px;
     margin-right: 16px;
   }
-  }
+  
 }
+
 /* //////////////////////////////////////////////////// */
 
 
@@ -589,9 +590,13 @@ backdrop-filter: blur(10px);}
 .footer-body{
   margin-bottom: 12px;
 }
-.mobile-hidden {
-  display: none;
+
+@media screen and (max-width: 500px) {
+  .mobile-hidden {
+    display: none;
+  }
 }
+
 
 /* Memoji */
 .face {
