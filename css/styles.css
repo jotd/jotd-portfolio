@@ -185,6 +185,16 @@ display: none;
 @media only screen 
 and (max-width: 500px) { 
 
+    /* Show App Icon */
+    .hero-nifty-app-icon {
+    background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
+    background-size: cover; 
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+  }
+
      /* Show App Icon */
   .hero-afterpay-app-icon {
     background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
