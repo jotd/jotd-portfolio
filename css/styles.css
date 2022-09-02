@@ -113,7 +113,7 @@ overflow-x: hidden;
 
 /* Shortcut to hide img */
 .mobile-hidden {
-  display: none;
+  display: none !important;
   }
 
 /* Shortcut to hide img */
@@ -703,7 +703,7 @@ font-size: 14px;
 /* Mobile – Hide Dot, Status, Location */
 @media screen and (max-width: 500px) {
   .dot, .nav-block, .cta, .nav-jsd-logo, .mobile-hidden {
-    display:none;
+    display:none !important;
   }}
 
 @media screen and (max-width: 500px) {
