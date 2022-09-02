@@ -187,7 +187,7 @@ and (max-width: 500px) {
 
     /* Show App Icon */
     .hero-nifty-app-icon {
-    background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
+    background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/+nifty/app-icon-nifty.webp);
     background-size: cover; 
     width: 64px;
     height: 64px;
