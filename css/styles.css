@@ -105,7 +105,7 @@ display: none;
   /* Thumbnails above cards */
   .img-hero-headshot {
     max-width: 200px;
-    max-height: 2200px;
+    max-height: 200px;
     border-radius: 24px;
     margin-bottom: 24px;
   }
@@ -176,10 +176,6 @@ display: none;
   }
 
 /* End – Your CSS to target only landscape mobile users /////////////////////// */
-
-
-
-
 
 
 @media only screen 
@@ -265,7 +261,7 @@ and (max-width: 500px) {
 @media screen and (max-width: 500px) {
   .img-hero-headshot {
     max-width: 200px;
-    max-height: 200px;
+    max-height: 300px;
     border-radius: 24px;
     margin-bottom: 24px;
   }
