@@ -47,7 +47,6 @@ overflow-x: hidden;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-end;
-    max-width: 400px;
     }
   
 /* End – Photo Left Component //////////////////// */
@@ -596,7 +595,6 @@ border-radius: 8px;
 padding: 8px;
 justify-content: center;
 align-items: center;
-width: 400px;
 height: 32px;
 display: flex;
 margin-top: 24px;
