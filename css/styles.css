@@ -96,7 +96,7 @@ overflow-x: hidden;
 
   .img-hero-headshot {
     max-width: 200px;
-    max-height: 300px;
+    max-height: auto;
     border-radius: 24px;
   }
 
