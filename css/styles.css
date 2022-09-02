@@ -100,22 +100,29 @@ overflow-x: hidden;
 /* End – Your CSS to target only landscape mobile users /////////////////////// */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
 
+  /* Thumbnails above cards */
+  .img-hero-headshot {
+    max-width: 200px;
+    max-height: 2200px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+  }
 
-/* Start – Card Components – Lanscape  //////  */
-  .tagline-home {
-    font-size: 18px;
-    line-height: 1.3em;
-    /* max-width: 800px; */
-}
-
+/* Card */
 .content-home-2 {
     background-color: #141414;
     padding: 32px;
     border-radius: 12px;
     max-width: auto;
   }
-  /* End – Card Components – Landscape //////  */
 
+/* Card */
+.hero-text-left {
+  background-color: #141414;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: auto;
+}
 
 /* Start – Swapped Objects //////////////////////////////////////////////////////*/
 /* Show App Icon */
@@ -580,7 +587,7 @@ border-radius: 8px;
 padding: 8px;
 justify-content: center;
 align-items: center;
-width: 300px;
+width: 400px;
 height: 32px;
 display: flex;
 margin-top: 24px;
