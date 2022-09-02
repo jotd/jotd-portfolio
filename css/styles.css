@@ -103,7 +103,7 @@ overflow-x: hidden;
 
 /* Start – Card Components – Lanscape  //////  */
   .tagline-home {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3em;
     /* max-width: 800px; */
 }
@@ -112,6 +112,7 @@ overflow-x: hidden;
     background-color: #141414;
     padding: 32px;
     border-radius: 12px;
+    max-width: auto;
   }
   /* End – Card Components – Landscape //////  */
 
