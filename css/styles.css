@@ -133,7 +133,8 @@ overflow-x: hidden;
   margin-bottom: 24px;
 }
 
-.hero-niftyy-app-icon {
+
+.hero-nifty-app-icon {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/+nifty/app-icon-nifty.webp);
   background-size: cover; 
   width: 64px;
