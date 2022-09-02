@@ -1,17 +1,12 @@
 
-/* Start – System Level /////////////////////////////////////// */
 
-/* Hack to disable horizontal scroll on /work page */
+/* Hack to disable horizontal scroll on work page */
 html, body {
 overflow-y: scroll;
 overflow-x: hidden;
 }
-/* End – System Level /////////////////////////////////////// */
 
-
-
-
-/* Start – Photo Left Component //////////////////// */
+/* Desktop – Photo Left Component /////////////////////////////*/
 .layout-home {
   display: flex;
   flex-direction: row;
@@ -84,6 +79,8 @@ overflow-x: hidden;
   justify-content: space-evenly;
   margin-left: 88px;
 }
+
+/* Subtracts the margin added on desktop */
 @media screen and (max-width: 500px) {
   .hero-img-right {
     margin-left: 0px;
@@ -94,22 +91,16 @@ overflow-x: hidden;
 
 
 
-/* End – Your CSS to target only landscape mobile users /////////////////////// */
+/* Start – Your CSS to target only landscape mobile users /////////////////////// */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
 
-.mobile-hidden {
-display: none;
-}
-
-  /* Thumbnails above cards */
-  .img-hero-headshot {
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 24px;
-    margin-bottom: 24px;
+  /* Makes headline longer for cards shown in landscape */
+  .tagline-home {
+    max-width: 500px;
   }
 
-/* Card */
+
+/* Card Bg */
 .content-home-2 {
     background-color: #141414;
     padding: 32px;
@@ -117,7 +108,7 @@ display: none;
     max-width: auto;
   }
 
-/* Card */
+/* Card Bg */
 .hero-text-left {
   background-color: #141414;
   padding: 32px;
@@ -125,8 +116,18 @@ display: none;
   max-width: auto;
 }
 
-/* Start – Swapped Objects //////////////////////////////////////////////////////*/
-/* Show App Icon */
+/* Shortcut to hide img */
+.mobile-hidden {
+  display: none;
+  }
+
+/* Shortcut to hide img */
+.hero-app-screen {
+  display: none;
+}  
+
+
+/* Show Afterpay App Icon */
 .hero-afterpay-app-icon {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/afterpay/app-icon.jpg);
   background-size: cover; 
@@ -136,7 +137,7 @@ display: none;
   margin-bottom: 24px;
 }
 
-
+/* Show Nifty App Icon */
 .hero-nifty-app-icon {
   background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/+nifty/app-icon-nifty.webp);
   background-size: cover; 
@@ -146,33 +147,6 @@ display: none;
   margin-bottom: 24px;
 }
 
-/* Hide App Screen */
-.hero-app-screen {
-  display: none;
-}
-/* End – Swapped Objects //////////////////////////////////////////////////////*/
-
-
-
-/* Photo Left Component //////////////////// */
-.layout-home {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 192px;
-  margin-left: 16px;
-  margin-right: 16px;
-}
-
-/* Makes headshot half the size so it looks like thumbnail */
-.img-hero-headshot {
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 24px;
-  margin-bottom: 24px;
-}
-
-  }
 
 /* End – Your CSS to target only landscape mobile users /////////////////////// */
 
@@ -205,19 +179,7 @@ and (max-width: 500px) {
     display: none;
   }
 
-  /* Photo Left Component //////////////////// */
-  .layout-home {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 192px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
 }
-
-/* //////////////////////////////////////////////////// */
 
 
 @media screen and (max-width: 500px) {
@@ -230,12 +192,7 @@ and (max-width: 500px) {
     margin-bottom: 24px;
   }
 
-  .hero-app-screen {
-    display: none;
-  }
   } 
-
-  
 
 .content-body {
   max-width: 700px;
@@ -247,24 +204,24 @@ and (max-width: 500px) {
 .content-row {
   max-width: 600px;
   margin: 0 auto; }
+
+
+
+/* Headshot Styles ///////////////////////////////// */
 .content-headshot {
   max-width: 700px;
   margin: 0 auto;
   border-radius: 24px;
   }
+
 .img-hero-headshot {
   max-width: 400px;
   max-height: 400px;
   border-radius: 24px;
 }
-@media screen and (max-width: 500px) {
-  .img-hero-headshot {
-    max-width: 200px;
-    max-height: 300px;
-    border-radius: 24px;
-    margin-bottom: 24px;
-  }
-  }
+
+/* /////////////////////////////////////////// */
+
 
   .hero-app-screen {
     max-width: 400px;
@@ -274,7 +231,7 @@ and (max-width: 500px) {
 
 
 
-
+  /* Caset Study Stuff /////// */
 .content-hero-image {
   max-width: 950px;
   margin: 0 auto;
@@ -292,12 +249,9 @@ and (max-width: 500px) {
   margin-bottom: 136px !important;
   background: #edeff1;
   border-radius: 24px; }
-.content-gif {
-  width: 80%;
-  margin-left: 10%;
-  background: #edeff1;
-  border-radius: 24px; }
-/* ////////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////////*/
+
+
 
 
 /* Typography ///////////////////////////////////////////////////////////// */
@@ -411,6 +365,17 @@ font-family: "dinregular";
   margin-bottom: 16px;
   max-width: 400px;
 }
+
+
+@media screen and (max-width: 500px) {
+  .img-hero-headshot {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+  }
+  }
+
 @media screen and (max-width: 500px) {
   .header-home {
     font-family: "blender_probold";
@@ -681,18 +646,6 @@ backdrop-filter: blur(10px);}
   height: 40px;
   width: 40px;
 }
-.footer-jsd-logo {
-  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
-  background-size: cover; 
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  margin-right: 12px;
-}
-
-.footer-body{
-  margin-bottom: 12px;
-}
 
 
 
@@ -897,16 +850,31 @@ a.menu-link {
 
 
 @media screen and (max-width: 500px) {
-  .footer.desktop {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    /* -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;  */
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; 
-          } }
+.footer.desktop {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  /* -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;  */
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; 
+        } }
+
+
+.footer-jsd-logo {
+  background-image: url(https://jotsd.s3.us-west-1.amazonaws.com/JSD/logo-JSD.png);
+  background-size: cover; 
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  margin-right: 12px;
+}
+
+.footer-body{
+  margin-bottom: 12px;
+}
+          
 /* ///////////////////////////////////////////////////// */
 
 
@@ -942,7 +910,7 @@ a.menu-link {
  /* ////////////////////////////////////////////////////// */
 
 
- /* Container for Text ////////////////////////////////////////////////////// */
+ /* Invisible Container for Layout ////////////////////////////////////////////////////// */
   .work-description {
     position: absolute;
     left: 0%;
@@ -1025,6 +993,7 @@ a.menu-link {
     margin-bottom: -32px;
     width: 100%; } }
 /* ///////////////////////////////////////////////////////////////// */
+
 
 /* Project Description //////////////////////////////////*/
 .blurb {
@@ -1111,16 +1080,18 @@ a.menu-link {
 /* //////////////////////////////////////////////////////////////*/
 
 
+
+
+
+
+
+
+
 /* Default Page Background */
 body {
   background-color: #000000;
   color: white;
 }
-
-/* 3D Render Background on 3D Art Direction Project*/
-/* .bg-3d {
-  background-image: url("https://jotsd.s3.us-west-1.amazonaws.com/home/3D+Wallpaper.png");
-} */
 
 /* Topographic Background on Homepage */
 .bg-topographic {
