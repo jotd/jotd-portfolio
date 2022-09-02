@@ -94,11 +94,6 @@ overflow-x: hidden;
 /* Start – Your CSS to target only landscape mobile users /////////////////////// */
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
 
-  /* Makes headline longer for cards shown in landscape */
-  .tagline-home {
-    max-width: 500px;
-  }
-
 
 /* Card Bg */
 .content-home-2 {
