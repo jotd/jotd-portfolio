@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Jot Dhaliwal</title>
+    <title>JSD Creative</title>
 
     <!-- This stuff sets up the page to be mobile friendly -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,207 +22,256 @@
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!-- Material Icon Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
-  <body class="hide-scroll">
-    <div class="header">
-      <div class="header-container">
-        <a href="/" class="face w-inline-block w--current"></a>
-        <a href="#" class="btn contact w-button"> Contact</a>
-        <div class="menu">
-          <a href="/work" class="menu-link">Work</a>
-          <a href="/about" class="menu-link">About</a>
-        </div>
-      </div>
+  <style>
+    .material-symbols-rounded {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    </style>
+
+<body class="bg-topographic">
+
+  <div class="header">
+    <div class="header-container">
+      <a href="https://jotd.me/" class="nav-jsd-logo"></a>
+    <!-- Status -->
+  <div class="availability-block"> 
+        <div class="dot"> </div> 
+        <p class="nav-block">Available / San Francisco</p>
+        <a class="cta" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> info@jotd.me</a>
+    </div>
+    <!-- Menu -->
+    <div class="menu border-img">
+      
+      <a href="https://jotd.me/" class="menu-link w--current">
+        <span class="material-symbols-rounded"> home </span>
+      </a>
+
+      <!-- <a href="https://jotd.me/" class="menu-link w--current">🏠</a> -->
+      <a href="https://jotd.me/work/" class="menu-link">Work</a>
+      <a href="https://jotd.me/services/" class="menu-link">Services</a>
+      <a href="https://jotd.me/about/" class="menu-link">About</a>
+    </div>
+    </div>
+  </div>
+
+
+ <!-- Jot Intro -->
+  <div class="layout-home">
+
+    <div class="content-home-3">
+      <img class="img-hero-headshot border-img" src="https://jotsd.s3.us-west-1.amazonaws.com/home/headshot-tall.png"/>
+      <div class="face w-inline-block w--current mobile-active desktop-hidden"> </div>
     </div>
 
-    <div class="content-home">
+
+    <div class="content-home-2">
+      <div class="text-metadata"> Product Designer </div> 
+      <hr>
       <h1 class="header-home">Jot Dhaliwal</h1>
-      <p class="tagline-home">
-        Product Designer based in SF, creating polished experiences across
-        mobile & web.
-      </p>
-    </div>
-
-    <script src="js/three.js"></script>
-    <script src="js/Projector.js"></script>
-    <script src="js/CanvasRenderer.js"></script>
-    <script src="js/stats.min.js"></script>
-    <script src="js/wavy.js"></script>
-
-    <script>
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-        // Do nothing if small browser width
-      ) {
-        // Do nothing if mobile device
-      } else {
-        setTimeout(
-          function () {
-            var SEPARATION = 100,
-              AMOUNTX = 50,
-              AMOUNTY = 50;
-            var container, stats;
-            var camera, scene, renderer;
-            var particles,
-              particle,
-              count = 0;
-            var mouseX = 0,
-              mouseY = 0;
-            var windowHalfX = window.innerWidth / 2;
-            var windowHalfY = window.innerHeight / 2;
-            init();
-            animate();
-            function init() {
-              container = document.createElement("div");
-              document.body.appendChild(container);
-              camera = new THREE.PerspectiveCamera(
-                75,
-                window.innerWidth / window.innerHeight,
-                1,
-                10000
-              );
-              camera.position.z = 1000;
-              scene = new THREE.Scene();
-
-              // change default bg color of canvas
-              // source: https://stackoverflow.com/questions/16177056/changing-three-js-background-to-transparent-or-other-color
-              scene.background = new THREE.Color(0xf9f9f9);
-
-              particles = new Array();
-              var PI2 = Math.PI * 2;
-              var material = new THREE.SpriteCanvasMaterial({
-                // change color of floating dots
-                color: 0x5dcfff,
-                program: function (context) {
-                  context.beginPath();
-                  context.arc(0, 0, 0.5, 0, PI2, true);
-                  context.fill();
-                },
-              });
-              var i = 0;
-              for (var ix = 0; ix < AMOUNTX; ix++) {
-                for (var iy = 0; iy < AMOUNTY; iy++) {
-                  particle = particles[i++] = new THREE.Sprite(material);
-                  particle.position.x =
-                    ix * SEPARATION - (AMOUNTX * SEPARATION) / 2;
-                  particle.position.z =
-                    iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
-                  scene.add(particle);
-                }
-              }
-              renderer = new THREE.CanvasRenderer();
-              renderer.setPixelRatio(window.devicePixelRatio);
-              renderer.setSize(window.innerWidth, window.innerHeight);
-              container.appendChild(renderer.domElement);
-              stats = new Stats();
-
-              // Hide stats widget container
-              // container.appendChild(stats.dom);
-
-              document.addEventListener(
-                "mousemove",
-                onDocumentMouseMove,
-                false
-              );
-              document.addEventListener(
-                "touchstart",
-                onDocumentTouchStart,
-                false
-              );
-              document.addEventListener(
-                "touchmove",
-                onDocumentTouchMove,
-                false
-              );
-              //
-              window.addEventListener("resize", onWindowResize, false);
-            }
-            function onWindowResize() {
-              windowHalfX = window.innerWidth / 2;
-              windowHalfY = window.innerHeight / 2;
-              camera.aspect = window.innerWidth / window.innerHeight;
-              camera.updateProjectionMatrix();
-              renderer.setSize(window.innerWidth, window.innerHeight);
-            }
-            //
-            function onDocumentMouseMove(event) {
-              mouseX = event.clientX - windowHalfX;
-              mouseY = event.clientY - windowHalfY;
-            }
-            function onDocumentTouchStart(event) {
-              if (event.touches.length === 1) {
-                event.preventDefault();
-                mouseX = event.touches[0].pageX - windowHalfX;
-                mouseY = event.touches[0].pageY - windowHalfY;
-              }
-            }
-            function onDocumentTouchMove(event) {
-              if (event.touches.length === 1) {
-                event.preventDefault();
-                mouseX = event.touches[0].pageX - windowHalfX;
-                mouseY = event.touches[0].pageY - windowHalfY;
-              }
-            }
-            //
-            function animate() {
-              requestAnimationFrame(animate);
-              render();
-
-              // Hide the stats widget lines
-              // stats.update();
-            }
-            function render() {
-              camera.position.x += (mouseX - camera.position.x) * 0.05;
-              camera.position.y += (-mouseY - camera.position.y) * 0.05;
-              camera.lookAt(scene.position);
-              var i = 0;
-              for (var ix = 0; ix < AMOUNTX; ix++) {
-                for (var iy = 0; iy < AMOUNTY; iy++) {
-                  particle = particles[i++];
-                  particle.position.y =
-                    Math.sin((ix + count) * 0.3) * 50 +
-                    Math.sin((iy + count) * 0.5) * 50;
-                  particle.scale.x = particle.scale.y =
-                    (Math.sin((ix + count) * 0.3) + 1) * 4 +
-                    (Math.sin((iy + count) * 0.5) + 1) * 4;
-                }
-              }
-              renderer.render(scene, camera);
-              count += 0.1;
-            }
-          },
-
-          0000
-        );
-      }
-    </script>
-
-    <div class="footer-home">
-      <div class="footer desktop">
-        <div class="footer-links">
-          <a
-            href="https://twitter.com/jotd?lang=en"
-            target="_blank"
-            class="footer-link"
-            >Twitter</a
-          >
-          <a
-            href="https://www.linkedin.com/in/jotdhaliwal/"
-            target="_blank"
-            class="footer-link"
-            >LinkedIn</a
-          >
-          <a
-            href="mailto:info@jotd.me?subject=Inquiry%20from%20website"
-            class="footer-link"
-            >Email</a
-          >
-        </div>
-        <div class="footer-block">© 2020 Jot Dhaliwal</div>
+      <div class="tagline-home">
+        🥶 Crafted apps / websites / brands @ 
+        <span id="text-white">Gemini</span>,
+        <span id="text-white">Square</span>,
+        <span id="text-white">Snapchat</span> &
+        <span id="text-white">Twitter</span>. 
+      </div>
+      <div>
+        <a class="cta-2" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> Get in touch 
+        </a>    
       </div>
     </div>
-  </body>
+        
+  </div>
+
+
+
+
+<!-- JSD Creative -->
+<div class="layout-home-2">
+
+<div class="hero-text-left">
+
+<div class="text-metadata"> Accepting New Clients </div>
+<hr>
+<h1 class="header-home"> JSD Creative </h1>
+
+<div class="tagline-home"> 🏆 My independent design studio practice — 
+<span id="text-white">crypto</span>, 
+<span id="text-white">web3</span> &
+<span id="text-white">fintech</span>.
+<a class="cta-2" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> Get in touch</a>    
+</div>
+
+</div>
+
+<!-- Vimeo Gif  -->
+<div> class="hero-img-right"> 
+<img class="img-hero-headshot border-img" 
+src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-04be-4b99-b939-2e2ec762fa31.gif?ClientID=vimeo-core-prod&Date=1661405487&Signature=4848fc69023097ae6c2a5d7064fa36e27aeb2089"/> 
+</div>
+
+</div>
+
+
+  <!-- Nifty App -->
+    <div class="layout-home">
+
+      <div class="content-home-3">
+        <img class="img-hero-headshot border-img mobile-hidden" src="https://jotsd.s3.us-west-1.amazonaws.com/nifty+app+store+screenshots/1.webp"/>
+      </div>
+  
+      <div class="content-home-2">
+
+        <span class="hero-nifty-app-icon"></span>
+        <div class="text-metadata"> Released on July 15, 2022 </div>
+        <hr>
+        <h1 class="header-home">Nifty NFT App </h1>
+        <div class="tagline-home"> 📣 View, browse and share NFTs! </div>
+
+        <div> <a class="cta-2" href="https://apps.apple.com/mk/app/nifty-gateway/id1599792483"> Get the app</a> </div>
+
+      </div>
+    </div>
+
+     <!-- Afterpay App -->
+     <div class="layout-home">
+
+      <div class="content-home-3">
+        <img class="hero-app-screen border-img" src="https://jotsd.s3.us-west-1.amazonaws.com/afterpay/afterpay-app-store.webp"/>
+      </div>
+  
+      <div class="content-home-2">
+        <span class="hero-afterpay-app-icon"></span>
+        <div class="text-metadata">
+          Acquired by Square </div>
+        <hr>
+        <h1 class="header-home">Afterpay App </h1>
+        <div class="tagline-home">
+          📣 Shop today and pay in 4 interest free installments.
+        </div>
+        <div>
+          <a class="cta-2" href="https://apps.apple.com/au/app/afterpay-shop-now-pay-later/id1230286588"> Get the app</a>    
+        </div>
+     </div>
+
+    </div>
+
+     <!-- Square Becomes Block -->
+     <div class="layout-home">
+
+      <div class="content-home-3">
+        <img class="img-hero-headshot border-img" src="https://jotsd.s3.us-west-1.amazonaws.com/afterpay/Block_lockup_reverse_black_500x500.gif"/>
+      </div>
+  
+      <div class="content-home-2">
+        <div class="text-metadata">
+          Square Name Change
+        </div>
+        <hr>
+        <h1 class="header-home"> Square Now Block </h1>
+        <div class="tagline-home">
+          <span id="text-white">📣 NYSE: SQ</span> 
+           includes – Square, Cash, Afterpay.
+        </div>
+        <div>
+          <a class="cta-2" href="https://squareup.com/us/en/press/square-changes-name-to-block"> Read the memo</a>    
+        </div>
+     </div>
+
+    </div>
+ 
+<!-- Component – Footer – Start /////////////////////////////////////////////// -->
+
+<!-- Divider -->
+<hr class="footer-divider">
+    
+<div class="footer">
+
+<!-- Link Stack -->
+<div class="footer-links">
+    <div class="footer-header" 
+    style=
+    "font-size: 10px; 
+    color: #fdb927;
+    letter-spacing: .2em;
+    text-transform: uppercase;"  
+    >
+    wagmi
+  </div>
+  <a
+    href="https://twitter.com/jotd?lang=en"
+    target="_blank"
+    class="footer-body underline"
+    >Twitter</a
+  >
+  <a
+    href="https://www.linkedin.com/in/jotdhaliwal/"
+    target="_blank"
+    class="footer-body underline"
+    >LinkedIn</a
+  >
+</div>
+
+
+ 
+
+<!-- Text Stack  -->
+<div class="footer-links mobile-hidden">
+  <div class="footer-header" 
+    style=
+    "font-size: 10px;
+    color: #fdb927;
+    letter-spacing: .2em;
+    text-transform: uppercase;"  
+    >
+    gm
+  </div>
+  <!-- Email -->
+  <div class="footer-body"> info@jotd.me </div> 
+  <!-- Phone -->
+  <div class="footer-body"> (916) 832–5322 </div> 
+</div>
+
+<!-- Mamba Mentality Column -->
+<div class="footer-links-row">
+  <div class="footer-header" 
+    style=
+    "font-size: 10px; 
+    color: #fdb927;
+    letter-spacing: .2em;
+    text-transform: uppercase;"  
+    >
+    mamba mentality
+  </div>
+
+  <!-- Container for Logo + Copyright -->
+  <div class="footer-links-row-2">
+    <!-- JSD Logo -->
+    <a href="https://jotd.me/" class="face w-inline-block w--current"></a>
+    <!-- Copyright  -->
+    <div class=""> © 2022 JSD Creative </div> 
+  </div>
+    
+
+</div>
+
+</div>
+<!-- Component – Footer – End ///////////////////////////////////////////////////// -->
+    
+
+</body>
 </html>
+
+  
+
+
+
