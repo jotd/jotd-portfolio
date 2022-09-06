@@ -1,10 +1,15 @@
+---
+title: Home
+# this is an empty front matter
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <!-- Do not copy this head section to other pages -->
   <head>
     <meta charset="utf-8" />
 
-    <title>JSD Creative</title>
+    <title>Home</title>
 
     <!-- This stuff sets up the page to be mobile friendly -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,29 +44,14 @@
 
 <body class="bg-topographic">
 
-  <div class="header">
-    <div class="header-container">
-      <a href="https://jotd.me/" class="nav-jsd-logo"></a>
-    <!-- Status -->
-  <div class="availability-block"> 
-        <div class="dot"> </div> 
-        <p class="nav-block">Available / San Francisco</p>
-        <a class="cta" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> info@jotd.me</a>
-    </div>
-    <!-- Menu -->
-    <div class="menu border-img">
-      
-      <a href="https://jotd.me/" class="menu-link w--current">
-        <span class="material-symbols-rounded"> home </span>
-      </a>
 
-      <!-- <a href="https://jotd.me/" class="menu-link w--current">🏠</a> -->
-      <a href="https://jotd.me/work/" class="menu-link">Work</a>
-      <a href="https://jotd.me/services/" class="menu-link">Services</a>
-      <a href="https://jotd.me/about/" class="menu-link">About</a>
-    </div>
-    </div>
-  </div>
+  {% include header.html %}
+  
+
+  <!-- Example code for using material icon in nav bar -->
+  <!-- <a href="https://jotd.me/" class="menu-link w--current">
+    <span class="material-symbols-rounded"> home </span>
+  </a> -->
 
 
  <!-- Jot Intro -->
@@ -188,84 +178,8 @@ src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-
      </div>
 
     </div>
- 
-<!-- Component – Footer – Start /////////////////////////////////////////////// -->
 
-<!-- Divider -->
-<hr class="footer-divider">
-    
-<div class="footer">
-
-<!-- Link Stack -->
-<div class="footer-links">
-    <div class="footer-header" 
-    style=
-    "font-size: 10px; 
-    color: #fdb927;
-    letter-spacing: .2em;
-    text-transform: uppercase;"  
-    >
-    wagmi
-  </div>
-  <a
-    href="https://twitter.com/jotd?lang=en"
-    target="_blank"
-    class="footer-body underline"
-    >Twitter</a
-  >
-  <a
-    href="https://www.linkedin.com/in/jotdhaliwal/"
-    target="_blank"
-    class="footer-body underline"
-    >LinkedIn</a
-  >
-</div>
-
-
- 
-
-<!-- Text Stack  -->
-<div class="footer-links mobile-hidden">
-  <div class="footer-header" 
-    style=
-    "font-size: 10px;
-    color: #fdb927;
-    letter-spacing: .2em;
-    text-transform: uppercase;"  
-    >
-    gm
-  </div>
-  <!-- Email -->
-  <div class="footer-body"> info@jotd.me </div> 
-  <!-- Phone -->
-  <div class="footer-body"> (916) 832–5322 </div> 
-</div>
-
-<!-- Mamba Mentality Column -->
-<div class="footer-links-row">
-  <div class="footer-header" 
-    style=
-    "font-size: 10px; 
-    color: #fdb927;
-    letter-spacing: .2em;
-    text-transform: uppercase;"  
-    >
-    mamba mentality
-  </div>
-
-  <!-- Container for Logo + Copyright -->
-  <div class="footer-links-row-2">
-    <!-- JSD Logo -->
-    <a href="https://jotd.me/" class="face w-inline-block w--current"></a>
-    <!-- Copyright  -->
-    <div class=""> © 2022 JSD Creative </div> 
-  </div>
-    
-
-</div>
-
-</div>
-<!-- Component – Footer – End ///////////////////////////////////////////////////// -->
+    {% include footer.html %}
     
 
 </body>

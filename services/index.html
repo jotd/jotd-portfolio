@@ -1,9 +1,13 @@
+---
+# this is an empty front matter
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
 
-    <title>Jot Dhaliwal</title>
+    <title>Services</title>
 
     <!-- This stuff sets up the page to be mobile friendly -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,24 +28,9 @@
   </head>
 
   <body class="">
-    <div class="header">
-      <div class="header-container">
-        <a href="https://jotd.me/" class="face w-inline-block w--current"></a>
-      <!-- Availability -->
-      <div class="availability-block"> 
-          <div class="dot"> </div> 
-          <p class="nav-block">Available / San Francisco</p>
-          <a class="cta" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> info@jotd.me</a>
-      </div>
-      <div class="menu">
-        <a href="https://jotd.me/" class="menu-link">🏠</a>
-        <a href="https://jotd.me/work/" class="menu-link">Work</a>
-        <a href="https://jotd.me/services/" class="menu-link  w--current">Services</a>
-        <a href="https://jotd.me/about/" class="menu-link">About</a>
-      </div>
-      </div>
-    </div>
 
+
+    {% include header.html %}
  
 
     <div  class="content-about">
@@ -56,62 +45,7 @@
     </div>
 
     
-  <!-- Component – Footer – Start /////////////////////////////////////////////// -->
-
-<!-- Divider -->
-<hr>
+    {% include footer.html %}
     
-<div class="footer desktop">
-
-<!-- Link Stack -->
-<div class="footer-links">
-    <div class="footer-link" 
-    style=
-    "font-size: 10px; 
-    color: #3478F6; 
-    letter-spacing: .2em;
-    text-transform: uppercase;"  
-    >
-    social
-  </div>
-  <a
-    href="https://twitter.com/jotd?lang=en"
-    target="_blank"
-    class="footer-link underline"
-    >Twitter</a
-  >
-  <a
-    href="https://www.linkedin.com/in/jotdhaliwal/"
-    target="_blank"
-    class="footer-link underline"
-    >LinkedIn</a
-  >
-</div>
-
-<!-- Text Stack  -->
-<div class="footer-links">
-  <div class="footer-link" 
-    style=
-    "font-size: 10px; 
-    color: #3478F6; 
-    letter-spacing: .2em;
-    text-transform: uppercase;"  
-    >
-    contact
-  </div>
-  <!-- Email -->
-  <div class="footer-link"> info@jotd.me </div> 
-  <!-- Phone -->
-  <div class="footer-link"> (916) 832–5322 </div> 
-</div>
-
-<!-- Text Stack  -->
-<div class="footer-links">
-  <!-- Copyright  -->
-  <div class="footer-link"> © 2022 JSD Creative </div> 
-</div>
-
-</div>
-<!-- Component – Footer – End ///////////////////////////////////////////////////// -->
   </body>
 </html>

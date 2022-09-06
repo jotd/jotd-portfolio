@@ -328,12 +328,12 @@ and (max-width: 500px) {
 } 
 
 /* Grey – Medium   */
-.card-gemini, .card-square, .menu, .work-container, .text-container, 
+.card-gemini, .card-square, .work-container, .text-container, 
 .text-container-2 { 
   background-color: #141414;}
 
 /* Grey – Dark */
-.menu-link.w--current, .tag, .text-container, .text-container-2 { 
+.tag, .text-container, .text-container-2 { 
   background-color: #0D0D0D;}
 
 
@@ -355,9 +355,25 @@ font-family: "DINPro-Bold";
 color: #ffffff; 
 }
 
+/* Default menu links */
+.menu-link {
+  color: #acb1bf;
+  font-family: "dinregular";
+}
+.menu-link:hover {
+  color:#fdb927;
+  transition: ease; 
+}
+.menu-link.active {
+  color: white;
+  font-family: "DINPro-Bold";
+  transition: ease; 
+}
 
-
-.tag, .menu-link, .menu-link.w--current, .text-subheader-1, 
+.tag, 
+/* Active menu links */
+.menu-link.w--current, 
+.text-subheader-1, 
 .nav-block {
 font-family: "dinregular";
 color: #ffffff;
@@ -526,7 +542,7 @@ hr {
   margin-top: 120px;
   border-color: white;
   border-style: solid;
-  border-width: 1px;
+  border-width: .5px;
   width: 100%;
 }
 
@@ -546,7 +562,7 @@ a {
 
 
 /* Small CTA – Navigation ///////////////////////////////////////////////////////////*/
-.cta {
+.nav-cta {
 font-family: "dinregular";
 font-size: 14px;
 color: #3478F6;
@@ -556,7 +572,7 @@ padding: 8px;
 justify-content: center;
 align-items: center;
 }
-.cta:hover {
+.nav-cta:hover {
 color: white;
 background-color: #141414;
 transition: ease;
@@ -712,7 +728,7 @@ height: 72px; }
   }
 
 /* Status + Location */
-.nav-block { 
+.nav-text { 
 display: -webkit-box;
 display: -webkit-flex;
 display: -ms-flexbox;
@@ -739,12 +755,11 @@ font-size: 14px;
 
 
 /* Menu ////////////////////////////////////////////////////////////////// */
-.menu-link.w--current {
+/* .menu-link.w--current {
   border-radius: 8px;
-  background-color: #0D0D0D;
   opacity: 1;
   color: white;
-  }
+  } */
 
 .menu-link {
   display: -webkit-box;
@@ -762,7 +777,7 @@ font-size: 14px;
   border-bottom-style: none;
   border-radius: 20px;
   /* font-family: "dinregular"; */
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
  }
 
@@ -784,8 +799,7 @@ font-size: 14px;
   border-radius: 10px;
   }
   
-a.menu-link {
-  color: white; }
+
 /* /////////////////////////////////////////////////////////////////////////////////// */
 
 
@@ -944,7 +958,7 @@ a.menu-link {
             justify-content: space-between; }
   @media screen and (max-width: 767px) {
     .work-description {
-      color: #ffffff
+      color: #ffffff;
       position: absolute;
       left: 0%;
       top: 0%;
