@@ -1,4 +1,77 @@
 
+
+/* Services Page – Value Props */
+.value-prop-wrap {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+}
+
+.value-prop {
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  align-items: center;
+  margin-right: 48px;
+}
+
+.value-prop-copy {
+  font-family: "dinregular";
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7em;
+  max-width: 400px;
+}
+
+.material-icons {
+  margin-right: 16px;
+  color: #fdb927;
+  /* font-size: 32px !important; */
+  background-color: #191919;
+  padding:4px;
+  border-radius: 8px;
+}
+/* //////////////////////////////////////////////// */
+
+
+
+.team-logos {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.team-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team-logo-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-logo {
+  display: flex;
+  flex-direction: row;
+  width: 64px;
+  height: 64px;
+  margin: 24px;
+  border-radius: 12px;
+}
+.team-cta {
+  display: flex;
+  flex-direction: row;
+}
+
+
 /* Default Page Bg */
 body { background-color: #000000; color: white;}
 
@@ -299,6 +372,7 @@ and (max-width: 500px) {
 /* Laker Yellow */
 .laker-yellow { color: #fdb927; }
 
+
 /* Yellow Text */
 #link-large { color: #ca9c46;}
 /* Yellow Text Hover */
@@ -417,7 +491,7 @@ font-family: "dinregular";
 .header-about {
   font-size: 56px;
   margin-top: 148px;
-  margin-left: 16px;
+  /* margin-left: 16px; */
   margin-bottom: 8px;
   }
 .header-case-study {
@@ -456,9 +530,9 @@ font-family: "dinregular";
   color: #ffffff;
   font-size: 14px;
   line-height: 1.7em;
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 40px;
+  /* margin-left: 16px;
+  margin-right: 16px; */
+  margin-bottom: 16px;
   }
   .text-metadata {
     font-family: "dinregular";
@@ -596,12 +670,12 @@ transition: ease;
   justify-content: center;
   align-items: center;
   height: 20px;
-  display: flex;
-  margin-top: 24px;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-top: 64px;
+  /* margin-left: 16px;
+  margin-right: 16px; */
   color: black;
   background-color: white;
+  display: flex;
   }
   .cta-3:hover {
   background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
