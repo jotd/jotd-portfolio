@@ -23,13 +23,18 @@ title: Home
     <link rel="canonical" href="https://jotd.me" />
 
     <!-- Link to External Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{"/css/styles.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Material Icon Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    
+
   </head>
 
 
@@ -81,13 +86,13 @@ title: Home
 
 
 <!-- JSD Creative -->
-<div class="layout-home-2">
+<!-- <div class="layout-home-2">
 
 <div class="hero-text-left">
 
 <div class="text-metadata"> Accepting New Clients </div>
 <hr>
-<h1 class="header-home"> JSD Creative </h1>
+<h1 class="header-home"> JSD Creative Inc. </h1>
 
 <div class="tagline-home"> 🏆 My independent design studio practice for early stage startups — 
   <span id="text-white">crypto</span>, 
@@ -98,19 +103,22 @@ title: Home
   <a class="cta-2" href="https://fantastical.app/jotd/call"> Book a call</a>    
 </div>
 
-</div>
+</div> -->
 
-<!-- Vimeo Gif  -->
-<div class="hero-img-right"> 
-<img class="img-hero-headshot border-img" 
-src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-04be-4b99-b939-2e2ec762fa31.gif?ClientID=vimeo-core-prod&Date=1661405487&Signature=4848fc69023097ae6c2a5d7064fa36e27aeb2089"/> 
-</div>
+
+<!-- Image Swap -->
+<!-- <div class="hero-img-right"> 
+  <img class="img-hero-headshot border-img" 
+  src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-04be-4b99-b939-2e2ec762fa31.gif?ClientID=vimeo-core-prod&Date=1661405487&Signature=4848fc69023097ae6c2a5d7064fa36e27aeb2089"/> 
+  <div class="swap-logo"></div>
+</div> -->
+
 
 </div>
 
 
   <!-- Nifty App -->
-    <div class="layout-home">
+    <!-- <div class="layout-home">
 
       <div class="content-home-3">
         <img class="img-hero-headshot border-img mobile-hidden" src="https://jotsd.s3.us-west-1.amazonaws.com/nifty+app+store+screenshots/1.webp"/>
@@ -127,10 +135,10 @@ src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-
         <div> <a class="cta-2" href="https://apps.apple.com/mk/app/nifty-gateway/id1599792483"> Get the app</a> </div>
 
       </div>
-    </div>
+    </div> -->
 
      <!-- Afterpay App -->
-     <div class="layout-home">
+     <!-- <div class="layout-home">
 
       <div class="content-home-3">
         <img class="hero-app-screen border-img" src="https://jotsd.s3.us-west-1.amazonaws.com/afterpay/afterpay-app-store.webp"/>
@@ -150,10 +158,10 @@ src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-
         </div>
      </div>
 
-    </div>
+    </div> -->
 
      <!-- Square Becomes Block -->
-     <div class="layout-home">
+     <!-- <div class="layout-home">
 
       <div class="content-home-3">
         <img class="img-hero-headshot border-img" src="https://jotsd.s3.us-west-1.amazonaws.com/afterpay/Block_lockup_reverse_black_500x500.gif"/>
@@ -174,7 +182,7 @@ src="https://videoapi-muybridge.vimeocdn.com/animated-thumbnails/image/795c8c9c-
         </div>
      </div>
 
-    </div>
+    </div> -->
 
     {% include footer.html %}
     

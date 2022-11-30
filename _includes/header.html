@@ -4,15 +4,20 @@
   
       <a href="/" class="nav-jsd-logo"></a>
       <div class="availability-block"> 
-          <div class="dot"> </div> 
-          <p class="nav-text">Available / SF</p>
-          <a class="nav-cta" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> info@jotd.me</a>
+        <div class="logo-lockup"> 
+          <p class="nav-text"> JSD Creative Inc.</p> 
+          <p class="nav-text-2"> 🏆 Just Win. </p> 
+        </div>
+          <!-- <a class="nav-cta" href="mailto:info@jotd.me?subject=Inquiry%20from%20website"> info@jotd.me</a> -->
+          <!-- <div class="dot"> </div>  -->
       </div>
   
 
       <div class="menu">
         {% for item in site.data.header.docs %}
-        <a href="{{ item.url }}" class="menu-link {% if item.url == page.url %}active{% endif %}">{{ item.title }}</a>
+        <a href="{{ item.url }}" 
+        class="menu-link {% if item.url == page.url %}active{% endif %}">
+        {{ item.title }}</a>
         {% endfor %}
       </div>
   

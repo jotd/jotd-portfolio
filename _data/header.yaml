@@ -3,11 +3,11 @@ docs:
 - title: Home
   url: /
 
-- title: Work
-  url: /work/
+# - title: Work
+#   url: /work/
 
-- title: Services
-  url: /services/
+# - title: Services
+#   url: /services/
 
-- title: About
-  url: /about/
+# - title: About
+#   url: /about/

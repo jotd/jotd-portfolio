@@ -9,7 +9,7 @@
 
     <title>Team</title>
 
-    <!-- This stuff sets up the page to be mobile friendly -->
+  <!-- This stuff sets up the page to be mobile friendly -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta
@@ -21,7 +21,8 @@
     <link rel="canonical" href="https://jotd.me" />
 
     <!-- Link to External Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="{{"/css/styles.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" />
 
     <!-- Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -42,15 +43,31 @@
     {% include header.html %}
  
 
-  <div class="team-logos  ">
+<div class="team-logos  ">
 
-    <div class="team-title">
+<div class="team-title">
 
-      <div class="header-about">Services</div>
+<div class="header-about">Services</div>
 
-      <div class="text-2"> 
-        JSD Creative partners with top tier founders in crypto/web3 to elevate the design and innovation of their products.
-      </div>
+<div class="text-2"> 
+JSD Creative Inc. is a product design & motion studio founded by Jot & Jess Dhaliwal in 2022. 
+The two siblings developed a passion for craft, theatre & storytelling in a Punjabi Sikh household  
+filled with rich culture, tradition and honor.
+</div>
+
+<div class="text-2"> 
+After graduating from Berkeley and USC respectively, Jot & Jess developed expertise in the 
+tech, media, art and luxury sectors.
+Now Jot & Jess partner with top tier founders on the frontier of 
+crypto, web3 & entertainment to elevate the design & innovation of their businesses.
+</div>
+
+<div class="text-2"> 
+We offer product design through a monthly subscription. 
+Typically we come in after a founder has successfuly secured Series A funding — 4 month minimum with 1st month as a 30 day trial run to see if the vibe is right ✌️
+</div>
+
+
 
       <div class="value-prop-wrap fadeInAnimation">
         <div class="value-prop"> 
@@ -67,6 +84,102 @@
         </div>
       </div>
 
+      <div>
+        <a class="cta-3" href="https://fantastical.app/jotd/call"> Book a call</a>    
+      </div>
+    
+    
+    
+
+<div class="team-wrap-outer">
+
+
+<div class="team-wrap">
+  
+<!-- Jot-->  
+<div class="team-person"> 
+<img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/jot.png"/>
+<span class="team-bg"> Cofounder & CEO — <br> Jot Dhaliwal, <br> "The Senator"</span>
+</div>
+
+<!-- Geeta -->
+<div class="team-person"> 
+  <img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/geeta.jpg"/>
+  <span class="team-bg"> CFO — <br>Gurjeet Dosanjh, <br> "The Fund Manager" </span>
+  </div>
+
+
+<!-- Rahul V -->
+<div class="team-person"> 
+  <img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/rahul.png"/>
+  <span class="team-bg"> M&A Advisor — <br>Rahul Varshneya, <br> "The Banker" </span>
+  </div>
+
+
+
+<!-- Tulsi -->
+<div class="team-person"> 
+  <img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/tulsi-2.png"/>
+  <span class="team-bg"> Strategy & Biz Ops — <br>Tulsi Mehta, <br> "The Economist" </span>
+  </div>
+
+<!-- Carmen -->
+<div class="team-person"> 
+  <img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/carmen.jpg"/>
+  <span class="team-bg"> VP of Talent — <br>Carmen Ballagan, <br> "The " </span>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+  <!-- <span class="team-bg"> M&A Advisor — <br>Rahul Varshneya, <br> "The Consigliere" </span> -->
+
+  
+
+  
+  
+
+
+
+<div class="team-wrap-2">
+
+<!-- Jess -->
+<div class="team-person"> 
+<img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/jess.jpg"/>
+<span class="team-bg"> Cofounder & CMO — <br>Jessleen Dhaliwal, <br> "The Producer" </span>
+</div>
+
+<!-- Sahil-->
+<div class="team-person"> 
+  <img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/sahil.jpg"/>
+  <span class="team-bg"> COO — <br> Sahil Doshi, <br> "The Consigliere" </span>
+  </div>
+  
+
+
+<!-- Zain -->  
+<div class="team-person"> 
+<img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/zain.png"/>
+<span class="team-bg"> Principal Advisor — <br> Zain Ali, <br> "The Art Director" </span>
+</div>
+
+<!-- Kyle -->
+<div class="team-person"> 
+<img class="team-pic" src="https://jotsd.s3.us-west-1.amazonaws.com/team/kyle.png"/>
+<span class="team-bg"> Data Scientist — <br> Kyle Rasmussen, <br> "The Quant" </span>
+</div>
+  
+</div>
+
+
+</div>
+
+      
 
       <div class="text-2"> 
       Our small but mighty team of creatives has crafted apps, websites and brands for the world's leading technology companies.  
@@ -79,14 +192,23 @@
     <div class="team-logo-row">
       <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–snap.png"/>
       <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–nike.png"/>
-      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–gemini.png"/>
-      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–nifty.png"/>     
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/airbnb.png"/>
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/google.png"/>   
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/pinterest.png"/>     
     </div>  
     <div class="team-logo-row"> 
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/netflix.png"/>
       <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–twitter.png"/>  
       <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–instacart.png"/>
       <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–facebook.png"/>  
-      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/logo–afterpay.png"/>  
+    <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/tiktok.png"/>  
+    </div>  
+    <div class="team-logo-row"> 
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/netflix.png"/>
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/twitter.png"/>  
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/instacart.png"/>
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/facebook.png"/>  
+      <img class="team-logo" src="https://jotsd.s3.us-west-1.amazonaws.com/logos/tiktok.png"/>  
     </div>  
     </div>
 
